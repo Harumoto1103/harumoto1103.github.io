@@ -19,7 +19,7 @@ title: WONG HOU UN — Home Page
     </div>
 </div>
 
-## ABOUT ME
+## About Me
 
 I am a software engineering student hailing from Macau. This origin instilled in me an innate love for languages and history, which I now strive to combine with my technological studies. Besides computers and languages, I have a profound passion for **mathematics**; I frequently spend time online calculating integrals and discussing linguistic concepts with friends.
 
@@ -38,7 +38,7 @@ I am a software engineering student hailing from Macau. This origin instilled in
     </a>
 </div>
 
-## ACADEMIC WORKS (COURSES)
+## Academic Works (Courses)
 
 During my academic journey, I have completed numerous projects to put theory into practice.
 
@@ -56,9 +56,9 @@ During my academic journey, I have completed numerous projects to put theory int
     </a>
 </div>
 
-## FEATURED PROJECTS
+## Featured Projects
 
-> ### CLOUD SYSTEM AND DATA REPOSITORY (LOU HAU DRIVE)
+> ### Cloud System & Data Repository (LHDrive)
 >
 > I developed a file management system and data repository for my secondary school (_Lou Hau High School_). This system provides users with an intuitive web interface. It is highly robust, remains in daily use by students and teachers, and can be accessed at <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a>.
 >
@@ -75,13 +75,7 @@ During my academic journey, I have completed numerous projects to put theory int
 > <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: Louhau Drive system interface, showing shared folders and files.</p>
 > </div>
 
-> ### FOOD RECOGNITION & CALORIE CALCULATION
->
-> A _Machine Learning_ project where a neural network (YOLOv5) detects food items in images. I am currently integrating a Large Language Model (LLM) to calculate calories and exploring _Semantic Segmentation_ techniques.
->
-> <span class="badge">Python</span> <span class="badge">YOLOv5</span> <span class="badge">LLM</span>
-
-## BLOGS AND NETWORKS
+## Blogs & Networks
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
 
@@ -115,7 +109,7 @@ During my academic journey, I have completed numerous projects to put theory int
 
 </div>
 
-## CONTACT
+## Contact
 
 - **Email:** <a href="mailto:harumoto1103@gmail.com">harumoto1103@gmail.com</a>
 - **GitHub:** <a href="https://github.com/harumoto1103">github.com/harumoto1103</a>

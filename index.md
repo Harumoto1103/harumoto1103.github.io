@@ -38,7 +38,7 @@ Discipulus artis ingeniariae programmaturae ex Macauense oriundus sum. Haec orig
     </a>
 </div>
 
-## OPERA ACADEMICA (CVRSVS)
+## Opera Academica (Cvrsvs)
 
 In schola, multa proposita confeci ad theoriam in praxim redigendam.
 
@@ -56,9 +56,9 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
     </a>
 </div>
 
-## PROPOSITA PRAECIPVVA
+## Proposita Praecipvva
 
-> ### SYSTEMA NVBIS ET REPOSITORIVM DATORVM (LOU HAU DRIVE)
+> ### Systema Nvbis & Repositorivm Datorvm (LHDrive)
 >
 > Systema administrationis fasciculorum et repositorium datorum pro ludo secundario meo (_Lou Hau High School_) creavi. Hoc systema per interfaciem interretialem usoribus praebet. Valde robustum est, etiamnunc in usu cottidiano a discipulis magistrisque scholae est, et in <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a> inveniri potest.
 >
@@ -75,13 +75,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 > <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies systematis Louhau Drive, thecas communes et fasciculos ostendens.</p>
 > </div>
 
-> ### AGNITIO CIBORVM & COMPVTATIO CALORIARVM
->
-> Opus _Machinalis Discendi_ ubi rete neuronale (YOLOv5) cibos in imaginibus detegit. Nunc exemplar linguae maius (LLM) ad calorias computandas adhibeo et artem _segmentationis semanticae_ exploro.
->
-> <span class="badge">Python</span> <span class="badge">YOLOv5</span> <span class="badge">LLM</span>
-
-## SCRIPTA ET RETIA
+## Scripta & Retia
 
 <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
 
@@ -115,7 +109,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 
 </div>
 
-## CONTACTVS
+## Contactvs
 
 - **Email:** <a href="mailto:harumoto1103@gmail.com">harumoto1103@gmail.com</a>
 - **GitHub:** <a href="https://github.com/harumoto1103">github.com/harumoto1103</a>
