@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'la' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <title>{{ page.title | default: site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Noto+Serif+TC:wght@400;600;700&display=swap");
+
+      :root {
+        --ink: #2b2219;
+        --pompeian-red: #8b1e0b;
+        --parchment: #f6f3eb;
+        --vellum: #fcfbf7;
+        --stone-border: #d3c5b3;
+      }
+
+      body {
+        /* Fallback stack includes Noto Serif TC for Classical Chinese rendering */
+        font-family:
+          "EB Garamond", "Noto Serif TC", "PMingLiU", "Songti TC", serif;
+        background-color: var(--parchment);
+        /* Subtle CSS-only paper texture */
+        background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+        color: var(--ink);
+        line-height: 1.7;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      .cinzel {
+        font-family: "Cinzel", serif;
+      }
+
+      /* Drop Cap for the very first paragraph of the page */
+      .markdown-content > p:first-of-type::first-letter {
+        font-family: "Cinzel", serif;
+        font-size: 4rem;
+        float: left;
+        line-height: 0.8;
+        padding-top: 0.2rem;
+        padding-right: 0.6rem;
+        color: var(--pompeian-red);
+      }
+
+      .markdown-content h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        color: var(--ink);
+        letter-spacing: 0.05em;
+        position: relative;
+        padding-bottom: 1rem;
+      }
+
+      /* Ornate H2 with Fleuron */
+      .markdown-content h2 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-top: 4rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        color: var(--pompeian-red);
+        position: relative;
+        padding-bottom: 1rem;
+        letter-spacing: 0.05em;
+      }
+
+      /* Combined ::after selector to apply the icon to both */
+      .markdown-content h1::after,
+      .markdown-content h2::after {
+        content: "❧";
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        color: var(--stone-border);
+      }
+
+      .markdown-content h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+        color: var(--ink);
+      }
+
+      .markdown-content p {
+        margin-bottom: 1.5rem;
+        font-size: 1.15rem;
+      }
+
+      .markdown-content a {
+        color: var(--pompeian-red);
+        font-style: italic;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .markdown-content a:hover {
+        color: #5a1106;
+        text-decoration: underline;
+      }
+
+      .markdown-content ul {
+        margin-bottom: 2rem;
+        padding-left: 1.5rem;
+        list-style-type: square;
+        font-size: 1.15rem;
+      }
+      .markdown-content li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Epigraph/Tablet style Blockquotes */
+      .markdown-content blockquote {
+        background-color: var(--vellum);
+        padding: 1.5rem 2rem;
+        border: double 4px var(--stone-border);
+        border-left: solid 6px var(--pompeian-red);
+        margin: 2.5rem 0;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        box-shadow: 4px 4px 0px rgba(211, 197, 179, 0.3);
+      }
+      .markdown-content blockquote:hover {
+        transform: translateY(-3px);
+        box-shadow: 8px 8px 0px rgba(139, 30, 11, 0.15);
+      }
+      .markdown-content blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Custom Course Information Layout inside Blockquotes */
+      .course-details {
+        margin-bottom: 0;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+        margin-top: 0.75rem;
+        border-top: 1px dotted var(--stone-border);
+        padding-top: 0.75rem;
+      }
+      .course-tc {
+        font-family: "Noto Serif TC", serif;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: var(--ink);
+      }
+      .course-en {
+        font-family: "EB Garamond", serif;
+        font-style: italic;
+        font-size: 0.95rem;
+        color: #5a4b3c;
+      }
+
+      /* Custom Tags & Buttons */
+      .badge {
+        display: inline-block;
+        padding: 0.2rem 0.75rem;
+        font-size: 0.85rem;
+        font-family: "Cinzel", serif;
+        border: 1px solid var(--pompeian-red);
+        color: var(--pompeian-red);
+        margin-right: 0.4rem;
+        margin-bottom: 0.5rem;
+        background-color: transparent;
+        letter-spacing: 0.05em;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.6rem 1.8rem;
+        border: 1px solid var(--ink);
+        color: var(--ink) !important;
+        text-decoration: none !important;
+        font-family: "Cinzel", serif;
+        letter-spacing: 0.1em;
+        transition: all 0.3s ease;
+        font-style: normal !important;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        background-color: transparent;
+      }
+      .btn svg {
+        fill: currentColor;
+        margin-right: 0.6rem;
+        transition: transform 0.3s ease;
+      }
+      .btn:hover {
+        background-color: var(--ink);
+        color: var(--parchment) !important;
+        box-shadow: 3px 3px 0px rgba(43, 34, 25, 0.2);
+      }
+      .btn:hover svg {
+        transform: scale(1.1);
+      }
+
+      .btn-red {
+        border-color: var(--pompeian-red);
+        color: var(--pompeian-red) !important;
+      }
+      .btn-red:hover {
+        background-color: var(--pompeian-red);
+        color: var(--parchment) !important;
+        box-shadow: 3px 3px 0px rgba(139, 30, 11, 0.2);
+      }
+      /* 古典卡片式按钮 (Progressus & Cursus) */
+      .card-btn {
+        flex: 1;
+        min-width: 250px;
+        text-decoration: none !important;
+        padding: 1.5rem;
+        border: 1px solid var(--pompeian-red);
+        color: var(--pompeian-red) !important;
+        background-color: var(--vellum);
+        text-align: center;
+        position: relative;
+        transition: all 0.3s ease;
+        /* 硬边缘的古典阴影 */
+        box-shadow: 4px 4px 0px rgba(139, 30, 11, 0.15);
+      }
+
+      /* 古典书籍常见的内嵌线 */
+      .card-btn::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+        border: 1px solid rgba(139, 30, 11, 0.2);
+        pointer-events: none;
+        transition: border-color 0.3s ease;
+      }
+
+      .card-btn:hover {
+        background-color: var(--pompeian-red);
+        color: var(--parchment) !important;
+        transform: translateY(-3px);
+        box-shadow: 6px 6px 0px rgba(139, 30, 11, 0.3);
+      }
+
+      .card-btn:hover::before {
+        border-color: rgba(246, 243, 235, 0.4);
+      }
+
+      .card-btn-title {
+        font-family: "Cinzel", serif;
+        font-size: 1.25rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-btn-subtitle {
+        font-family: "EB Garamond", serif;
+        font-size: 1rem;
+        font-style: italic;
+        opacity: 0.9;
+      }
+
+      /* 古典实心大按钮 (Omnia Opera) */
+      .btn-solid-red {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        border: 1px solid var(--pompeian-red);
+        color: var(--parchment) !important;
+        background-color: var(--pompeian-red);
+        text-decoration: none !important;
+        font-family: "Cinzel", serif;
+        font-weight: 600;
+        font-size: 1.15rem;
+        letter-spacing: 0.05em;
+        position: relative;
+        transition: all 0.3s ease;
+        box-shadow: 4px 4px 0px rgba(139, 30, 11, 0.3);
+      }
+
+      .btn-solid-red::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        border: 1px solid rgba(246, 243, 235, 0.4);
+        pointer-events: none;
+        transition: border-color 0.3s ease;
+      }
+
+      .btn-solid-red:hover {
+        background-color: var(--ink); /* 悬浮时变成古典墨水黑，对比更强烈 */
+        border-color: var(--ink);
+        color: var(--parchment) !important;
+        transform: translateY(-2px);
+        box-shadow: 6px 6px 0px rgba(43, 34, 25, 0.4);
+      }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-[#8b1e0b] selection:text-white">
+    <nav
+      class="border-b-2 border-double border-[#d3c5b3] bg-[#f4ebd8]/90 backdrop-blur-sm sticky top-0 z-50"
+    >
+      <div
+        class="max-w-4xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4"
+      >
+        <a
+          href="/"
+          class="cinzel font-bold text-2xl tracking-widest text-[#8b1e0b] hover:text-[#5a1106] transition-colors"
+        >
+          WONG HOU UN
+        </a>
+
+        <div class="space-x-4 text-sm sm:text-base flex items-center">
+          {% if page.lang == 'en' %}
+          <a
+            href="{{ page.url | remove_first: '/en' }}"
+            class="cinzel text-[#8b1e0b] hover:underline font-semibold tracking-wider"
+            >Latina</a
+          >
+          <span class="text-[#d3c5b3]">❧</span>
+          <span class="cinzel text-gray-500 tracking-wider">English</span>
+          {% else %}
+          <span class="cinzel text-gray-500 tracking-wider">Latina</span>
+          <span class="text-[#d3c5b3]">❧</span>
+          <a
+            href="/en{{ page.url }}"
+            class="cinzel text-[#8b1e0b] hover:underline font-semibold tracking-wider"
+            >English</a
+          >
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="max-w-4xl mx-auto px-6 sm:px-8 py-12 md:py-20 markdown-content"
+    >
+      {{ content }}
+    </main>
+
+    <footer
+      class="bg-[#2b2219] text-[#d3c5b3] py-12 text-center text-sm mt-12 cinzel tracking-widest border-t-4 border-[#8b1e0b]"
+    >
+      <p>&copy; 2026 WONG HOU UN. ALIQVA IVRA RESERVANTVR.</p>
+      <p class="mt-4 text-xs opacity-60 font-sans tracking-normal">
+        Constructum cum Jekyll. In GitHub Pages hospitatur.
+      </p>
+    </footer>
+  </body>
+</html>
