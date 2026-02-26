@@ -19,7 +19,7 @@ title: WONG HOU UN — Pagina Domestica
     </div>
 </div>
 
-## DE ME
+## De Me
 
 Discipulus artis ingeniariae programmaturae ex Macauense oriundus sum. Haec origo mihi insitum amorem linguarum historiaeque dedit, quem nunc cum studiis technologiae coniungere conor. Praeter computatra et linguas, **mathematicam** vehementer diligo; saepe in interrete calculis integralibus vaco et quaestiones de linguistica cum aliis amicis tracto.
 
