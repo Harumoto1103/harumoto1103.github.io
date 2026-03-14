@@ -4,17 +4,17 @@ lang: la
 title: Cursus Peracti
 ---
 
-# CVRSVS PERACTI
+# DE CVRSVVS STVDIORVM CONFECTIS
 
-Hic est index cursuum et disciplinarum quas perfeci per tempus meum academicum.
+Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra excolvi.
 
-## Compvtatio (COMP)
+## Ars Compvtatralis (COMP)
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-8">
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Systema Operativvm Linvx</h3>
+        <h3 style="margin-top: 0;">Systema Administrativvm Linvx</h3>
         <div class="course-details">
             <span class="course-tc">LINUX作業系統</span>
             <span class="course-en">Linux Operating System</span>
@@ -23,7 +23,7 @@ Hic est index cursuum et disciplinarum quas perfeci per tempus meum academicum.
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Programmatvra</h3>
+        <h3 style="margin-top: 0;">Ratio Programmatvm Scribendorvm</h3>
         <div class="course-details">
             <span class="course-tc">程序設計</span>
             <span class="course-en">Programming</span>
@@ -32,7 +32,7 @@ Hic est index cursuum et disciplinarum quas perfeci per tempus meum academicum.
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Logica Digitalis et Designatio</h3>
+        <h3 style="margin-top: 0;">Logica Compvtatralis et Dispositio Partivm</h3>
         <div class="course-details">
             <span class="course-tc">數字邏輯與部件設計</span>
             <span class="course-en">Digital Logic and Component Design</span>
@@ -86,7 +86,7 @@ Hic est index cursuum et disciplinarum quas perfeci per tempus meum academicum.
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Intelligentia Artificialis</h3>
+        <h3 style="margin-top: 0;">Mens Artificiosa</h3>
         <div class="course-details">
             <span class="course-tc">人工智能</span>
             <span class="course-en">Artificial Intelligence</span>
@@ -104,7 +104,7 @@ Hic est index cursuum et disciplinarum quas perfeci per tempus meum academicum.
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Fvndamenta Mathematica I.A.</h3>
+        <h3 style="margin-top: 0;">Fvndamenta Mathematica Mentis Artificiosae</h3>
         <div class="course-details">
             <span class="course-tc">人工智能的數學基礎</span>
             <span class="course-en">Mathematical Foundations of Artificial Intelligence</span>

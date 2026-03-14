@@ -6,9 +6,9 @@ title: WONG HOU UN — Pagina Domestica
 
 <div style="text-align: center; margin-bottom: 4rem;">
     <h1 class="cinzel" style="font-size: 3.5rem; font-weight: bold; margin-bottom: 1rem; color: #2c241b; letter-spacing: 0.05em;">WONG HOU UN</h1>
-    <p style="font-size: 1.5rem; color: var(--pompeian-red); font-family: 'Cinzel', serif;">Stvdia Informaticae & Philologia</p>
+    <p style="font-size: 1.5rem; color: var(--pompeian-red); font-family: 'Cinzel', serif;">Stvdia Informaticae & Philologiae</p>
     <p style="font-size: 1.25rem; color: #4a4036; max-width: 600px; margin: 1.5rem auto;">
-        Discipulus artis <i>Ingeniariae Programmaturae</i>, qui studio in <i>Scientia Computatrali</i>, <i>Machinis Discentibus</i>, et <i>Linguistica Computatrali</i> discit. Macauense natus, ubi litterae antiquae novaeque cum technologia conveniunt.
+        Artis programmatvrae alumnus Macao natvs, vbi antiqvae litterae cvm technologia mirifice conivngvntvr, non solvm scientiae compvtatrali sed etiam lingvisticae rationi operam do.
     </p>
     <div style="margin-top: 2.5rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
         <a href="https://github.com/harumoto1103" class="btn">
@@ -21,16 +21,16 @@ title: WONG HOU UN — Pagina Domestica
 
 ## De Me
 
-Discipulus artis ingeniariae programmaturae ex Macauense oriundus sum. Haec origo mihi insitum amorem linguarum historiaeque dedit, quem nunc cum studiis technologiae coniungere conor. Praeter computatra et linguas, **mathematicam** vehementer diligo; saepe in interrete calculis integralibus vaco et quaestiones de linguistica cum aliis amicis tracto.
+Artis programmatvrae alvmnvs Macao orivndvs, amorem lingvarvm rervmqve gestarvm havsi, quem nvnc cvm scientia technica copvlare stvdeo. Neqve vero solvm compvtatris delector, sed mathematicas artes qvoqve ex animo colo; saepissime enim in interrete calcvelis integralibvs vaco et qvaestiones de lingvistica cvm aliis amicis tracto.
 
-**In rebus technicis**, operam do _Machinis Discentibus_, _Visioni Computatrali_, et _Securitati Systematum_. Maxime gaudeo nova instrumenta creare atque purgare, a retibus neuronalibus ad programmaturas automaticas.
+**In rebvs technicis**, praecipve machinis discentibvs visioniqve compvtatrali atqve secvritati systematvm incvmbens, nihil ivcvndivs habeo qvam nova instrvmenta fingere atqve expolire, a retibvs nevronalibvs ad programmatvras avtomaticas.
 
-**In rebus humanitatis**, _Philologiam_, _Linguam Antiquam_, et _Grammaticam Comparativam_ vehementer diligo. Propositum meum est pontem aedificare inter has duas disciplinas: instrumentis computatralibus hodiernis uti ad textus antiquos intellegendos et ad philologiam computatralem promovendam.
+**In rebvs hymanitatis**, philologiam et grammaticam comparativam magnopere colo, eo consilio vt pontem inter has disciplinas aedificem: instrvmentis compvtatralibvs hodiernis vti ad textvs antiqvos intellegendos et ad philologiam compvtatralem promovendam.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem;">
     <a href="/progressus.html" class="card-btn">
         <span class="card-btn-title">Progressus Discendi</span>
-        <span class="card-btn-subtitle">Stvdia Currentia Inspice &rarr;</span>
+        <span class="card-btn-subtitle">Stvdia Cvrrentia Inspice &rarr;</span>
     </a>
     <a href="/cursus.html" class="card-btn">
         <span class="card-btn-title">Cursus Academici</span>
@@ -39,7 +39,7 @@ Discipulus artis ingeniariae programmaturae ex Macauense oriundus sum. Haec orig
     <a href="/lhdrive/" class="card-btn">
         <span class="card-btn-title">LHDrive macOS</span>
         <span class="card-btn-subtitle">App pro Lou Hau Inspice &rarr;</span>
-        <span class="badge" style="margin-top: 10px; display: inline-block;">Vibe-Coding</span>
+        <span class="badge" style="margin-top: 10px; display: inline-block;">Ex Afflatv Factvm</span>
     </a>
 </div>
 
@@ -73,13 +73,13 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 > - **Communicatio:** Facultas fasciculos cum aliis utentibus facile communicandi (file sharing).
 > - **Thecae Communes pro Administratoribus:** Spatia separata et tuta ubi administratores scholae documenta publica simul gerere et communicare possunt.
 >
-> <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span> <span class="badge">Manu Scriptvm</span>
+> <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span> <span class="badge">Manv Factvm</span>
 >
 <div style="text-align: center; margin: 1.5rem 0;">
 <img src="/assets/img/lhdrive.png" alt="Interficies Systematis Louhau Drive" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
 <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies systematis Louhau Drive, thecas communes et fasciculos ostendens.</p>
 <div style="margin-top: 10px;">
-    <span class="badge">Vibe-Coding</span><br>
+    <span class="badge">Ex Afflatv Factvm</span><br>
     <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS Inspice</a>
 </div>
 </div>

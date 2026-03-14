@@ -6,14 +6,14 @@ title: Opera Academica
 
 # Opera Academica & Pensa
 
-Hic inveniuntur opera praecipua quae in cursibus universitariis perfeci.
+Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 
 > ### Discentia Profvnda
 >
 > #### Agnitio Ciborvm & Compvtatio Caloriarvm
 >
 > **Systema ad Diaetam Inquirendam per Exemplaria Levia**
-> Opus in cursu "Discendi Profundi" (Deep Learning) confectum. Est systema integrum ad diaetam percipiendam et consilia de valetudine danda , quod in machinis mobilibus sine interrete operari potest ut intimitatem usorum tueatur.
+> Opus in cvrsv "Discendi Profvndi" (Deep Learning) confectvm. Est systema integrvm ad diaetam percipiendam et consilia de valetvdine danda, qvod in machinis mobilibvs sine interrete operari potest vt intimitatem vsorvm tveatvr.
 >
 > **Technologiae Praecipuae:**
 >
@@ -33,14 +33,14 @@ Hic inveniuntur opera praecipua quae in cursibus universitariis perfeci.
 
 > ### Programmatvra Obiectis Directa (OOP)
 >
-> **Ludus "MineMatching" in JavaFX**
-> Ludus "MineMatching" est ludus eliminationis themate "Minecraft" aedificatus. Architectura programmatis principia obiectis directa (sicut encapsulationem et polymorphismum) clare demonstrat. Classis abstracta `Piece` per classes derivatas (sicut `Eliminator` vel `Wall`) extenditur, ut omnia elementa in una matrice bidimensionali (2D array) contineantur.
+> **Lvdvs "MineMatching" in JavaFX**
+> Lvdvs "MineMatching" est ratiocinativvs qvidem, qvi qvasi Minecraft stilo fvtis est. Architectvra programmatis principia obiectis directa (vti svnt elvctatio et polymorphisvms) fvlcris fvndamentis demonstrat. Classis abstracta `Piece` per classes derivatas (vti svnt `Eliminator` vel `Wall`) extenditvr, vt omnia elementa in vna matrice bidimensionali (2D array) contineantvr.
 >
-> - **Tabula et Elementa:** Quinque genera elementorum insunt: Ordinaria, Eliminatores, Specialia (sicut gladius adamantinus ad columnas delendas), Muri (in gradu sexto, qui moveri non possunt), et vacua (Nulls).
-> - **Instrumenta et Gradus:** Sex gradus praesto sunt. Instrumento "malleo" uti licet ad unum elementum delendum (quod obtinetur ubi quinque elementa simul delentur), et "potione restitutionis" ad ultimam actionem revocandam.
-> - **Interficies:** Quattuor interficies GUI (Initium, Ludus, Menus, Finis) habet, ubi utentes mure trahendo vel cliccando ludunt.
+> - **Tabvla et Elementa:** Qvinqve genera elementorvm insvnt: Ordinaria, Eliminatores, Specialia (vti gladivs adamantinvs ad colvmnas delendas), Mvri (in gradv sexto, qvi moveri non possvnt), et vacva (Nulls).
+> - **Instrvmenta et Gradvs:** Sex gradvs praesto svnt. Instrvmento "malleo" vti licet ad vnvm elementvm delendvm (qvod obtinetvr vbi qvinqve elementa simvl delentvr), et "potione restitvtionis" ad vltimam actionem revocandam.
+> - **Interficies:** Qvattvor interficies GVI (Initivm, Lvdvs, Menvs, Finis) habet, vbi vtentes mvre trahendo vel cliccando lvdvnt.
 >
-> Potes codicem descriptionemque (Sinice) legere:
+> Potes codicem descriptionemqve (Sinice) legere:
 >
 > <div style="display: flex; gap: 15px; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
 >   <a href="https://github.com/Harumoto1103/MineMatching" target="_blank" class="btn">
@@ -50,43 +50,43 @@ Hic inveniuntur opera praecipua quae in cursibus universitariis perfeci.
 >   
 >   <a href="/assets/pdf/MineMatching 用户手册.pdf" target="_blank" class="btn btn-red">
 >     <svg height="18" width="18" viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"></path></svg>
->     Descriptio Ludi (PDF)
+>     Descriptio Lvdi (PDF)
 >   </a>
 > </div>
 >
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/mine-matching.png" alt="Tabula Ludi MineMatching" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Tabula ludi MineMatching cum elementis variis et instrumentis.</p>
+> <img src="/assets/img/mine-matching.png" alt="Tabvla Lvdi MineMatching" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Tabvla lvdi MineMatching cvm elementis variis et instrvmentis.</p>
 > </div>
 
 > ### Visio Compvtatralis
 >
 > **TriStreamNet: Exemplar ad Imagines ab AI Generatas Discernendas**
-> Propositum hoc classificationem binariam perficit (verum an generatum). Architectura _TriStreamNet_ utitur tribus fluminibus:
+> Propositvm hoc classificationem binariam perficit (vervm an generatvm). Architectvra _TriStreamNet_ vtitvr tribvs flvminibvs:
 >
-> 1. **Flumen Spatiale RGB:** Reti ResNet18 utitur ad colores et texturas percipiendas.
-> 2. **Flumen Frequentiae:** Transformata Fourieriana Rapida (FFT) utitur ad artificia periodica invenienda.
-> 3. **Flumen Strepitus (Noise):** Filtra SRM adhibet ad anomalias in distributione strepitus extrahendas.
->    Accuratio finalis in imaginibus probandis 75.90% fuit.
+> 1. **Flvmen Spatiale RGB:** Reti ResNet18 vtitvr ad colores et textvras percipiendas.
+> 2. **Flvmen Freqventiae:** Transformata Fovrieriana Rapida (FFT) vtitvr ad artificia periodica invenienda.
+> 3. **Flvmen Strepitvs (Noise):** Filtra SRM adhibet ad anomalias in distribvtione strepitvs extrahendas.
+>    Accvratio finalis in imaginibvs probandis 75.90% fvit.
 >
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/cv-detect.png" alt="Architectura TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectura TriStreamNet cum tribus fluminibus et attentione CBAM.</p>
+> <img src="/assets/img/cv-detect.png" alt="Architectvra TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectvra TriStreamNet cvm tribvs flvminibvs et attentione CBAM.</p>
 > </div>
 
 > ### Principia Lingvarvm Programmatvrae
 >
-> **KanbunSE: Lingua Programmaturae S-Expressionis**
-> Lingua _KanbunSE_ (Kanbun S-Expression) a me creata est ut pontem faciat inter litteras Sinicas classicas et computationem hodiernam. Haec lingua syntaxim linguae Sinicae classicae cum structura S-Expressionis eleganter coniungit.
+> **KanbunSE: Lingva Programmatvrae S-Expressionis**
+> Lingva _KanbunSE_ (Kanbun S-Expression) a me creata est vt pontem faciat inter litteras Sinicas classicas et compvtationem hodiernam. Haec lingva syntaxim lingvae Sinicae classicae cvm strvctvra S-Expressionis eleganter conivngit.
 >
-> #### Proprietates Praecipuae:
+> #### Proprietates Praecipvvae:
 >
-> - **Systema Obiectis Directum (OOP):** Classes absolutas et hereditarias, polymorphismum, et vocabulum `此` (hoc) pro autoreferentia in methodis plene sustinet.
-> - **Numeri et Genera Datorum:** Numeros Arabicos in numeros Sinicos traditionales vel formales (e.g., 三百一十四點一五 pro 314.15) automatice convertit per integrationem cum lingua Python. Valores booleani ut 陽 (Yang, verum) et 陰 (Yin, falsum) repraesentantur.
-> - **Tractatio Errorum:** Errores contextuales plene in lingua classica Sinica nuntiantur. Exempli gratia, error indicis extra fines sic ostenditur: "索驥圖外、其轍亂矣".
-> - **Architectura Interna:** Interpretes in lingua Racket aedificatus est. Analysim lexicalem, parsationem descensus recursivi (recursive descent parser), et catenam ambitus (Environment Chain) pro spatio lexicali (lexical scoping) comprehendit.
+> - **Systema Obiectis Directvm (OOP):** Classes absolvtas et hereditarias, polymorphisvvm, et vocabvlvm `此` (hoc) pro avtoreferentia in methodis plene svstinet.
+> - **Nvmeri et Genera Datorvm:** Nvmeros Arabicos in nvmeros Sinicos traditionales vel formales (e.g., 三百一十四點一五 pro 314.15) avtomatice convertit per integrationem cvm lingva Python. Valores booleani vt 陽 (Yang, vervm) et 陰 (Yin, falsvm) repraesentantvr.
+> - **Tractatio Errorvm:** Errores contextuales plene in lingva classica Sinica nvntiantvr. Exempli gratia, error indicis extra fines sic ostenditvr: "索驥圖外、其轍亂矣".
+> - **Architectvra Interna:** Interpretes in lingva Racket aedificatvs est. Analysim lexicalem, parsationem descensvs recvrsivi (recvrsive descent parser), et catenam ambitvs (Environment Chain) pro spatio lexicali (lexical scoping) comprehendit.
 >
-> Potes codicem descriptionemque (Anglice) legere:
+> Potes codicem descriptionemqve (Anglice) legere:
 >
 > <div style="display: flex; gap: 15px; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
 >   <a href="https://github.com/Harumoto1103/KanbunSE" target="_blank" class="btn">
@@ -95,20 +95,20 @@ Hic inveniuntur opera praecipua quae in cursibus universitariis perfeci.
 >   </a>
 >   <a href="/assets/pdf/KanbunSE Guide.pdf" target="_blank" class="btn btn-red">
 >     <svg height="18" width="18" viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"></path></svg>
->     Descriptio Ludi (PDF)
+>     Descriptio Lvdi (PDF)
 >   </a>
 > </div>
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/exec-flow.png" alt="Fluxus Executionis KanbunSE" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Structura interpretis et fluxus executionis linguae KanbunSE.</p>
+> <img src="/assets/img/exec-flow.png" alt="Flvxvs Execvtionis KanbunSE" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Strvctvra interpretis et flvxvs execvtionis lingvae KanbunSE.</p>
 > </div>
 
 > ### Designatio Thecarvm Datorvm
 >
-> **Systema Administrationis Refectionis Curruum**
-> Systema datorum designatum ad negotia curruum reficiendorum. Tres partes habet: Utentes, Mechanici, et Administratores. Utitur transactionibus SQL ad integritatem datorum servandam, et machinis (triggers) ad deletionem continuatam (cascade delete).
+> **Systema Administrationis Refectionis Cvrruvm**
+> Systema datorvm designatvm ad negotia cvrruvm reficiendorvm. Tres partes habet: Vtentes, Mechanici, et Administratores. Vtitvr transactionibvs SQL ad integritatem datorvm servandam, et machinis (triggers) ad deletionem continvatam (cascade delete).
 
 > ### Ingeniaria Programmatvrae
 >
-> **Situs Interretialis ad Cauponas Aestimandas**
-> Applicationem interretialem aedificavi ubi utentes cauponas inquirere, locare, et de eis commentarios relinquere possunt. Systema plene operatur cum designatione robusta.
+> **Sitvs Interretialis ad Cavponas Aestimandas**
+> Applicationem interretialem aedificavi vbi vtentes cavponas inqvirere, locare, et de eis commentarios relinqvere possvnt. Systema plene operatvr cvm designatione robvsta.
