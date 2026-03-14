@@ -36,6 +36,11 @@ Discipulus artis ingeniariae programmaturae ex Macauense oriundus sum. Haec orig
         <span class="card-btn-title">Cursus Academici</span>
         <span class="card-btn-subtitle">Indices Cvrsvvm Lege &rarr;</span>
     </a>
+    <a href="/lhdrive/" class="card-btn">
+        <span class="card-btn-title">LHDrive macOS</span>
+        <span class="card-btn-subtitle">App pro Lou Hau Inspice &rarr;</span>
+        <span class="badge" style="margin-top: 10px; display: inline-block;">Vibe-Coding</span>
+    </a>
 </div>
 
 ## Opera Academica (Cvrsvs)
@@ -68,12 +73,16 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 > - **Communicatio:** Facultas fasciculos cum aliis utentibus facile communicandi (file sharing).
 > - **Thecae Communes pro Administratoribus:** Spatia separata et tuta ubi administratores scholae documenta publica simul gerere et communicare possunt.
 >
-> <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span>
+> <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span> <span class="badge">Manu Scriptvm</span>
 >
-> <div style="text-align: center; margin: 1.5rem 0;">
-> <img src="/assets/img/lhdrive.png" alt="Interficies Systematis Louhau Drive" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies systematis Louhau Drive, thecas communes et fasciculos ostendens.</p>
-> </div>
+<div style="text-align: center; margin: 1.5rem 0;">
+<img src="/assets/img/lhdrive.png" alt="Interficies Systematis Louhau Drive" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+<p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies systematis Louhau Drive, thecas communes et fasciculos ostendens.</p>
+<div style="margin-top: 10px;">
+    <span class="badge">Vibe-Coding</span><br>
+    <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS Inspice</a>
+</div>
+</div>
 
 ## Scripta & Retia
 

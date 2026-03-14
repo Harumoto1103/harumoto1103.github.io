@@ -36,6 +36,11 @@ I am a software engineering student hailing from Macau. This origin instilled in
         <span class="card-btn-title">Academic Courses</span>
         <span class="card-btn-subtitle">Read Course Lists &rarr;</span>
     </a>
+    <a href="/lhdrive/" class="card-btn">
+        <span class="card-btn-title">LHDrive macOS</span>
+        <span class="card-btn-subtitle">View Lou Hau App &rarr;</span>
+        <span class="badge" style="margin-top: 10px; display: inline-block;">Vibe-Coding</span>
+    </a>
 </div>
 
 ## Academic Works (Courses)
@@ -68,12 +73,16 @@ During my academic journey, I have completed numerous projects to put theory int
 > - **File Sharing:** The ability to easily share files with other users across the platform.
 > - **Shared Admin Folders:** Secure, separate spaces where school administrators can collectively manage and distribute public documents.
 >
-> <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span>
+> <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span> <span class="badge">Hand-Coded</span>
 >
-> <div style="text-align: center; margin: 1.5rem 0;">
-> <img src="/assets/img/lhdrive.png" alt="Louhau Drive System Interface" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: Louhau Drive system interface, showing shared folders and files.</p>
-> </div>
+<div style="text-align: center; margin: 1.5rem 0;">
+<img src="/assets/img/lhdrive.png" alt="Louhau Drive System Interface" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+<p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: Louhau Drive system interface, showing shared folders and files.</p>
+<div style="margin-top: 10px;">
+    <span class="badge">Vibe-Coding</span><br>
+    <a href="/lhdrive/" class="btn" style="margin-top: 5px;">View LHDrive for macOS</a>
+</div>
+</div>
 
 ## Blogs & Networks
 
