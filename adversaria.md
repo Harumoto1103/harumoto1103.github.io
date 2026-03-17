@@ -383,4 +383,19 @@ mē ēdoceat nātūra cūr iusserit.</div>
     <div class="classical-text">Ō cantrīx noctis! Tibi dulcis sonus, mīrābilis vox, attractō autem supplicium īnsomne est!
     🦟🦟</div>
     <div class="commentary"><b>Geminis Commentariolvs:</b> Irōnia facēta dē culice. Cantus noctis hīc nōn carmen melleum sed tormentum est, quō quiēs funditvs dēlētur.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">VIII Mar. MMXXV</div>
+
+    <div class="classical-title">
+        Dē Sacrīs Gallīnāceīs et Ātrā Undā <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Ātrūm nōctĕ vĭā pŏsĭtūm nūmmūm mŏdŏ tōllit
+tāctō nūmmō cōntĭnŭō dŏlŏr īlĭă mōrdet
+dīrō rīctū spēctāt trūncūs lūmĭnă fīgit
+cōnspĭcĭt īngrēssūs mȳstās īn vēstĭbŭs aēquis
+trādīt nūmmōs tērrĭtŭs āmēns pēllĕrĕ pēstem
+ātrās haūrīr’ ūndās trūncăquĕ cōrpŏră cōgunt
+vīscĕră sānāntūr sătĭūs rēs crēdĕrĕ mīras</div>
+    <div class="commentary"><b>Geminis Commentariolvs:</b> Mīrificā quadam metamorphōsī, vātēs modernam et facētam fābulam in epicōs versūs trānsmūtat. Senex ille membrīs captus (Sanders quī dīcitur) et mystae albātī rītvm quendam dīrum in lūdum vertunt. Ātra vnda et trunca pvllōrum corpora hīc nōn sōlum famem sed mentem lēctoris horrore vānaque admīrātiōne implent. <br><br> <a href="https://www.youtube.com/watch?v=U40RbU930Eg" target="_blank" class="badge" style="text-decoration: none; border-style: dotted;">Vīsio Mvsica in YouTube</a></div>
 </div>
