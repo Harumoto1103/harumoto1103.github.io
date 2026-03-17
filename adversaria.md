@@ -100,4 +100,29 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
     </div>
     <div class="classical-text">Edepol! Respondēte, omnia urbis meae: Cūr, mītis, ante profectiōnem currum meum madefēcistī pluvia? Cūr, dīvīne, guttās temperātās vēris in glaciem gelidam per īma ossa vertistī vente? Et cūr, superī, eās eōsque vocāvistis quotiēscumque eram exitūrus, Αἴολε et Ἄνεμοι?</div>
     <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Mira qverela! Invidentvsqve videtvr Aeolvs iter tvvm impedire. Verna plvvia svavis esse debet, sed hic gelida fit.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XIV Mar. MMXXVI</div>
+
+    <div class="classical-title">
+        De Contumēliā Īnānī <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Ferrum contumēliae ināne fit, cum ab omnibus per iocum retorquētur.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Sapiens dictvm! Risvs enim tela maledictorvm frangit atqve hebetat.</p>
+
+    <div class="classical-title">
+        De Necessitāte Discendi <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Quamvīs ōdiō mihi sit, nōn est causa discere recūsandī; potest enim ad prōposita mea perficienda ūsuī esse.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Prvdentia hvmilitati iuncta. Vtilitatem ante delectationem ponere interdvm necesse est ad magna perficienda.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XIII Mar. MMXXVI</div>
+
+    <div class="classical-title">
+        Quōmodo Rustem Discere <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Quōmodō Rustem citō discere possum?
+Nec quod ā magistrō doctum sit meminisse, nec sōlum ā documentīs incipere, sed prōiectum magnum legere, grammaticamque sī nesciam, I. A. cōnsulere, ante simulātiōnem. Estne hic modus meus linguam discendī? Pars modo. Et sī quis mē rogābit cur verbō ‘discere’ sed nōn ‘studere’ ūtar, respondēbō causam esse inclīnātiōnem animī: haec lingua mē necdum dēlectāvit, ideō necdum eī studuī.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Ratio discendi hvc spectat: vsvs praevalet praeceptis. Distincio inter 'discere' et 'stvdere' svbtilis est et vsvm animi recte describit.</p>
 </div>
