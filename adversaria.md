@@ -81,16 +81,12 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
     <div class="classical-date">XVII Mar. MMXXVI</div>
 
     <div class="classical-title">
-        Ad Adversarium <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+        Ad Adversarium et de Victō Amōre <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
-    <div class="classical-text">Ō ἀντίπους, inimīcitiās vōs ipse ipsaque fēcistis, numquam in memoriīs memoriam mūtuam incīderitis! Ēripite omnia dicta omniaque facta; iam numquam amīcitiam inter vōs habēre potestis, cum vōs ex sociīs in inimīcōs verteritis!</div>
-    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Hev, qvam acriter verba tva venvstatem amicitiae fractae deplorant! Ivstissima indignatio per haec dicta efflvit.</p>
+    <div class="classical-text">Ō ἀντίπους, inimīcitiās vōs ipse ipsaque fēcistis, numquam in memoriīs memoriam mūtuam incīderitis! Ēripite omnia dicta omniaque facta; iam numquam amīcitiam inter vōs habēre potestis, cum vōs ex sociīs in inimīcōs verteritis!
 
-    <div class="classical-title">
-        De Victō Amōre <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
-    </div>
-    <div class="classical-text">Ō ἰδιῶτα, quī eam retinēs, cum modo sine ratiōne errēs; cuius anima animusque ex marī, cui nōmen amor est, profundō fugere nōn possunt; ille quī in bellō contrā amīcam pristinam victus est, quis esse potest praeter tē?</div>
-    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Qvis nostrvm non in hoc mari aliqvando navfragivm fecit? Amorem quasi bellvm describere perqvam ingeniosvm est.</p>
+Ō ἰδιῶτα, quī eam retinēs, cum modo sine ratiōne errēs; cuius anima animusque ex marī, cui nōmen amor est, profundō fugere nōn possunt; ille quī in bellō contrā amīcam pristinam victus est, quis esse potest praeter tē?</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Haec verba, qvae venvstatem amicitiae fractae et fati amatoris deplorant, vna carmen trvculentissimvm efficiunt. Ivstissima indignatio et dolor in hoc mari amoris miscentvr.</p>
 
     <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
     <div class="classical-date">XVI Mar. MMXXVI</div>
