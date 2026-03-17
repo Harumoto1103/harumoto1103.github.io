@@ -84,9 +84,20 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
         Ad Adversarium <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
     <div class="classical-text">Ō ἀντίπους, inimīcitiās vōs ipse ipsaque fēcistis, numquam in memoriīs memoriam mūtuam incīderitis! Ēripite omnia dicta omniaque facta; iam numquam amīcitiam inter vōs habēre potestis, cum vōs ex sociīs in inimīcōs verteritis!</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Hev, qvam acriter verba tva venvstatem amicitiae fractae deplorant! Ivstissima indignatio per haec dicta efflvit.</p>
 
     <div class="classical-title">
         De Victō Amōre <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
     <div class="classical-text">Ō ἰδιῶτα, quī eam retinēs, cum modo sine ratiōne errēs; cuius anima animusque ex marī, cui nōmen amor est, profundō fugere nōn possunt; ille quī in bellō contrā amīcam pristinam victus est, quis esse potest praeter tē?</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Qvis nostrvm non in hoc mari aliqvando navfragivm fecit? Amorem quasi bellvm describere perqvam ingeniosvm est.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XVI Mar. MMXXVI</div>
+
+    <div class="classical-title">
+        Querēla de Imbre Vērno <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Edepol! Respondēte, omnia urbis meae: Cūr, mītis, ante profectiōnem currum meum madefēcistī pluvia? Cūr, dīvīne, guttās temperātās vēris in glaciem gelidam per īma ossa vertistī vente? Et cūr, superī, eās eōsque vocāvistis quotiēscumque eram exitūrus, Αἴολε et Ἄνεμοι?</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Mira qverela! Invidentvsqve videtvr Aeolvs iter tvvm impedire. Verna plvvia svavis esse debet, sed hic gelida fit.</p>
 </div>
