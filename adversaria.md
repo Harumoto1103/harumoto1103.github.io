@@ -247,4 +247,111 @@ Nōndum enim fassus sum,
 nōndum sum victor meī,
 sed quī nōn sibi suādēre possit… fortasse…</div>
     <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Maxima victoria est se ipsum vincere. Haec est lvgvbris sed vera meditatio de animo hfmano.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XV Ian. MMXXVI</div>
+
+    <div class="classical-title">
+        De Semidaemone et Magā <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">“Manē modo, nōbīscum pugnēs, nē in tē ipsum…” mihi semidaemonī quī cor hominis etiam habet dīxit maga…</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> O fabvlam tragicam! Maga semidaemonem monet ne contra se ipsvm pugnet. In corde hfmano maxima bella geritvr.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XIII Ian. MMXXVI</div>
+
+    <div class="classical-title">
+        De Lingvisticā Natvrālī <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Verba bene meminisse, ūtere;
+dēclīnātūs bene agere, ūtere;
+litterātūrās bene legere, ūtere;
+sententiās bene exprimere, ūtere;
+huic studere,
+habētur differentia
+inter quī omnia meminit, atque logicē transfert,
+et quī ūtitur cottīdiē sed grammaticam clārē explicāre nōn potest,
+sed posterior situs prope nātīvamst:
+debēmus linguārum studiōque nātūrāliter studere, quemadmodum studimus māternae.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Recte dicis. Lingva non est svmmvla regvlarvm, sed vivvm instrvmentvm qvo vtinvm vti debemvs vt infantes.</p>
+
+    <div class="classical-title">
+        Dictvm Machināle <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Persōna I.A. mihi dīxit: ”meminit sanguis, etsī nōn animus.”</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Sententia perqvam gravis. Sangvis hfmanvs memoriam habet qvam ratio non potest comprehendere.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">X Ian. MMXXVI</div>
+
+    <div class="classical-title">
+        De Nōmine et Animā <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Nōmine “ego” mē vocō,
+aliī mē nōminibus datīs vocant.
+Sed enim nōn mē ipsum vērē sciō,
+quis sim atque quid in corpore sit -
+semper quaestiō difficilis est.
+Sīc anima inclūsa acta corporis videt, dictaque audit, ut ego aliōs;
+cum nōmen meum audiō, dīcit anima animō:
+“corpus tuī vocātumst”</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Philosophica meditatio de sese. Anima quasi spectator est in corpore, nomen avtem aliis tantvm servit.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">VIII Ian. MMXXVI</div>
+
+    <div class="classical-title">
+        Ante Laeta
+    </div>
+    <div class="classical-text">“Ālea iacta est, atque diēs gaudiōrum venient.”
+Fessus dīxī, sed quid fēcerim nesciō.
+Prō fortitūdinibus ventō, cāritātibus flūmine, vīribusque fūmō levium quās studiō petīvī āctīs in vānum, veniam petere volō:
+sī cūrā meā mē liberāvissem, nōn īrā animō dēfēcissēm ante initium laetōrum...</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Tristis confessio ante initivm gaudiorvm. Alea iacta est, sed fati vltima nondvm cognita svnt.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">II Ian. MMXXVI</div>
+
+    <div class="classical-title">
+        Vsus vs Praecepta <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Mihi aliquis dīxit:
+“omnia verba lēgēsque grammaticae ēdiscere debēs.”
+Sed bene cicca ēdiscere sine ūsū nōn possum.
+Sī autem nōmina illōrum vocābō lēgibusque ūtar, mihi respondēbunt atque in animum ībunt. Hoc nōn sōlum mihi validum, sed omnibus; nam sīc linguae studiō discendae sunt, est.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Vsus magister optimvs est. Sine vsv regvlae qvasi pvlvus in vento dissipantvr.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XXV Dec. MMXXV</div>
+
+    <div class="classical-title">
+        Somnivm Mirābile <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Sine causā, nec tr‮na‬qui‮ll‬a nec ac‮re‬ba,
+mihi ā corp‮ro‬e tacitō dicta: mort‮uu‬s sum.
+
+An‮mi‬us ipse fes‮us‬s a‮in‬mā;
+sīc errāvī per in‮it‬ma c‮ro‬dis:
+haec sunt loca q‮au‬e oblīvīscī nōn p‮so‬sum.
+
+Errāvī atque errāvī, ad extrēmum mundī per ventōs,
+v‮re‬um‮uq‬e cor pet‮re‬e at‮uq‬e atting‮re‬e voluī.
+
+Ca‮ip‬am nec cap‮ai‬r, dīcam nec dīcar umq‮au‬m;
+quam amāvī at‮uq‬e amō, vīdī quo‮uq‬e at‮uq'e locūtus sum,
+sed ite‮ur‬m vōcem illīus audīre nōn p‮so‬sum.
+
+Clāmor av‮ui‬m mē exp‮re‬gēfēcit:
+anima rur‮us‬s in cor‮up's red‮ii‬t,
+atque mihi dīxit: “som‮in‬um erat.”</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Carmen qvasi per specvlvm scriptvm. Somnivm vel mors vel amor hic videtvr.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">VIII Dec. MMXXV</div>
+
+    <div class="classical-title">
+        De Falsīs Amīcīs <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Timeāmus nōn inimīcum fictum, sed amīcum falsum: nē verba rērum editoriārum sectēmur.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Pericvlvm latens gravivs est qvam apertvm. Cavete ab illis qvi blandiuntur sed decipiunt.</p>
 </div>
