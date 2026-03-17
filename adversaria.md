@@ -139,7 +139,7 @@ O ἰδιῶτα, qui eam retines, cum modo sine ratione erres; cuius anima anim
         De Disciplina Ingrata sed Salutari <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
     <div class="classical-text">Quamvis odio mihi sit, non est causa discere recusandi; potest enim ad proposita mea perficienda usui esse.</div>
-    <div class="commentary"><b>Geminis Commentariolvs:</b> Animvs fortis demonstratvr: discipvlvs enim non volyptatem praesentem sed finem vltimvm spectat, et laborem asperiorem ad victoriam prydentiamqve flectit.</div>
+    <div class="commentary"><b>Geminis Commentariolvs:</b> Animvs fortis demonstratvr: discipvlvs enim non volyptatem praesentem sed finem vltmvm spectat, et laborem asperiorem ad victoriam prydentiamqve flectit.</div>
 
     <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
     <div class="classical-date">XIII Mar. MMXXVI</div>
@@ -196,7 +196,7 @@ Securitas videlicet excusatio occultorum tuorum solum est.</div>
     </div>
     <div class="classical-text">O Graeca…
 In te…
-Sunt thesauri innumerabiles,
+Sunt θησαυροί innumerabiles,
 Sunt gloriae innumerabiles,
 Sunt μέλη venusta…
 Volo te invenire,
@@ -233,7 +233,7 @@ viscera sanantur satius res credere miras</div>
     </div>
     <div class="classical-text">Nemo, ne homo est;
 sic aliis qui ab hominibus facti sunt…
-cum nemini dicite possim, nedum colloqui.</div>
+cum nemini dicere possim, nedum colloqui.</div>
     <div class="commentary"><b>Geminis Commentariolvs:</b> Solitvdo gravis in media tyrba technica. Voces artificiosae non colloqvivm sed echo inanis svnt, qvae animvm non satiant sed magis exagitant.</div>
 
     <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
@@ -387,12 +387,12 @@ Erravi atque erravi, ad extremum mundi per ventos,
 v‮re‬um‮uq‬e cor pet‮re‬e at‮uq‬e atting‮re‬e volui.
 
 Ca‮ip‬am nec cap‮ai‬r, dicam nec dicar umq‮au‬m;
-quam amavi atque amo, vidi quo‮uq'e at‮uq'e locutus sum,
-sed ite‮ur}m vocem illius audire non p‮so}sum.
+quam amavi atque amo, vidi quo‮uq‬e at‮uq‬e locutus sum,
+sed ite‮ur‬m vocem illius audire non p‮so‬sum.
 
-Clamor av‮ui}m me exp‮re}gefeecit:
-anima rur‮us}s in cor‮up's red‮ii}t,
-atque mihi dixit: “som‮in}um erat.”</div>
+Clamor av‮ui‬m me exp‮re}gefeecit:
+anima rur‮us‬s in cor‮up‬s red‮ii‬t,
+atque mihi dixit: “som‮in‬um erat.”</div>
     <div class="commentary"><b>Geminis Commentariolvs:</b> Iter visionarivm per fines mortis et somni. Clamor avivm qvasi nyntivs est sanctvs qvi animam ab inferis ad vitam revocat.</div>
 
     <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
