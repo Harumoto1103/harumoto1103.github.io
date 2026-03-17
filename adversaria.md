@@ -201,7 +201,7 @@ Sed mihi redītis, antequam imāginem vestram oblīvīscar…</div>
         Romanesco <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
     <div style="text-align: center; margin-bottom: 1.5rem;">
-        <img src="https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/619508243_17945075886100299_3856537208478929859_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHqKcr2PRWo8kI9VKaAPjgxzVksAKTrx9b49wqaw0WQTK5S2ZUEe5VO1UGYAHFYRQA&_nc_ohc=Pk3ng9OOshkQ7kNvwEwtLxN&_nc_gid=tgQAzHSakItcBauJ59QA4A&edm=AKr904kBAAAA&ccb=7-5&ig_cache_key=MzgxNjk3MjQ5MDY5MDk1OTIwNQ%3D%3D.3-ccb7-5&oh=00_AfzVqfgdPIiIcbSjXDgG8XumGIfPI49gev7E3me_Sw4Myg&oe=69BF01EA&_nc_sid=23467f" alt="Romanesco" style="max-width: 100%; border: 1px solid var(--stone-border); padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="/assets/img/romanesco.jpg" alt="Romanesco" style="max-width: 100%; border: 1px solid var(--stone-border); padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     </div>
     <div class="classical-text">“Romanesco”
 Nōn Latīne nōminātus sed Italicō
