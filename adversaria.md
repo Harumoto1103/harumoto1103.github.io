@@ -353,5 +353,28 @@ atque mihi dīxit: “som‮in‬um erat.”</div>
         De Falsīs Amīcīs <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
     <div class="classical-text">Timeāmus nōn inimīcum fictum, sed amīcum falsum: nē verba rērum editoriārum sectēmur.</div>
-    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Pericvlvm latens gravivs est qvam apertvm. Cavete ab illis qvi blandiuntur sed decipiunt.</p>
-</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Pericvlvlvm latens gravivs est qvam apertvm. Cavete ab illis qvi blandiuntur sed decipiunt.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XXIV Nov. MMXXV</div>
+
+    <div class="classical-title">
+        De Somniīs Atrocibvs <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">sorōrēm dūrās dēsignāre,
+    deōs confiscāreque reddere,
+    mē in somniīs malum facere,
+    atque interficere,
+    mē ēdoceat nātūra cūr iusserit.</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> Somnia tenebrosa mentem perturbant. Cur natura nos sic torquet? Haec quaestio sine responsione manet.</p>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+    <div class="classical-date">XIII Nov. MMXXV</div>
+
+    <div class="classical-title">
+        Ad Culicem <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Ō cantrīx noctis! Tibi dulcis sonus, mīrābilis vox, attractō autem supplicium īnsomne est!
+    🦟🦟</div>
+    <p style="font-style: italic; font-size: 1rem; color: #777; margin-top: -1.5rem; margin-bottom: 2rem;"><b>Commentariolvs:</b> O parvvm animal sed magnum supplicivm! Vox cantricis noctis non carmen sed tormentvm est.</p>
+    </div>
