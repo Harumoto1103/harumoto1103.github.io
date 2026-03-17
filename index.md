@@ -41,6 +41,10 @@ Artis programmatvrae alvmnvs Macao orivndvs, amorem lingvarvm rervmqve gestarvm 
         <span class="card-btn-subtitle">App pro Lou Hau Inspice &rarr;</span>
         <span class="badge" style="margin-top: 10px; display: inline-block;">Ex Afflatv Factvm</span>
     </a>
+    <a href="/adversaria.html" class="card-btn">
+        <span class="card-btn-title">Adversaria</span>
+        <span class="card-btn-subtitle">Scripta Leviora & Adnotata &rarr;</span>
+    </a>
 </div>
 
 ## Opera Academica (Cvrsvs)

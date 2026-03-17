@@ -38,10 +38,15 @@ I am a software engineering student hailing from Macau. This origin instilled in
     </a>
     <a href="/lhdrive/" class="card-btn">
         <span class="card-btn-title">LHDrive macOS</span>
-        <span class="card-btn-subtitle">View Lou Hau App &rarr;</span>
-        <span class="badge" style="margin-top: 10px; display: inline-block;">Vibe-Coding</span>
+        <span class="card-btn-subtitle">App for Lou Hau &rarr;</span>
+        <span class="badge" style="margin-top: 10px; display: inline-block;">Personal Project</span>
     </a>
-</div>
+    <a href="/adversaria.html" class="card-btn">
+        <span class="card-btn-title">Adversaria</span>
+        <span class="card-btn-subtitle">Essays & Jottings &rarr;</span>
+        <span class="badge" style="margin-top: 10px; display: inline-block;">Latin Only</span>
+    </a>
+    </div>
 
 ## Academic Works (Courses)
 
