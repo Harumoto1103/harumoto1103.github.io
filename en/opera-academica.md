@@ -69,10 +69,34 @@ Below are the primary projects I have completed during my university courses.
 > 3. **Noise Stream:** Applies SRM filters to extract anomalies in noise distribution.
 >    The final accuracy on the test dataset was 75.90%.
 >
-> <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/cv-detect.png" alt="TriStreamNet Architecture" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: The TriStreamNet architecture featuring three streams and CBAM attention.</p>
+<div style="text-align: center; margin: 1rem 0;">
+<img src="/assets/img/cv-detect.png" alt="TriStreamNet Architecture" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+<p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: The TriStreamNet architecture featuring three streams and CBAM attention.</p>
+</div>
+
+> ### Cryptography & Information Security
+>
+> **PlayfairCracker: A Multi-Algorithm Suite for Cracking Playfair Ciphers**
+> This project implements several advanced techniques to break the Playfair cipher. It features a base implementation using **Simulated Annealing** in C and a highly optimized, multi-threaded cracker in **Rust** using frequency analysis and deterministic search.
+>
+> - **Simulated Annealing (C):** Employs key mutation and probabilistic acceptance (Metropolis criterion) to navigate the large key space and converge on the optimal plaintext.
+> - **DFS Search & Parallelism (Rust):** A high-performance cracker that uses frequency-based deduction (bigrams and quadgrams) and a Depth-First Search with aggressive pruning based on Playfair's geometric rules. Parallelized with Rayon to handle millions of tasks across all CPU cores.
+> - **GUI Interface:** A visual tool developed via "Vibe-Coding" that allows users to monitor the cracking process and see the matrix reconstruction in real-time.
+>
+> <span class="badge">C</span> <span class="badge">Rust</span> <span class="badge">Cryptography</span> <span class="badge">Simulated Annealing</span> <span class="badge">GUI</span>
+>
+> <div style="display: flex; gap: 15px; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
+>   <a href="https://github.com/Harumoto1103/PlayfairCracker" target="_blank" class="btn">
+>     <svg height="18" width="18" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+>     Code on GitHub
+>   </a>
 > </div>
+>
+> <div style="text-align: center; margin: 1rem 0;">
+> <img src="/assets/img/playfair-gui.png" alt="PlayfairCracker GUI" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: The PlayfairCracker GUI demonstrating real-time matrix reconstruction.</p>
+> </div>
+>
 
 > ### Principles of Programming Languages
 >

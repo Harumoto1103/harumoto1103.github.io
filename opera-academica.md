@@ -69,10 +69,34 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 > 3. **Flvmen Strepitvs (Noise):** Filtra SRM adhibet ad anomalias in distribvtione strepitvs extrahendas.
 >    Accvratio finalis in imaginibvs probandis 75.90% fvit.
 >
-> <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/cv-detect.png" alt="Architectvra TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectvra TriStreamNet cvm tribvs flvminibvs et attentione CBAM.</p>
+<div style="text-align: center; margin: 1rem 0;">
+<img src="/assets/img/cv-detect.png" alt="Architectvra TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+<p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectvra TriStreamNet cvm tribvs flvminibvs et attentione CBAM.</p>
+</div>
+
+> ### Cryptographia & Secvritas Informationis
+>
+> **PlayfairCracker: Systema ad Cryptographiam Playfair Solvendam**
+> Hoc propositvm solvtionem cryptographiae Playfair per algorithmos varios demonstrat. In primis, algorithmvs **"Simulated Annealing"** (in lingva C) adhibetvr ad claves fortvitas explorandas et ad textvm clarvm paulatim inveniendvm. Deinde, algorithmvs provectior (in lingva **Rust**) vtitvr analysi freqventiae (bigrams & quadgrams) et inqvisitione DFS ad claves celeriter ervendas.
+>
+> - **Simulated Annealing (C):** Vtitvr mvtationibvs clavivm et ratiocinatione probabilistica (Metropolis criterion) ad optima solvta reperienda sine in foveis localibvs manendo.
+> - **Inqvisitio DFS & Parallelismvs (Rust):** Algorithmos mltithreaded (Rayon) adhibet ad milia pensorvm simvl solvenda, vbi regulae Playfair ad spativm inqvisitionis coercendvm (pruning) valent.
+> - **Interficies Graphica (GUI):** Systema vtitvr interficie graphica ad progressvm vsvrvm et reconstrvctionem matricis Playfair in tempore reali ostendendvm.
+>
+> <span class="badge">C</span> <span class="badge">Rust</span> <span class="badge">Cryptography</span> <span class="badge">Simulated Annealing</span> <span class="badge">GUI</span>
+>
+> <div style="display: flex; gap: 15px; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
+>   <a href="https://github.com/Harumoto1103/PlayfairCracker" target="_blank" class="btn">
+>     <svg height="18" width="18" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+>     Codex in GitHub
+>   </a>
 > </div>
+>
+> <div style="text-align: center; margin: 1rem 0;">
+> <img src="/assets/img/playfair-gui.png" alt="Interficies Graphica PlayfairCracker" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies graphica PlayfairCracker matricem reconstrvctionis ostendens.</p>
+> </div>
+>
 
 > ### Principia Lingvarvm Programmatvrae
 >

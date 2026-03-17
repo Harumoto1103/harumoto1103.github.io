@@ -50,7 +50,8 @@ During my academic journey, I have completed numerous projects to put theory int
 - **Object-Oriented Programming:** "MineMatching" game in JavaFX.
 - **Database Design:** Management system for car repairs.
 - **Software Engineering:** Web application for restaurant reviews.
-- **Computer Vision:** "TriStreamNet" model to detect AI-generated images.
+- **Computer Vision:** TriStreamNet model for detecting AI-generated images.
+- **Cryptography:** Playfair Cracker via Simulated Annealing and DFS.
 - **Principles of Programming Languages:** _KanbunSE_, an S-Expression language written in Classical Chinese.
 - **Data Structures:** HTML Tree Parser in C++ Qt.
 - **Software Design:** Game of Life in CLI.

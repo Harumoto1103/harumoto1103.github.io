@@ -51,6 +51,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 - **Designatio Datorum Thecarum:** Systema ad currus reficiendos.
 - **Ingeniaria Programmaturae:** Situs interretialis ad cauponas aestimandas.
 - **Visio Computatralis:** Exemplar "TriStreamNet" ad imagines ab Intellegentia Artificiali generatas discernendas.
+- **Cryptographia:** Resolutor Playfair per Simulated Annealing et DFS.
 - **Principia Linguarum Programmaturae:** _KanbunSE_, lingua S-Expressionis verbis Sinicis classicis scripta.
 - **Structurae Datorum:** Resolutor Arboris HTML in C++ Qt.
 - **Designatio Programmaturae:** Ludus Vitae (Game of Life) in CLI.
