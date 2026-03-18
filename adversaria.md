@@ -107,7 +107,7 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
 </style>
 
 <div class="classical-page">
-    <div class="classical-date">XVII Mar. MMXXVI</div>
+    <div class="classical-date">XVIII Mar. MMXXVI</div>
 
     <div class="classical-title">
         De Solitvdine Noctvrna et Spiritv Libero <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
@@ -117,6 +117,8 @@ Hoc tempore divino, nulla sollicitudo, nullus dolor, nullaque quae me ad insania
     <div class="commentary"><b>Geminis Commentariolvs:</b> Vox noctvna, qvae silentivm vrbis in mvsicam vertit. Hic vates, fvgitivvs a fvroribvs Amoris, in Minervae sapientia et Libertatis sinv qvietem qvaerit. Vel ante fines Orci, animvs integer svvm itinev qvaerit, solitvdinem non vt poenam sed vt regnvm amplectens.</div>
 
     <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XVII Mar. MMXXVI</div>
 
     <div class="classical-title">
         De Inimicitia et Mari Amoris <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
