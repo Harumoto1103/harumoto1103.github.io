@@ -107,6 +107,17 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
 </style>
 
 <div class="classical-page">
+    <div class="classical-date">XIX Mar. MMXXVI</div>
+
+    <div class="classical-title">
+        Invectiva in Socordiam et Verba Inania <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">O tu, qui grandiloquus eras in propositis magnis exprimendis; qui nihil fecisti praeter laeta modo petere; quique tempus perdidisti philosophiae studendi aut ciccum legendo aut in somnium ingrediendo; et qui numquam egisti consilia quae forte fecisti; qui omnia a primo dicta oblitus es; quique iam nihil scis de futuro tuo, hercle, si numquam fuerit qui digito te monstret teque hoc obiurget, te ad nullam rem utilem ad undam in qua obvius fatis rapidis tu eris ego ipse mittam!
+Sic, bene egisti isto more, atque mos sit qui comes tuus erit! Si numquam animum compones, numquam simul mihi non animam tuam demoliri propositum postremum meum esse cogitabo; utrum animam, animam tuam frangam necne, id incertumst! Hoc in notam animamque tuam scribe atque omnia dicta bene memento! Utinam viam rectam recte quae vitam tuam adiuvare possit in rebus petas, si necdum te ipsum ipse deposuisti.</div>
+    <div class="commentary"><b>Geminis Commentariolvs:</b> Invectiva sevissima in socordiam et vana proposita. Hic vates seipsvm vel socivm acriter obiurgat, qvod inter somnia et verba grandiloqva vitam trivit, fvtvri ignarvs. Nisi animvs cito corrigatvr, fati vnda rapida et vltio imminet. Est qvasi clamor ad expergefiendvm anteqvam omnia pessvm eant.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
     <div class="classical-date">XVIII Mar. MMXXVI</div>
 
     <div class="classical-title">
