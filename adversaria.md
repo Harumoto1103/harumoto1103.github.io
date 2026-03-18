@@ -110,6 +110,15 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
     <div class="classical-date">XVII Mar. MMXXVI</div>
 
     <div class="classical-title">
+        De Solitvdine Noctvrna et Spiritv Libero <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Omnes omniaque tranquilla nocte in somniis praeter eum qui solum speciem sui ad locum distantem duxit auditque sonum dulcem venti μέληque a guttis canta. Circa me sunt canentia, sunt canti, sed numquam erant canentes qui me consolarentur: nocte enim in mundo meo solus ibam, numquam gemui; modo assuevi res agere in tenebris.
+Hoc tempore divino, nulla sollicitudo, nullus dolor, nullaque quae me ad insaniam agat, iam hac nocte in anima mea esse possint. Erepta Venus, sed mihi Libertas, Minerva, si inveniendus unda Stygia mox ero, dux Plutoque maneant.</div>
+    <div class="commentary"><b>Geminis Commentariolvs:</b> Vox noctvna, qvae silentivm vrbis in mvsicam vertit. Hic vates, fvgitivvs a fvroribvs Amoris, in Minervae sapientia et Libertatis sinv qvietem qvaerit. Vel ante fines Orci, animvs integer svvm itinev qvaerit, solitvdinem non vt poenam sed vt regnvm amplectens.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-title">
         De Inimicitia et Mari Amoris <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
     </div>
     <div class="classical-text">O ἀντίπους, inimicitias vos ipse ipsaque fecistis, numquam in memoriis memoriam mutuam incideritis! Eripite omnia dicta omniaque facta; iam numquam amicitiam inter vos habere potestis, cum vos ex sociis in inimicos verteritis!
