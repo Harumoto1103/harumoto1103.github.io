@@ -14,234 +14,46 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/selection/active-line.min.js"></script>
   <style>
-    :root {
-      --ink:          #2b2219;
-      --red:          #8b1e0b;
-      --parchment:    #f6f3eb;
-      --vellum:       #fcfbf7;
-      --border:       #d3c5b3;
-      --muted:        #8a7060;
-    }
+    :root { --ink: #2b2219; --red: #8b1e0b; --parchment: #f6f3eb; --vellum: #fcfbf7; --border: #d3c5b3; --muted: #8a7060; }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; overflow: hidden; }
-    body {
-      font-family: "EB Garamond","Noto Serif TC","PMingLiU",serif;
-      background: var(--parchment);
-      color: var(--ink);
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* ── NAV ── */
-    nav {
-      border-bottom: 2px double var(--border);
-      background: rgba(244,235,216,.93);
-      backdrop-filter: blur(4px);
-      padding: .6rem 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: .75rem;
-      flex-shrink: 0;
-      z-index: 10;
-    }
-    nav a.brand {
-      font-family: "Cinzel", serif;
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: .1em;
-      color: var(--red);
-      text-decoration: none;
-    }
-    nav .controls { display: flex; gap: .5rem; align-items: center; }
-    .btn-run {
-      font-family: "Cinzel", serif;
-      font-size: .8rem;
-      letter-spacing: .08em;
-      border: 1px solid var(--red);
-      color: var(--parchment);
-      background: var(--red);
-      padding: .35rem 1.1rem;
-      cursor: pointer;
-      transition: all .2s;
-    }
-    .btn-run:hover { background: #5a1106; border-color: #5a1106; }
-    .btn-clear, .btn-lang {
-      font-family: "Cinzel", serif;
-      font-size: .75rem;
-      letter-spacing: .06em;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      background: transparent;
-      padding: .35rem .85rem;
-      cursor: pointer;
-      transition: all .2s;
-    }
+    body { font-family: "EB Garamond","Noto Serif TC",serif; background: var(--parchment); color: var(--ink); display: flex; flex-direction: column; }
+    nav { border-bottom: 2px double var(--border); background: rgba(244,235,216,.93); backdrop-filter: blur(4px); padding: .6rem 1.2rem; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; z-index: 10; }
+    nav a.brand { font-family: "Cinzel", serif; font-weight: 700; font-size: 1.1rem; letter-spacing: .1em; color: var(--red); text-decoration: none; }
+    .controls { display: flex; gap: .5rem; align-items: center; }
+    .btn-run { font-family: "Cinzel", serif; font-size: .8rem; border: 1px solid var(--red); color: var(--parchment); background: var(--red); padding: .35rem 1.1rem; cursor: pointer; transition: 0.2s; }
+    .btn-run:hover { background: #5a1106; }
+    .btn-clear, .btn-lang { font-family: "Cinzel", serif; font-size: .75rem; border: 1px solid var(--border); color: var(--muted); background: transparent; padding: .35rem .85rem; cursor: pointer; transition: 0.2s; }
     .btn-clear:hover, .btn-lang:hover { border-color: var(--ink); color: var(--ink); }
-
-    /* ── MAIN LAYOUT ── */
-    .ide-body {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 200px 1fr 280px;
-      min-height: 0;
-      overflow: hidden;
-    }
-    @media (max-width: 1000px) {
-      .ide-body { grid-template-columns: 1fr; }
-      .sidebar-left, .sidebar-right { display: none; }
-    }
-
-    /* ── SIDEBARS ── */
-    .sidebar-left, .sidebar-right {
-      border-right: 1px solid var(--border);
-      overflow-y: auto;
-      background: var(--vellum);
-      display: flex;
-      flex-direction: column;
-    }
+    .ide-body { flex: 1; display: grid; grid-template-columns: 220px 1fr 300px; min-height: 0; overflow: hidden; }
+    @media (max-width: 1000px) { .ide-body { grid-template-columns: 1fr; } .sidebar-left, .sidebar-right { display: none; } }
+    .sidebar-left, .sidebar-right { border-right: 1px solid var(--border); overflow-y: auto; background: var(--vellum); display: flex; flex-direction: column; }
     .sidebar-right { border-right: none; border-left: 1px solid var(--border); }
-    .sidebar-title {
-      font-family: "Cinzel", serif;
-      font-size: .7rem;
-      letter-spacing: .15em;
-      color: var(--muted);
-      padding: .6rem .8rem .4rem;
-      border-bottom: 1px solid var(--border);
-      text-transform: uppercase;
-      flex-shrink: 0;
-    }
-
-    .example-item {
-      display: block;
-      padding: .5rem .8rem;
-      font-size: .85rem;
-      font-family: "Noto Serif TC", serif;
-      color: var(--ink);
-      cursor: pointer;
-      border-bottom: 1px dotted var(--border);
-      transition: background .15s;
-      text-align: left;
-      background: none;
-      border: none;
-      width: 100%;
-    }
-    .example-item:hover, .example-item.active {
-      background: rgba(139,30,11,.07);
-      color: var(--red);
-    }
-
+    .sidebar-title { font-family: "Cinzel", serif; font-size: .7rem; letter-spacing: .15em; color: var(--muted); padding: .6rem .8rem .4rem; border-bottom: 1px solid var(--border); text-transform: uppercase; }
+    .example-item { display: block; padding: .5rem .8rem; font-size: .85rem; color: var(--ink); cursor: pointer; border-bottom: 1px dotted var(--border); text-align: left; background: none; width: 100%; border: none; }
+    .example-item:hover, .example-item.active { background: rgba(139,30,11,.07); color: var(--red); }
     .ref-section { border-bottom: 1px solid var(--border); }
-    .ref-section-title {
-      font-family: "Cinzel", serif;
-      font-size: .65rem;
-      letter-spacing: .12em;
-      color: var(--red);
-      padding: .45rem .75rem .3rem;
-      text-transform: uppercase;
-    }
-    .ref-item {
-      padding: .2rem .75rem .2rem 1rem;
-      display: flex;
-      gap: .4rem;
-      align-items: baseline;
-      font-size: .78rem;
-      line-height: 1.4;
-    }
-    .ref-kw {
-      font-family: "Noto Serif TC", serif;
-      font-weight: 700;
-      color: var(--red);
-      white-space: nowrap;
-      min-width: 2.5em;
-      cursor: pointer;
-    }
-    .ref-kw:hover { text-decoration: underline; }
-    .ref-desc { color: var(--muted); font-size: .73rem; }
-
-    /* ── EDITOR AREA ── */
-    .editor-area {
-      display: grid;
-      grid-template-rows: 60fr 40fr;
-      min-height: 0;
-      overflow: hidden;
-    }
-    .editor-pane, .output-pane {
-      display: flex;
-      flex-direction: column;
-      min-height: 0;
-      overflow: hidden;
-    }
-    .pane-title {
-      font-family: "Cinzel", serif;
-      font-size: .65rem;
-      letter-spacing: .15em;
-      color: var(--muted);
-      padding: .35rem .75rem;
-      border-bottom: 1px solid var(--border);
-      flex-shrink: 0;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .ref-section-title { font-family: "Cinzel", serif; font-size: .65rem; color: var(--red); padding: .45rem .75rem .3rem; text-transform: uppercase; }
+    .ref-item { padding: .2rem .75rem; display: flex; gap: .4rem; align-items: baseline; font-size: .78rem; }
+    .ref-kw { font-family: "Noto Serif TC", serif; font-weight: 700; color: var(--red); cursor: pointer; }
+    .editor-area { display: grid; grid-template-rows: 60fr 40fr; min-height: 0; overflow: hidden; }
+    .pane-title { font-family: "Cinzel", serif; font-size: .65rem; color: var(--muted); padding: .35rem .75rem; border-bottom: 1px solid var(--border); flex-shrink: 0; text-transform: uppercase; display: flex; justify-content: space-between; }
     .output-pane { border-top: 2px solid var(--border); }
-
-    .CodeMirror {
-      height: 100%;
-      font-family: "Noto Serif TC", "MingLiU", monospace;
-      font-size: .93rem;
-      line-height: 1.7;
-      background: var(--vellum);
-      color: var(--ink);
-    }
-    .CodeMirror-scroll { height: 100%; }
-
-    #output {
-      flex: 1;
-      overflow-y: auto;
-      padding: .6rem .9rem;
-      font-family: "Noto Serif TC", monospace;
-      font-size: .88rem;
-      line-height: 1.75;
-      white-space: pre-wrap;
-      background: var(--vellum);
-    }
-    #output .out-line { color: var(--ink); }
-    #output .err-line { color: var(--red); font-weight: bold; }
-    #output .info-line { color: var(--muted); font-size: .8rem; }
-
-    #kw-tooltip {
-      position: fixed;
-      display: none;
-      background: var(--ink);
-      color: var(--parchment);
-      font-family: "Noto Serif TC", serif;
-      font-size: .8rem;
-      padding: .4rem .7rem;
-      border-radius: 2px;
-      max-width: 280px;
-      line-height: 1.5;
-      z-index: 1000;
-      pointer-events: none;
-    }
-
-    .cm-s-kanbun .cm-comment   { color: #9a8070; font-style: italic; }
-    .cm-s-kanbun .cm-keyword   { color: #8b1e0b; font-weight: bold; }
-    .cm-s-kanbun .cm-string    { color: #2a6b2a; }
-    .cm-s-kanbun .cm-number    { color: #1a4a8a; }
-    .cm-s-kanbun .cm-atom      { color: #7a3b00; font-weight: bold; }
-    .cm-s-kanbun .cm-variable  { color: var(--ink); }
-    .cm-s-kanbun .cm-bracket   { color: #8b1e0b; }
-    .cm-s-kanbun .CodeMirror-matchingbracket { outline: 1px solid var(--red); color: var(--red) !important; }
+    .CodeMirror { height: 100%; font-family: "Noto Serif TC", monospace; font-size: 0.95rem; background: var(--vellum); color: var(--ink); }
+    #output { flex: 1; overflow-y: auto; padding: .6rem .9rem; font-family: "Noto Serif TC", monospace; font-size: .9rem; white-space: pre-wrap; background: var(--vellum); line-height: 1.6; }
+    .err-line { color: var(--red); font-weight: bold; }
+    .cm-s-kanbun .cm-comment { color: #9a8070; font-style: italic; }
+    .cm-s-kanbun .cm-keyword { color: #8b1e0b; font-weight: bold; }
+    .cm-s-kanbun .cm-string { color: #2a6b2a; }
+    .cm-s-kanbun .cm-number { color: #1a4a8a; }
+    .cm-s-kanbun .cm-atom { color: #7a3b00; font-weight: bold; }
   </style>
 </head>
 <body>
-
 <nav>
   <div class="flex items-center gap-4">
     <a href="/" class="brand">WONG HOU UN</a>
-    <span class="title cinzel" id="nav-title">Editor KanbunSE Online</span>
+    <span class="title cinzel" id="nav-title">Editor KanbunSE</span>
   </div>
   <div class="controls">
     <button class="btn-lang" id="btn-lang">English</button>
@@ -250,133 +62,99 @@
     <button class="btn-run" id="btn-run">▶ Curre</button>
   </div>
 </nav>
-
 <div class="ide-body">
-  <aside class="sidebar-left">
-    <div class="sidebar-title" id="ex-title">Exempla</div>
-    <div id="example-list"></div>
-  </aside>
-
+  <aside class="sidebar-left"><div class="sidebar-title" id="ex-title">Exempla</div><div id="example-list"></div></aside>
   <main class="editor-area">
-    <div class="editor-pane">
-      <div class="pane-title">
-        <span id="editor-title">Editor KanbunSE</span>
-      </div>
-      <textarea id="editor"></textarea>
-    </div>
-    <div class="output-pane">
-      <div class="pane-title">
-        <span id="output-title">Exitus</span>
-      </div>
-      <div id="output"><span class="info-line" id="welcome-msg">▷ Preme "Curre" vel ⌘↵ ad codicem exsequendum.</span></div>
-    </div>
+    <div class="editor-pane"><div class="pane-title"><span id="editor-title">Editor KanbunSE</span></div><textarea id="editor"></textarea></div>
+    <div class="output-pane"><div class="pane-title"><span id="output-title">Exitus</span></div><div id="output"><span class="info-line" id="welcome-msg">▷ Preme "Curre" ad codicem exsequendum.</span></div></div>
   </main>
-
-  <aside class="sidebar-right">
-    <div class="sidebar-title" id="ref-title">Syntaxis</div>
-    <div id="ref-panel"></div>
-  </aside>
+  <aside class="sidebar-right"><div class="sidebar-title" id="ref-title">Syntaxis</div><div id="ref-panel"></div></aside>
 </div>
-
-<div id="kw-tooltip"></div>
-
 <script>
 class KanbunSEInterpreter {
-  constructor() { this._buf = ''; this._steps = 0; this._MAX_STEPS = 5000000; }
+  constructor() { this._buf = ''; this._steps = 0; this._MAX_STEPS = 10000000; }
   _mkEnv(parent) { return { parent, b: new Map() }; }
-  _lookup(env, name) {
-    let e = env; while (e) { if (e.b.has(name)) return e.b.get(name); e = e.parent; }
-    throw new Error(`Lookup failed: variable "${name}" is unknown.`);
-  }
+  _lookup(env, name) { let e = env; while (e) { if (e.b.has(name)) return e.b.get(name); e = e.parent; } throw new Error(name + ' 者、未聞其名也。'); }
   _cnMap() { return {'零':0,'〇':0,'一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10,'百':100,'千':1000,'萬':10000,'億':1e8,'兆':1e12,'京':1e16,'壹':1,'貳':2,'叁':3,'參':3,'肆':4,'伍':5,'陸':6,'柒':7,'捌':8,'玖':9,'拾':10,'佰':100,'仟':1000,'廿':20,'卅':30,'卌':40,'兩':2,'分':0.1,'厘':0.01,'毫':0.001,'絲':0.0001,'忽':1e-5,'微':1e-6}; }
   fromChinese(token) {
     const M = this._cnMap(); let s = token, neg = false; if (s.startsWith('負')) { neg = true; s = s.slice(1); }
-    let sepIdx = s.indexOf('點') !== -1 ? s.indexOf('點') : s.indexOf('又');
+    let sepIdx = s.indexOf('點'); if (sepIdx === -1) sepIdx = s.indexOf('又');
     const intStr = sepIdx >= 0 ? s.slice(0, sepIdx) : s, decStr = sepIdx >= 0 ? s.slice(sepIdx + 1) : '';
     const parseInt_ = (part) => {
+      if (part === '零' || part === '〇' || part === '') return 0;
       let total = 0, section = 0, current = 0;
-      for (const c of [...part]) {
-        if (!(c in M)) return null;
-        const v = M[c]; if (v >= 10) { if (v >= 10000) { total = (total + section + current) * v; section = 0; current = 0; } else { section += (current === 0 ? 1 : current) * v; current = 0; } } else { current += v; }
-      }
+      for (const c of [...part]) { if (!(c in M)) return null; const v = M[c]; if (v >= 10) { if (v >= 10000) { total = (total + section + (current === 0 ? 1 : current)) * v; section = 0; current = 0; } else { section += (current === 0 ? 1 : current) * v; current = 0; } } else { current = v; } }
       return total + section + current;
     };
-    const parseDec_ = (part) => { let r = 0; for (let i = 0; i < part.length; i++) { if (!(part[i] in M)) return null; r += M[part[i]] * Math.pow(10, -(i + 1)); } return r; };
-    try { if (!intStr && !decStr) return null; const iv = intStr ? parseInt_(intStr) : 0, dv = decStr ? parseDec_(decStr) : 0; if (iv === null || dv === null) return null; return neg ? -(iv + dv) : (iv + dv); } catch { return null; }
+    const parseDec_ = (part) => { let r = 0; for (let i = 0; i < part.length; i++) { const v = M[part[i]]; if (v < 1 && v > 0) { r += (i > 0 && M[part[i-1]] < 10 ? M[part[i-1]] : 1) * v; } else if (v < 10) { if (i + 1 < part.length && M[part[i+1]] < 1) continue; r += v * Math.pow(10, -(i + 1)); } } return r; };
+    try { if (!intStr && !decStr) return null; let iv = parseInt_(intStr); if (iv === null) return null; let dv = 0; if (decStr) { dv = parseDec_(decStr); if (dv === null) return null; } return neg ? -(iv + dv) : (iv + dv); } catch { return null; }
   }
   toChinese(n) {
-    if (!isFinite(n)) return String(n); if (n < 0) return '負' + this.toChinese(-n);
-    const D = ['零','一','二','三','四','五','六','七','八','九'], U = ['','十','百','千'], LU = ['','萬','億','兆','京'];
+    if (!isFinite(n)) return String(n); if (n < 0) return '負' + this.toChinese(-n); if (n === 0) return '零';
+    const D = ['零','一','二','三','四','五','六','七','八','九'], U = ['','十','百','千'], LU = ['','萬','億','兆','京'], DU = ['分','厘','毫','絲','忽','微'];
     const cvtInt = (x) => {
-      if (x === 0) return '零'; let res = '', rem = x, ui = 0;
+      if (x === 0) return ''; let res = '', rem = Math.floor(x), ui = 0;
       while (rem > 0) {
-        let seg = rem % 10000; if (seg) { let s = '', t = seg; for (let i = 0; i < 4; i++) { let d = t % 10; if (d) s = D[d] + U[i] + s; else if (s && s[0] !== '零') s = '零' + s; t = Math.floor(t / 10); } res = s.replace(/零+$/, '') + LU[ui] + res; } else if (res && res[0] !== '零') { res = '零' + res; } rem = Math.floor(rem / 10000); ui++;
+        let seg = rem % 10000; if (seg > 0) { let s = '', s_str = seg.toString().padStart(4, '0'); for (let i = 0; i < 4; i++) { let d = parseInt(s_str[3-i]); if (d > 0) s = D[d] + U[i] + s; else if (s !== '' && s[0] !== '零') s = '零' + s; } res = s.replace(/零+$/, '') + LU[ui] + res; } else if (res !== '' && res[0] !== '零') { res = '零' + res; } rem = Math.floor(rem / 10000); ui++;
       }
-      return res.replace(/零零/g, '零').replace(/^零+|零+$/g, '') || '零';
+      return res.replace(/零+/g, '零').replace(/^零+|零+$/g, '').replace(/^一十/, '十');
     };
     const ip = Math.floor(Math.abs(n)), dp = Math.abs(n) - ip;
-    return (cvtInt(ip) + (dp > 1e-10 ? '點...' : '')).replace(/^一十/, '十');
+    let res = cvtInt(ip) || (dp > 0 ? '' : '零');
+    if (dp > 1e-10) { res += '點'; let tempD = dp; for (let i = 0; i < 6; i++) { tempD *= 10; let digit = Math.floor(tempD + 1e-9); if (digit > 0) res += D[digit] + DU[i]; else res += '零' + DU[i]; tempD -= digit; } res = res.replace(/(零[分厘毫絲忽微])+$/, ''); }
+    return res;
   }
-  stringify(v) { if (typeof v === 'number') return this.toChinese(v); if (v === true) return '陽'; if (v === false || v === null) return '陰'; if (Array.isArray(v)) return '【' + v.map(x => this.stringify(x)).join('、') + '】'; if (v?._t === 'inst') return '【' + v._cls._name + '之實體】'; if (v?._t === 'cls') return '【' + v._name + '之類】'; return String(v); }
-  tokenize(code) { const stripped = code.split('\n').map(l => { const i = l.indexOf(';'); return i >= 0 ? l.slice(0, i) : l; }).join('\n'); const spaced = stripped.replace(/\(/g, ' ( ').replace(/\)/g, ' ) '); const re = /\(|\)|「[^」]*」|[^\s()]+/gu; const toks = []; let m; while ((m = re.exec(spaced)) !== null) if (m[0]) toks.push(m[0]); return toks; }
-  parse(toks) { const res = []; let i = 0; while (i < toks.length) { const [e, ni] = this._parseOne(toks, i); res.push(e); i = ni; } return res; }
-  _parseOne(toks, i) {
-    const t = toks[i];
-    if (t === '(') { const lst = []; i++; while (i < toks.length && toks[i] !== ')') { const [e, ni] = this._parseOne(toks, i); lst.push(e); i = ni; } if (i >= toks.length) throw new Error('Syntax Error: Parenthesis mismatch.'); return [lst, i + 1]; }
-    if (t === ')') throw new Error('Syntax Error: Unexpected ")".');
-    const n = Number(t); if (!isNaN(n) && t !== '') return n;
-    if (t.startsWith('「') && t.endsWith('」')) return { _t: 'str', v: t.slice(1, -1) };
-    const cn = this.fromChinese(t); return cn !== null ? cn : t;
+  stringify(v) { if (typeof v === 'number') return this.toChinese(v); if (v === true) return '陽'; if (v === false || v === null) return '陰'; if (Array.isArray(v)) return '【' + v.map(x => this.stringify(x)).join('、') + '】'; if (v?._t === 'inst') return '【' + v._cls._name + '之實體】'; if (v?._t === 'cls') return '【' + v._name + '之類】'; if (v?._t === 'func') return '【函數】'; return String(v); }
+  tokenize(code) { const stripped = code.split('\n').map(l => { const i = l.indexOf(';'); return i >= 0 ? l.slice(0, i) : l; }).join('\n'); const spaced = stripped.replace(/\(/g, ' ( ').replace(/\)/g, ' ) '); return (spaced.match(/\(|\)|「[^」]*」|[^\s()]+/gu) || []).filter(t => t.trim() !== ''); }
+  parse(toks) {
+    let i = 0; const parse_ = () => { if (i >= toks.length) throw new Error('其既終乎、未見始也。'); const t = toks[i++]; if (t === '(') { const lst = []; while (i < toks.length && toks[i] !== ')') lst.push(parse_()); if (i >= toks.length) throw new Error('括未合、終無所見。'); i++; return lst; } if (t === ')') throw new Error('右括盈、左闕如也。'); const n = Number(t); if (!isNaN(n) && t !== '') return n; if (t.startsWith('「') && t.endsWith('」')) return { _t: 'str', v: t.slice(1, -1) }; const cn = this.fromChinese(t); return cn !== null ? cn : t; };
+    const res = []; while (i < toks.length) res.push(parse_()); return res;
   }
+  _deepEq(a, b) { if (a === b) return true; if (Array.isArray(a) && Array.isArray(b)) return a.length === b.length && a.every((v, i) => this._deepEq(v, b[i])); if (a?._t === 'str' && b?._t === 'str') return a.v === b.v; return false; }
   eval(expr, env) {
-    if (++this._steps > this._MAX_STEPS) throw new Error('Execution limit reached.');
-    if (typeof expr === 'number') return expr; if (expr?._t === 'str') return expr.v; if (expr === null || expr === false) return false;
-    if (typeof expr === 'string') return this._lookup(env, expr);
-    if (!Array.isArray(expr)) return expr;
-    const e = expr, len = e.length; if (len === 0) return false;
-    const [a0, a1, a2, a3, a4, a5, a6, a7] = e;
+    if (++this._steps > this._MAX_STEPS) throw new Error('運算逾限。'); if (typeof expr === 'number') return expr; if (expr?._t === 'str') return expr.v; if (expr === '陽') return true; if (expr === '陰') return false; if (typeof expr === 'string') return this._lookup(env, expr); if (!Array.isArray(expr) || expr.length === 0) return false;
+    const [a0, a1, a2, a3, a4, a5, a6, a7] = expr; const len = expr.length;
     if (len === 4 && a1 === '者' && a3 === '也') { const v = this.eval(a2, env); env.b.set(a0, v); return v; }
     if (len === 4 && a0 === '名' && a2 === '以') { const v = this.eval(a1, env); env.b.set(a3, v); return v; }
-    if (len >= 6 && a0 === '立') {
-      let n, p=null, at, mi; if (a2 === '承') { n=a1; p=a3 === '無' ? null : this._lookup(env, a3); at=a5; mi=7; } else { n=a1; at=a3; mi=5; }
-      const ms = new Map(); (e[mi]||[]).forEach(([mn, mp, mb]) => ms.set(mn, (inst, ...as) => { const ne = this._mkEnv(env); ne.b.set('此', inst); (mp||[]).forEach((pa,i) => ne.b.set(pa, as[i])); return this.eval(mb, ne); }));
-      const c = { _t:'cls', _name:n, _attrs:at, _methods:ms, _parent:p }; env.b.set(n, c); return c;
-    }
-    if (len === 3 && a0 === '造' && a2 === '之實體') { const c = this._lookup(env, a1), ats = new Map(); let cur = c; while(cur){ (cur._attrs||[]).forEach(a => ats.set(a, false)); cur = cur._parent; } return { _t:'inst', _cls:c, _attrs:ats }; }
-    if (len === 6 && a0 === '令' && a2 === '之' && a4 === '為') { const inst = this.eval(a1, env), v = this.eval(a5, env); inst._attrs.set(a3, v); return v; }
+    if (a0 === '立') { let n, p=null, at, ms; if (a2 === '承') { n=a1; p=a3 === '無' ? null : this._lookup(env, a3); at=expr[5]; ms=expr[7]; } else { n=a1; at=a3; ms=expr[5]; } const mm = new Map(); (ms||[]).forEach(([mn, mp, mb]) => mm.set(mn, { p: mp, b: mb, env })); const c = { _t:'cls', _name:n, _attrs:at, _methods:mm, _parent:p }; env.b.set(n, c); return c; }
+    if (a0 === '造' && a2 === '之實體') { const c = this._lookup(env, a1), ats = new Map(); let cur = c; while(cur){ (cur._attrs||[]).forEach(a => ats.set(a, false)); cur = cur._parent; } return { _t:'inst', _cls:c, _attrs:ats }; }
+    if (a0 === '令' && a2 === '之' && a4 === '為') { const inst = this.eval(a1, env), v = this.eval(a5, env); inst._attrs.set(a3, v); return v; }
     const ev = (x) => this.eval(x, env);
-    if (a0 === '加') return ev(a1) + ev(a3); if (a0 === '減') return ev(a1) - ev(a3); if (a0 === '乘') return ev(a1) * ev(a3); if (a0 === '除') return ev(a1) / ev(a3);
-    if (a0 === '若') return ev(a1) ? ev(a3) : (len === 6 ? ev(a5) : false);
+    if (a0 === '加') return ev(a1) + ev(a3); if (a0 === '減') return ev(a1) - ev(a3); if (a0 === '乘') return ev(a1) * ev(a3); if (a0 === '除') { if (a4 === '所餘') return ev(a1) % ev(a3); return ev(a1) / ev(a3); } if (a0 === '整除') return Math.floor(ev(a1) / ev(a3));
+    if (a1 === '等於') return this._deepEq(ev(a0), ev(a2)); if (a1 === '大於') return ev(a0) > ev(a2); if (a1 === '小於') return ev(a0) < ev(a2); if (a1 === '且') return ev(a0) && ev(a2); if (a1 === '或') return ev(a0) || ev(a2); if (a0 === '非') return !ev(a1);
+    if (a0 === '若') return ev(a1) ? ev(a3) : (a4 === '若非' ? ev(a5) : false);
     if (a0 === '書') { const v = ev(a1); this._buf += this.stringify(v) + (a2 === '未善' ? '' : '\n'); return v; }
-    if (a0 === '施') {
-      if (Array.isArray(a1) && a1[1] === '之') { const inst = ev(a1[0]), args = (Array.isArray(a3)?a3:[a3]).map(x => ev(x)); let c = inst._cls; while(c){ if(c._methods.has(a1[2])) return c._methods.get(a1[2])(inst, ...args); c = c._parent; } }
-      const fn = ev(a1), args = (Array.isArray(a3)?a3:[a3]).map(x => ev(x)); return fn(...args);
-    }
-    if (a0 === '夫') return (...args) => { const ne = this._mkEnv(env); (a1||[]).forEach((p,i) => ne.b.set(p, args[i])); return this.eval(a2, ne); };
-    if (a0 === '大衍') { const s=ev(a3), f=ev(a5); for(let i=s; i<=f; i++) { env.b.set(a1, i); ev(a7); } return false; }
-    if (a1 === '之') { const o = ev(a0); if (a3 === '者') return o[ev(a2)-1]; if (o?._t === 'inst') return o._attrs.get(a2); if (Array.isArray(o)) return a2 === '長' ? o.length : o[ev(a2)-1]; }
-    if (a0 === '為列以') return (a1||[]).map(x => ev(x)); if (a0 === '充') { const l=ev(a1), v=ev(a3); l.push(v); return v; }
-    let last = false; e.forEach(sub => last = this.eval(sub, env)); return last;
+    if (a0 === '大衍') { const s=ev(a3), f=ev(a5); for(let i=s; i<=f; i++){ env.b.set(a1, i); this.eval(a7, env); } return false; }
+    if (a0 === '為' && a3 === '遍') { const n = ev(a2); for(let i=0; i<n; i++) ev(a1); return false; }
+    if (a0 === '卦') { const v = ev(a1); for(const br of a3) if(this._deepEq(v, ev(br[0]))) return ev(br[2]); return false; }
+    if (a0 === '施') { let f, targetInst = null; if (Array.isArray(a1) && a1[1] === '之') { targetInst = this.eval(a1[0], env); let c = targetInst._cls; while(c){ if(c._methods.has(a1[2])){ f = c._methods.get(a1[2]); break; } c = c._parent; } } else { f = this.eval(a1, env); } let argsVal = Array.isArray(a3) ? a3.map(x => this.eval(x, env)) : [this.eval(a3, env)]; if (f?._t === 'func' || (f && f.p !== undefined)) { const ne = this._mkEnv(f.env); if (targetInst) ne.b.set('此', targetInst); (f.p || []).forEach((p, i) => ne.b.set(p, argsVal[i])); return this.eval(f.b, ne); } if (typeof f === 'function') return f(...argsVal); throw new Error('不可施。'); }
+    if (a0 === '夫') return { _t: 'func', p: a1, b: a2, env };
+    if (a1 === '之') { const o = ev(a0); if (a3 === '者') return o[ev(a2) - 1]; if (o?._t === 'inst') return o._attrs.get(a2); if (Array.isArray(o)) return a2 === '長' ? o.length : o[ev(a2) - 1]; }
+    if (a0 === '為列以') return (a1 || []).map(x => ev(x)); if (a0 === '充') { const l = ev(a1); const v = ev(a3); l.push(v); return v; }
+    let last = false; expr.forEach(sub => last = this.eval(sub, env)); return last;
   }
-  run(code) { this._buf = ''; this._steps = 0; try { const toks = this.tokenize(code), ast = this.parse(toks), env = this._mkEnv(null); env.b.set('陽', true); env.b.set('陰', false); ast.forEach(ex => this.eval(ex, env)); return { output: this._buf, error: null }; } catch (err) { return { output: this._buf, error: err.message }; } }
+  run(code) { this._buf = ''; this._steps = 0; try { const ast = this.parse(this.tokenize(code)), env = this._mkEnv(null); env.b.set('陽', true); env.b.set('陰', false); ast.forEach(ex => this.eval(ex, env)); return { output: this._buf, error: null }; } catch (err) { return { output: this._buf, error: err.message }; } }
 }
 
 const LANGS = {
-  la: { navTitle: "Editor KanbunSE Online", curre: "▶ Curre", purga: "Purga", exempla: "Exempla", syntaxis: "Syntaxis", editor: "Editor KanbunSE", exitus: "Exitus", welcome: "▷ Preme \"Curre\" vel ⌘↵ ad codicem exsequendum.", err: "Error", empty: "(Nullus codex)" },
-  en: { navTitle: "KanbunSE Online IDE", curre: "▶ Run", purga: "Clear", exempla: "Examples", syntaxis: "Syntax", editor: "KanbunSE Editor", exitus: "Output", welcome: "▷ Press \"Run\" or ⌘↵ to execute code.", err: "Error", empty: "(No code)" }
+  la: { nav: "Editor KanbunSE", cur: "▶ Curre", clr: "Purga", ex: "Exempla", syn: "Syntaxis", ed: "Editor", out: "Exitus", welcome: "▷ Preme \"Curre\" ad codicem exsequendum.", err: "Error" },
+  en: { nav: "KanbunSE IDE", cur: "▶ Run", clr: "Clear", ex: "Examples", syn: "Syntax", ed: "Editor", out: "Output", welcome: "▷ Press \"Run\" to execute code.", err: "Error" }
 };
-let curLang = 'la'; const terp = new KanbunSEInterpreter(); const outEl = document.getElementById('output');
-function setLang(l) { curLang = l; const t = LANGS[l]; document.getElementById('nav-title').textContent = t.navTitle; document.getElementById('btn-run').textContent = t.curre; document.getElementById('btn-clear').textContent = t.purga; document.getElementById('ex-title').textContent = t.exempla; document.getElementById('ref-title').textContent = t.syntaxis; document.getElementById('editor-title').textContent = t.editor; document.getElementById('output-title').textContent = t.exitus; document.getElementById('btn-lang').textContent = l === 'la' ? 'English' : 'Latina'; if (outEl.children.length === 1) outEl.firstChild.textContent = t.welcome; }
+let curLang = 'la'; const terp = new KanbunSEInterpreter();
+function setLang(l) { curLang = l; const t = LANGS[l]; document.getElementById('nav-title').textContent = t.nav; document.getElementById('btn-run').textContent = t.cur; document.getElementById('btn-clear').textContent = t.clr; document.getElementById('ex-title').textContent = t.ex; document.getElementById('ref-title').textContent = t.syn; document.getElementById('editor-title').textContent = t.ed; document.getElementById('output-title').textContent = t.out; document.getElementById('btn-lang').textContent = l === 'la' ? 'English' : 'Latina'; if (document.getElementById('output').children.length === 1) document.getElementById('welcome-msg').textContent = t.welcome; }
 document.getElementById('btn-lang').onclick = () => setLang(curLang === 'la' ? 'en' : 'la');
 CodeMirror.defineMode('kanbunse', () => {
   const KW = new Set(['者','也','名','以','加','減','乘','除','所餘','整除','等於','大於','小於','且','或','非','若','則','若非','書','未善','為','遍','大衍','自','至','夫','施','於','立','承','具','能','造','之實體','之','令','充','卦','而','為列以','此']);
   return { token(stream) { if (stream.eatSpace()) return null; if (stream.peek() === ';') { stream.skipToEnd(); return 'comment'; } if (stream.peek() === '「') { stream.next(); while(!stream.eol() && stream.peek() !== '」') stream.next(); stream.next(); return 'string'; } if (stream.peek() === '(' || stream.peek() === ')') { stream.next(); return 'bracket'; } let w = ''; while(!stream.eol() && !/[\s()「]/.test(stream.peek())) w += stream.next(); if (KW.has(w)) return 'keyword'; if (w === '陽' || w === '陰') return 'atom'; return 'variable'; } };
 });
 const editor = CodeMirror.fromTextArea(document.getElementById('editor'), { mode: 'kanbunse', theme: 'kanbun', lineNumbers: true, matchBrackets: true, autoCloseBrackets: true, styleActiveLine: true, indentUnit: 4, extraKeys: { 'Cmd-Enter': runCode, 'Ctrl-Enter': runCode } });
-function runCode() { const code = editor.getValue(); if (!code.trim()) return; outEl.innerHTML = ''; const res = terp.run(code); if (res.output) { const s = document.createElement('span'); s.textContent = res.output; outEl.appendChild(s); } if (res.error) { const s = document.createElement('span'); s.className = 'err-line'; s.textContent = LANGS[curLang].err + ': ' + res.error; outEl.appendChild(s); } outEl.scrollTop = outEl.scrollHeight; }
+function runCode() { const code = editor.getValue(); if (!code.trim()) return; const out = document.getElementById('output'); out.innerHTML = ''; const res = terp.run(code); if (res.output) { const s = document.createElement('span'); s.textContent = res.output; out.appendChild(s); } if (res.error) { const s = document.createElement('span'); s.className = 'err-line'; s.textContent = LANGS[curLang].err + ': ' + res.error; out.appendChild(s); } out.scrollTop = out.scrollHeight; }
 document.getElementById('btn-run').onclick = runCode;
-document.getElementById('btn-clear').onclick = () => { outEl.innerHTML = ''; };
-const EX = { 'Salve': '(書 「Salve Mundi!」)', 'Calculus': '(書 (加 一 以 二))', 'OOP': '(立 形狀 具 (名) 能 ((說 () (書 (此 之 名)))))\n(名 (造 形狀 之實體) 以 甲)\n(令 甲 之 名 為 「Rectangulum」)\n(施 (甲 之 說) 於 ())' };
+document.getElementById('btn-clear').onclick = () => { document.getElementById('output').innerHTML = ''; };
+const EX = { 
+  'Example.kse': `; 定義\n(名 三點一四一五九二六五三五八九七九 以 圓周率)\n(書 圓周率)\n\n; 求和\n(名 (夫 (甲)\n    (\n        (名 零 以 乙)\n        (大衍 丙 自 一 至 甲 為\n            (乙 者 (加 乙 以 丙) 也)\n        )\n        乙\n    )\n) 以 求和)\n\n(書 (施 求和 於 百))`,
+  'OO.kse': `; 定義形狀基類\n(立 形狀 具 (名稱 顏色) 能 (\n    (描述 () (\n        (書 「這是一個」 未善)\n        (書 (此 之 顏色) 未善)\n        (書 「的」 未善)\n        (書 (此 之 名稱))\n    ))\n    (面積 () (書 「基礎形狀沒有面積計算」))\n))\n\n; 定義矩形類\n(立 矩形 承 形狀 具 (長 寬) 能 (\n    (面積 () (乘 (此 之 長) 以 (此 之 寬)))\n))\n\n(名 (造 矩形 之實體) 以 我的矩形)\n(令 我的矩形 之 名稱 為 「矩形」)\n(令 我的矩形 之 顏色 為 「藍色」)\n(令 我的矩形 之 長 為 五)\n(令 我的矩形 之 寬 為 三)\n\n(施 (我的矩形 之 描述) 於 ())\n(書 「面積：」 未善)\n(書 (施 (我的矩形 之 面積) 於 ()))`
+};
 const exList = document.getElementById('example-list'); Object.entries(EX).forEach(([n, c]) => { const b = document.createElement('button'); b.className = 'example-item'; b.textContent = n; b.onclick = () => { editor.setValue(c); runCode(); }; exList.appendChild(b); });
 setLang('la');
 </script>
