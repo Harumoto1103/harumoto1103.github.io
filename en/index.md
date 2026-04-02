@@ -83,7 +83,7 @@ During my academic journey, I have completed numerous projects to put theory int
 > <span class="badge">Rust</span> <span class="badge">Python</span> <span class="badge">OpenCV</span> <span class="badge">SSH</span> <span class="badge">Fourier</span>
 >
 > <div style="text-align: center; margin: 1.5rem 0;">
->     <img src="https://github.com/user-attachments/assets/placeholder-remote-desktop-hd" alt="TermVis Remote Desktop Demo" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+>     <video src="https://github.com/Harumoto1103/TermVis/raw/main/assets/remote_desktop_demo.mov" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" controls></video>
 >     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Demo: Mirroring a 1080p physical display via SSH with Fourier sharpening.</p>
 >     <div style="margin-top: 15px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 >         <a href="https://github.com/Harumoto1103/TermVis" target="_blank" class="btn">
@@ -131,7 +131,7 @@ During my academic journey, I have completed numerous projects to put theory int
         <div>
             <h3 style="margin: 0 0 0.5rem 0; color: var(--pompeian-red); font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: bold;">HARUMOTO HATENA BLOG</h3>
             <p style="margin: 0; font-size: 0.95rem; color: var(--ink); line-height: 1.6;">
-                My personal weblog, where I delve deep into my academic interests. Here, I publish detailed solutions and proofs for complex mathematical problems (such as the <i>MIT Integration Bee</i>, Feynman's integration trick, and infinite series). You can also find my competitive programming logs (<i>AtCoder</i>) and notes on reading Classical Chinese texts (<i>Kanbun Kundoku</i>). <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Online Editor Classical Chinese &rarr;</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">VS Code Extension &rarr;</a>
+                My personal weblog, where I delve deep into my academic interests. Here, I publish detailed solutions and proofs for complex mathematical problems (such as the <i>MIT Integration Bee</i>, Feynman's integration trick, and infinite series). You can also find my competitive programming logs (<i>AtCoder</i>) and notes on reading Classical Chinese texts (<i>Kanbun Kundoku</i>).
             </p>
         </div>
     </a>

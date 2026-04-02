@@ -82,7 +82,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 > <span class="badge">Rust</span> <span class="badge">Python</span> <span class="badge">OpenCV</span> <span class="badge">SSH</span> <span class="badge">Fourier</span>
 >
 > <div style="text-align: center; margin: 1.5rem 0;">
->     <img src="https://github.com/user-attachments/assets/placeholder-remote-desktop-hd" alt="TermVis Remote Desktop Demo" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+>     <video src="https://github.com/Harumoto1103/TermVis/raw/main/assets/remote_desktop_demo.mov" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" controls></video>
 >     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Demonstratio: Desktop 1080p per SSH in terminali reddita cvm acvatione Fovrieriana.</p>
 >     <div style="margin-top: 15px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 >         <a href="https://github.com/Harumoto1103/TermVis" target="_blank" class="btn">
