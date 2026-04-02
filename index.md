@@ -111,9 +111,41 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 > <div style="text-align: center; margin: 1.5rem 0;">
 >     <img src="/assets/img/lhdrive.png" alt="Interficies Systematis Louhau Drive" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
 >     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies systematis Louhau Drive, thecas communes et fasciculos ostendens.</p>
->     <div style="margin-top: 10px;">
->         <span class="badge">Ex Afflatv Factvm</span><br>
->         <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS Inspice</a>
+<div style="margin-top: 10px;">
+    <span class="badge">Ex Afflatv Factvm</span><br>
+    <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS Inspice</a>
+</div>
+</div>
+
+> ### KanbunSE (Kanbun S-Expression)
+>
+> Lingua S-Expressionis verbis Sinicis classicis scripta ad philologiam computatralem promovendam.
+>
+> _KanbunSE_ est interpretatrum et instrumentum quod sinit utentes programmata scribere utendo verbis et syntaxi Sinica antiqua (Kanbun). Propositum est pontem aedificare inter mundum technicum et litteras humaniores.
+>
+> **Munera Praecipua:**
+> - **Interpretatrum:** Machina quae S-expressiones (Kanbun) legit et exsequitur.
+> - **Extensio VS Code:** Instrumentum ad scribendum cum auxilio syntaxis et colorum.
+> - **Philologia:** Facilior redditur analysis textuum antiquorum per instrumenta computatralia.
+>
+> <span class="badge">TypeScript</span> <span class="badge">S-Expression</span> <span class="badge">Classical Chinese</span> <span class="badge">VS Code Extension</span>
+>
+> <div style="text-align: center; margin: 1.5rem 0;">
+>     <img src="/assets/img/kanbunse-logo.png" alt="KanbunSE Logo" style="max-width: 150px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1.5rem;" />
+>     <br>
+>     <img src="/assets/img/kanbunse-vsc.png" alt="KanbunSE VS Code Syntax Highlighting" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+>     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Logo officialis (svpra) et demonstratio syntaxis in VS Code (infra).</p>
+>     <div style="margin-top: 15px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+>         <a href="https://github.com/Harumoto1103/KanbunSE" target="_blank" class="btn">
+>             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+>             Codex Fontis (GitHub)
+>         </a>
+>         <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" target="_blank" class="btn btn-red">
+>             Extensio VS Code &rarr;
+>         </a>
+>         <a href="/kanbunse/" class="btn">
+>             Machina Interpretandi ▶
+>         </a>
 >     </div>
 > </div>
 
