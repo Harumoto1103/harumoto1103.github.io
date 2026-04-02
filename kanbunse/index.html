@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="la">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>漢文SE 在線編輯器 — Wong Hou Un</title>
+  <title>Editor KanbunSE Online — Wong Hou Un</title>
   <link rel="icon" type="image/jpeg" href="/profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
@@ -53,12 +53,6 @@
       color: var(--red);
       text-decoration: none;
     }
-    nav .title {
-      font-family: "Noto Serif TC",serif;
-      font-size: 1rem;
-      color: var(--ink);
-      letter-spacing: .05em;
-    }
     nav .controls { display: flex; gap: .5rem; align-items: center; }
     .btn-run {
       font-family: "Cinzel", serif;
@@ -72,7 +66,7 @@
       transition: all .2s;
     }
     .btn-run:hover { background: #5a1106; border-color: #5a1106; }
-    .btn-clear {
+    .btn-clear, .btn-lang {
       font-family: "Cinzel", serif;
       font-size: .75rem;
       letter-spacing: .06em;
@@ -83,18 +77,17 @@
       cursor: pointer;
       transition: all .2s;
     }
-    .btn-clear:hover { border-color: var(--ink); color: var(--ink); }
-    .shortcut-hint { font-size: .7rem; color: var(--muted); font-family: monospace; }
+    .btn-clear:hover, .btn-lang:hover { border-color: var(--ink); color: var(--ink); }
 
     /* ── MAIN LAYOUT ── */
     .ide-body {
       flex: 1;
       display: grid;
-      grid-template-columns: 190px 1fr 250px;
+      grid-template-columns: 200px 1fr 280px;
       min-height: 0;
       overflow: hidden;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       .ide-body { grid-template-columns: 1fr; }
       .sidebar-left, .sidebar-right { display: none; }
     }
@@ -119,7 +112,6 @@
       flex-shrink: 0;
     }
 
-    /* Examples list */
     .example-item {
       display: block;
       padding: .5rem .8rem;
@@ -131,9 +123,7 @@
       transition: background .15s;
       text-align: left;
       background: none;
-      border-left: none;
-      border-top: none;
-      border-right: none;
+      border: none;
       width: 100%;
     }
     .example-item:hover, .example-item.active {
@@ -141,7 +131,6 @@
       color: var(--red);
     }
 
-    /* Keyword reference */
     .ref-section { border-bottom: 1px solid var(--border); }
     .ref-section-title {
       font-family: "Cinzel", serif;
@@ -173,7 +162,7 @@
     /* ── EDITOR AREA ── */
     .editor-area {
       display: grid;
-      grid-template-rows: 58fr 42fr;
+      grid-template-rows: 60fr 40fr;
       min-height: 0;
       overflow: hidden;
     }
@@ -198,7 +187,6 @@
     }
     .output-pane { border-top: 2px solid var(--border); }
 
-    /* CodeMirror full-height */
     .CodeMirror {
       height: 100%;
       font-family: "Noto Serif TC", "MingLiU", monospace;
@@ -209,7 +197,6 @@
     }
     .CodeMirror-scroll { height: 100%; }
 
-    /* Output */
     #output {
       flex: 1;
       overflow-y: auto;
@@ -221,10 +208,9 @@
       background: var(--vellum);
     }
     #output .out-line { color: var(--ink); }
-    #output .err-line { color: var(--red); font-style: italic; }
+    #output .err-line { color: var(--red); font-weight: bold; }
     #output .info-line { color: var(--muted); font-size: .8rem; }
 
-    /* Tooltip */
     #kw-tooltip {
       position: fixed;
       display: none;
@@ -239,15 +225,7 @@
       z-index: 1000;
       pointer-events: none;
     }
-    #kw-tooltip code {
-      font-family: monospace;
-      font-size: .75rem;
-      color: #f6b73a;
-      display: block;
-      margin-top: .2rem;
-    }
 
-    /* Custom CM theme */
     .cm-s-kanbun .cm-comment   { color: #9a8070; font-style: italic; }
     .cm-s-kanbun .cm-keyword   { color: #8b1e0b; font-weight: bold; }
     .cm-s-kanbun .cm-string    { color: #2a6b2a; }
@@ -256,1100 +234,151 @@
     .cm-s-kanbun .cm-variable  { color: var(--ink); }
     .cm-s-kanbun .cm-bracket   { color: #8b1e0b; }
     .cm-s-kanbun .CodeMirror-matchingbracket { outline: 1px solid var(--red); color: var(--red) !important; }
-    .cm-s-kanbun .CodeMirror-activeline-background { background: rgba(139,30,11,.04); }
-    .cm-s-kanbun .CodeMirror-cursor { border-left: 2px solid var(--red); }
-    .cm-s-kanbun .CodeMirror-selected { background: rgba(139,30,11,.13); }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <div style="display:flex;align-items:center;gap:1rem">
-    <a class="brand" href="/">WONG HOU UN</a>
-    <span style="color:var(--border)">❧</span>
-    <span class="title">漢文SE 在線編輯器</span>
+  <div class="flex items-center gap-4">
+    <a href="/" class="brand">WONG HOU UN</a>
+    <span class="title cinzel" id="nav-title">Editor KanbunSE Online</span>
   </div>
   <div class="controls">
-    <span class="shortcut-hint">⌘↵ 運行</span>
-    <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" target="_blank" style="margin-right: 1rem; color: #722f37; text-decoration: underline; font-size: 0.9rem;">VS Code Extension</a><button class="btn-clear" id="btn-clear">清空輸出</button>
-    <button class="btn-run" id="btn-run">▶ 運行</button>
+    <button class="btn-lang" id="btn-lang">English</button>
+    <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" target="_blank" style="margin-right: .5rem; color: var(--muted); text-decoration: underline; font-size: 0.75rem;" id="vs-link">VS Code Extension</a>
+    <button class="btn-clear" id="btn-clear">Purga</button>
+    <button class="btn-run" id="btn-run">▶ Curre</button>
   </div>
 </nav>
 
-<!-- IDE BODY -->
 <div class="ide-body">
-
-  <!-- LEFT: Examples -->
   <aside class="sidebar-left">
-    <div class="sidebar-title">示例程序</div>
+    <div class="sidebar-title" id="ex-title">Exempla</div>
     <div id="example-list"></div>
   </aside>
 
-  <!-- CENTER: Editor + Output -->
   <main class="editor-area">
     <div class="editor-pane">
       <div class="pane-title">
-        <span>代碼編輯器 · KanbunSE</span>
+        <span id="editor-title">Editor KanbunSE</span>
       </div>
       <textarea id="editor"></textarea>
     </div>
     <div class="output-pane">
       <div class="pane-title">
-        <span>輸出結果</span>
+        <span id="output-title">Exitus</span>
       </div>
-      <div id="output"><span class="info-line">▷ 點擊「運行」或按 ⌘↵ 執行代碼</span>
-</div>
+      <div id="output"><span class="info-line" id="welcome-msg">▷ Preme "Curre" vel ⌘↵ ad codicem exsequendum.</span></div>
     </div>
   </main>
 
-  <!-- RIGHT: Keyword Reference -->
   <aside class="sidebar-right">
-    <div class="sidebar-title">語法速覽</div>
+    <div class="sidebar-title" id="ref-title">Syntaxis</div>
     <div id="ref-panel"></div>
   </aside>
-
 </div>
 
-<!-- Tooltip -->
 <div id="kw-tooltip"></div>
 
 <script>
-// ═══════════════════════════════════════════════════════════════════
-//  KANBUNSE INTERPRETER  (JavaScript port of main.rkt + oo-module.rkt)
-// ═══════════════════════════════════════════════════════════════════
-
 class KanbunSEInterpreter {
-  constructor() {
-    this._buf = '';
-    this._steps = 0;
-    this._MAX_STEPS = 3000000;
-  }
-
-  // ── Environment ──────────────────────────────────────────────────
+  constructor() { this._buf = ''; this._steps = 0; this._MAX_STEPS = 5000000; }
   _mkEnv(parent) { return { parent, b: new Map() }; }
-
   _lookup(env, name) {
-    let e = env;
-    while (e) {
-      if (e.b.has(name)) return e.b.get(name);
-      e = e.parent;
-    }
-    throw new Error(name + ' 者、未聞其名也。');
+    let e = env; while (e) { if (e.b.has(name)) return e.b.get(name); e = e.parent; }
+    throw new Error(`Lookup failed: variable "${name}" is unknown.`);
   }
-
-  // ── Chinese Numeral Conversion ───────────────────────────────────
-  _cnMap() {
-    return {
-      '零':0,'〇':0,'一':1,'二':2,'三':3,'四':4,'五':5,
-      '六':6,'七':7,'八':8,'九':9,'十':10,'百':100,'千':1000,
-      '萬':10000,'億':100000000,'兆':1e12,'京':1e16,
-      '壹':1,'貳':2,'叁':3,'參':3,'肆':4,'伍':5,'陸':6,
-      '柒':7,'捌':8,'玖':9,'拾':10,'佰':100,'仟':1000,
-      '廿':20,'卅':30,'卌':40,'兩':2,
-      '分':0.1,'厘':0.01,'毫':0.001,'絲':0.0001,'忽':0.00001,'微':0.000001,
-    };
-  }
-
+  _cnMap() { return {'零':0,'〇':0,'一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10,'百':100,'千':1000,'萬':10000,'億':1e8,'兆':1e12,'京':1e16,'壹':1,'貳':2,'叁':3,'參':3,'肆':4,'伍':5,'陸':6,'柒':7,'捌':8,'玖':9,'拾':10,'佰':100,'仟':1000,'廿':20,'卅':30,'卌':40,'兩':2,'分':0.1,'厘':0.01,'毫':0.001,'絲':0.0001,'忽':1e-5,'微':1e-6}; }
   fromChinese(token) {
-    const M = this._cnMap();
-    let s = token, neg = false;
-    if (s.startsWith('負')) { neg = true; s = s.slice(1); }
-    // Find decimal separator
-    let sepIdx = -1;
-    for (let i = 0; i < s.length; i++) {
-      if (s[i] === '點' || s[i] === '又') { sepIdx = i; break; }
-    }
-    const intStr = sepIdx >= 0 ? s.slice(0, sepIdx) : s;
-    const decStr = sepIdx >= 0 ? s.slice(sepIdx + 1) : '';
-
+    const M = this._cnMap(); let s = token, neg = false; if (s.startsWith('負')) { neg = true; s = s.slice(1); }
+    let sepIdx = s.indexOf('點') !== -1 ? s.indexOf('點') : s.indexOf('又');
+    const intStr = sepIdx >= 0 ? s.slice(0, sepIdx) : s, decStr = sepIdx >= 0 ? s.slice(sepIdx + 1) : '';
     const parseInt_ = (part) => {
       let total = 0, section = 0, current = 0;
       for (const c of [...part]) {
         if (!(c in M)) return null;
-        const v = M[c];
-        if (v >= 10) {
-          if (v >= 10000) { total = (total + section + current) * v; section = 0; current = 0; }
-          else { section += (current === 0 ? 1 : current) * v; current = 0; }
-        } else { current += v; }
+        const v = M[c]; if (v >= 10) { if (v >= 10000) { total = (total + section + current) * v; section = 0; current = 0; } else { section += (current === 0 ? 1 : current) * v; current = 0; } } else { current += v; }
       }
       return total + section + current;
     };
-
-    const parseDec_ = (part) => {
-      let r = 0;
-      let i = 0;
-      for (const c of [...part]) {
-        if (!(c in M)) return null;
-        r += M[c] * Math.pow(10, -(i + 1));
-        i++;
-      }
-      return r;
-    };
-
-    try {
-      if (!intStr && !decStr) return null;
-      const iv = intStr ? parseInt_(intStr) : 0;
-      if (iv === null) return null;
-      const dv = decStr ? parseDec_(decStr) : 0;
-      if (dv === null) return null;
-      return neg ? -(iv + dv) : (iv + dv);
-    } catch { return null; }
+    const parseDec_ = (part) => { let r = 0; for (let i = 0; i < part.length; i++) { if (!(part[i] in M)) return null; r += M[part[i]] * Math.pow(10, -(i + 1)); } return r; };
+    try { if (!intStr && !decStr) return null; const iv = intStr ? parseInt_(intStr) : 0, dv = decStr ? parseDec_(decStr) : 0; if (iv === null || dv === null) return null; return neg ? -(iv + dv) : (iv + dv); } catch { return null; }
   }
-
   toChinese(n) {
-    if (!isFinite(n)) return String(n);
-    if (n < 0) return '負' + this.toChinese(-n);
-    const D = ['零','一','二','三','四','五','六','七','八','九'];
-    const U = ['','十','百','千'];
-    const LU = ['','萬','億','兆','京'];
-
+    if (!isFinite(n)) return String(n); if (n < 0) return '負' + this.toChinese(-n);
+    const D = ['零','一','二','三','四','五','六','七','八','九'], U = ['','十','百','千'], LU = ['','萬','億','兆','京'];
     const cvtInt = (x) => {
-      if (x === 0) return '零';
-      const parts = [];
-      let ui = 0, rem = x;
+      if (x === 0) return '零'; let res = '', rem = x, ui = 0;
       while (rem > 0) {
-        const seg = rem % 10000;
-        if (seg) {
-          let s = '', t = seg;
-          for (let i = 0; i < 4; i++) {
-            const d = t % 10;
-            if (d) s = D[d] + U[i] + s;
-            else if (s && s[0] !== '零') s = '零' + s;
-            t = Math.floor(t / 10);
-          }
-          s = s.replace(/零+$/, '').replace(/零零/g, '零');
-          if (ui > 0 && ui < LU.length) s += LU[ui];
-          parts.unshift(s);
-        } else { parts.unshift('零'); }
-        rem = Math.floor(rem / 10000); ui++;
+        let seg = rem % 10000; if (seg) { let s = '', t = seg; for (let i = 0; i < 4; i++) { let d = t % 10; if (d) s = D[d] + U[i] + s; else if (s && s[0] !== '零') s = '零' + s; t = Math.floor(t / 10); } res = s.replace(/零+$/, '') + LU[ui] + res; } else if (res && res[0] !== '零') { res = '零' + res; } rem = Math.floor(rem / 10000); ui++;
       }
-      return parts.join('').replace(/^零+|零+$/g, '') || '零';
+      return res.replace(/零零/g, '零').replace(/^零+|零+$/g, '') || '零';
     };
-
-    const cvtDec = (d) => {
-      let res = [], rem = d;
-      for (let i = 0; i < 8; i++) {
-        rem *= 10;
-        const digit = Math.floor(rem + 1e-10);
-        const clamp = Math.min(digit, 9);
-        if (clamp === 0 && res.length === 0) { rem -= digit; continue; }
-        res.push(D[clamp]);
-        rem -= digit;
-        if (rem < 1e-10) break;
-      }
-      while (res.length && res[res.length - 1] === '零') res.pop();
-      return res.join('');
-    };
-
-    const ip = Math.floor(Math.abs(n));
-    const dp = Math.abs(n) - ip;
-    const si = (ip === 0 && dp > 0) ? '' : cvtInt(ip);
-    const sd = dp > 1e-9 ? '點' + cvtDec(dp) : '';
-    return (si + sd) || '零';
+    const ip = Math.floor(Math.abs(n)), dp = Math.abs(n) - ip;
+    return (cvtInt(ip) + (dp > 1e-10 ? '點...' : '')).replace(/^一十/, '十');
   }
-
-  // ── Stringify ────────────────────────────────────────────────────
-  stringify(v) {
-    if (typeof v === 'number') return this.toChinese(v);
-    if (typeof v === 'string') return v;
-    if (v === true)  return '陽';
-    if (v === false || v === null || v === undefined) return '陰';
-    if (Array.isArray(v)) return '【' + v.map(x => this.stringify(x)).join('、') + '】';
-    if (v && v._t === 'inst') return '【' + v._cls._name + '之實體】';
-    if (v && v._t === 'cls')  return '【' + v._name + '之類】';
-    if (typeof v === 'function') return '【函數】';
-    return String(v);
-  }
-
-  // ── Tokenizer ────────────────────────────────────────────────────
-  tokenize(code) {
-    // Strip comments
-    const stripped = code.split('\n').map(line => {
-      const i = line.indexOf(';');
-      return i >= 0 ? line.slice(0, i) : line;
-    }).join('\n');
-    const spaced = stripped.replace(/\(/g, ' ( ').replace(/\)/g, ' ) ');
-    const toks = [];
-    const re = /\(|\)|「[^」]*」|[^\s()]+/gu;
-    let m;
-    while ((m = re.exec(spaced)) !== null) {
-      if (m[0]) toks.push(m[0]);
-    }
-    return toks;
-  }
-
-  // ── Parser ───────────────────────────────────────────────────────
-  atom(tok) {
-    // Arabic number
-    const n = Number(tok);
-    if (!isNaN(n) && tok !== '') return n;
-    // String literal 「...」
-    if (tok.startsWith('「') && tok.endsWith('」'))
-      return { _t: 'str', v: tok.slice(1, -1) };
-    // Chinese number
-    const cn = this.fromChinese(tok);
-    if (cn !== null) return cn;
-    return tok; // identifier / keyword
-  }
-
-  parse(toks) {
-    const res = [];
-    let i = 0;
-    while (i < toks.length) {
-      const [e, ni] = this._parseOne(toks, i);
-      res.push(e); i = ni;
-    }
-    return res;
-  }
-
+  stringify(v) { if (typeof v === 'number') return this.toChinese(v); if (v === true) return '陽'; if (v === false || v === null) return '陰'; if (Array.isArray(v)) return '【' + v.map(x => this.stringify(x)).join('、') + '】'; if (v?._t === 'inst') return '【' + v._cls._name + '之實體】'; if (v?._t === 'cls') return '【' + v._name + '之類】'; return String(v); }
+  tokenize(code) { const stripped = code.split('\n').map(l => { const i = l.indexOf(';'); return i >= 0 ? l.slice(0, i) : l; }).join('\n'); const spaced = stripped.replace(/\(/g, ' ( ').replace(/\)/g, ' ) '); const re = /\(|\)|「[^」]*」|[^\s()]+/gu; const toks = []; let m; while ((m = re.exec(spaced)) !== null) if (m[0]) toks.push(m[0]); return toks; }
+  parse(toks) { const res = []; let i = 0; while (i < toks.length) { const [e, ni] = this._parseOne(toks, i); res.push(e); i = ni; } return res; }
   _parseOne(toks, i) {
-    if (i >= toks.length) throw new Error('其既終乎、未見始也。');
     const t = toks[i];
-    if (t === '(') {
-      const lst = []; i++;
-      while (i < toks.length && toks[i] !== ')') {
-        const [e, ni] = this._parseOne(toks, i);
-        lst.push(e); i = ni;
-      }
-      if (i >= toks.length) throw new Error('括未合、終無所見。');
-      return [lst, i + 1];
-    }
-    if (t === ')') throw new Error('右括盈、左闕如也。');
-    return [this.atom(t), i + 1];
+    if (t === '(') { const lst = []; i++; while (i < toks.length && toks[i] !== ')') { const [e, ni] = this._parseOne(toks, i); lst.push(e); i = ni; } if (i >= toks.length) throw new Error('Syntax Error: Parenthesis mismatch.'); return [lst, i + 1]; }
+    if (t === ')') throw new Error('Syntax Error: Unexpected ")".');
+    const n = Number(t); if (!isNaN(n) && t !== '') return n;
+    if (t.startsWith('「') && t.endsWith('」')) return { _t: 'str', v: t.slice(1, -1) };
+    const cn = this.fromChinese(t); return cn !== null ? cn : t;
   }
-
-  // ── OOP Helpers ──────────────────────────────────────────────────
-  _collectAttrs(cls) {
-    if (!cls) return [];
-    return [...this._collectAttrs(cls._parent), ...cls._attrs];
-  }
-
-  _mkInstance(cls) {
-    const attrs = new Map();
-    this._collectAttrs(cls).forEach(a => attrs.set(a, false));
-    return { _t: 'inst', _cls: cls, _attrs: attrs };
-  }
-
-  _getAttr(inst, name) {
-    if (!inst._attrs.has(name)) throw new Error('屬性 ' + name + ' 不存在於此實體及其父類');
-    return inst._attrs.get(name) ?? false;
-  }
-
-  _setAttr(inst, name, val) {
-    if (!inst._attrs.has(name)) throw new Error('屬性 ' + name + ' 不存在於此實體及其父類');
-    inst._attrs.set(name, val);
-  }
-
-  _getMethod(inst, name) {
-    let cls = inst._cls;
-    while (cls) {
-      if (cls._methods.has(name)) return cls._methods.get(name);
-      cls = cls._parent;
-    }
-    throw new Error('方法 ' + name + ' 不存在於此類及其父類');
-  }
-
-  // ── Function / Method Factories ──────────────────────────────────
-  _mkFn(params, body, defEnv) {
-    const arity = params.length;
-    const terp = this;
-    const fn = function(...args) {
-      if (args.length !== arity) throw new Error('參數之數不合乎法度。需' + arity + '而得' + args.length);
-      const nenv = terp._mkEnv(defEnv);
-      params.forEach((p, i) => nenv.b.set(p, args[i]));
-      return terp.eval(body, nenv);
-    };
-    fn._kseArity = arity;
-    return fn;
-  }
-
-  _mkMethod(params, body, defEnv) {
-    const arity = params.length;
-    const terp = this;
-    const fn = function(inst, ...args) {
-      if (args.length !== arity) throw new Error('方法參數不合。需' + arity + '而得' + args.length);
-      const nenv = terp._mkEnv(defEnv);
-      nenv.b.set('此', inst);
-      params.forEach((p, i) => nenv.b.set(p, args[i]));
-      return terp.eval(body, nenv);
-    };
-    fn._kseArity = arity;
-    return fn;
-  }
-
-  // ── Equality ─────────────────────────────────────────────────────
-  _eq(a, b) {
-    if (a === b) return true;
-    if (Array.isArray(a) && Array.isArray(b)) {
-      if (a.length !== b.length) return false;
-      return a.every((v, i) => this._eq(v, b[i]));
-    }
-    return false;
-  }
-
-  // ── Evaluator ────────────────────────────────────────────────────
   eval(expr, env) {
-    this._steps++;
-    if (this._steps > this._MAX_STEPS) throw new Error('運算逾限，或陷無窮也。');
-
-    // Primitives
-    if (typeof expr === 'number') return expr;
-    if (expr && expr._t === 'str') return expr.v;   // string literal
-    if (expr === null || expr === false) return false;
-
-    if (typeof expr === 'string') {
-      const KW = new Set(['書','加','減','乘','除','若','則','否','大衍','為','施',
-        '於','夫','立','承','具','能','造','之','令','者','也','名','以',
-        '等於','大於','小於','且','或','非','充','卦','而','為列以','未善',
-        '遍','自','至','若非','所餘','整除','之實體','此']);
-      if (KW.has(expr)) throw new Error('「' + expr + '」為語法關鍵字，不可單獨使用。');
-      return this._lookup(env, expr);
-    }
-
+    if (++this._steps > this._MAX_STEPS) throw new Error('Execution limit reached.');
+    if (typeof expr === 'number') return expr; if (expr?._t === 'str') return expr.v; if (expr === null || expr === false) return false;
+    if (typeof expr === 'string') return this._lookup(env, expr);
     if (!Array.isArray(expr)) return expr;
-
-    const e = expr, len = e.length;
-    if (len === 0) return false;
-
+    const e = expr, len = e.length; if (len === 0) return false;
     const [a0, a1, a2, a3, a4, a5, a6, a7] = e;
-
-    // ── Variable Definition ──────────────────────────────────
-    // (varname 者 value 也)
-    if (len === 4 && a1 === '者' && a3 === '也') {
-      const v = this.eval(a2, env);
-      env.b.set(a0, v);
-      return v;
+    if (len === 4 && a1 === '者' && a3 === '也') { const v = this.eval(a2, env); env.b.set(a0, v); return v; }
+    if (len === 4 && a0 === '名' && a2 === '以') { const v = this.eval(a1, env); env.b.set(a3, v); return v; }
+    if (len >= 6 && a0 === '立') {
+      let n, p=null, at, mi; if (a2 === '承') { n=a1; p=a3 === '無' ? null : this._lookup(env, a3); at=a5; mi=7; } else { n=a1; at=a3; mi=5; }
+      const ms = new Map(); (e[mi]||[]).forEach(([mn, mp, mb]) => ms.set(mn, (inst, ...as) => { const ne = this._mkEnv(env); ne.b.set('此', inst); (mp||[]).forEach((pa,i) => ne.b.set(pa, as[i])); return this.eval(mb, ne); }));
+      const c = { _t:'cls', _name:n, _attrs:at, _methods:ms, _parent:p }; env.b.set(n, c); return c;
     }
-    // (名 value 以 varname)
-    if (len === 4 && a0 === '名' && a2 === '以') {
-      const v = this.eval(a1, env);
-      env.b.set(a3, v);
-      return v;
+    if (len === 3 && a0 === '造' && a2 === '之實體') { const c = this._lookup(env, a1), ats = new Map(); let cur = c; while(cur){ (cur._attrs||[]).forEach(a => ats.set(a, false)); cur = cur._parent; } return { _t:'inst', _cls:c, _attrs:ats }; }
+    if (len === 6 && a0 === '令' && a2 === '之' && a4 === '為') { const inst = this.eval(a1, env), v = this.eval(a5, env); inst._attrs.set(a3, v); return v; }
+    const ev = (x) => this.eval(x, env);
+    if (a0 === '加') return ev(a1) + ev(a3); if (a0 === '減') return ev(a1) - ev(a3); if (a0 === '乘') return ev(a1) * ev(a3); if (a0 === '除') return ev(a1) / ev(a3);
+    if (a0 === '若') return ev(a1) ? ev(a3) : (len === 6 ? ev(a5) : false);
+    if (a0 === '書') { const v = ev(a1); this._buf += this.stringify(v) + (a2 === '未善' ? '' : '\n'); return v; }
+    if (a0 === '施') {
+      if (Array.isArray(a1) && a1[1] === '之') { const inst = ev(a1[0]), args = (Array.isArray(a3)?a3:[a3]).map(x => ev(x)); let c = inst._cls; while(c){ if(c._methods.has(a1[2])) return c._methods.get(a1[2])(inst, ...args); c = c._parent; } }
+      const fn = ev(a1), args = (Array.isArray(a3)?a3:[a3]).map(x => ev(x)); return fn(...args);
     }
-
-    // ── Class Definition ─────────────────────────────────────
-    // (立 Name 具 (attrs) 能 (methods))
-    if (len === 6 && a0 === '立' && a2 === '具' && a4 === '能') {
-      const methods = new Map();
-      if (Array.isArray(a5)) {
-        for (const md of a5) {
-          const [mn, mp, mb] = md;
-          methods.set(mn, this._mkMethod(Array.isArray(mp) ? mp : [], mb, env));
-        }
-      }
-      const cls = { _t:'cls', _name:a1, _attrs: Array.isArray(a3)?a3:[], _methods:methods, _parent:null };
-      env.b.set(a1, cls);
-      return cls;
-    }
-    // (立 Child 承 Parent 具 (attrs) 能 (methods))
-    if (len === 8 && a0 === '立' && a2 === '承' && a4 === '具' && a6 === '能') {
-      const parent = a3 === '無' ? null : this._lookup(env, a3);
-      const methods = new Map();
-      if (Array.isArray(a7)) {
-        for (const md of a7) {
-          const [mn, mp, mb] = md;
-          methods.set(mn, this._mkMethod(Array.isArray(mp) ? mp : [], mb, env));
-        }
-      }
-      const cls = { _t:'cls', _name:a1, _attrs: Array.isArray(a5)?a5:[], _methods:methods, _parent:parent };
-      env.b.set(a1, cls);
-      return cls;
-    }
-
-    // ── Instance Creation ────────────────────────────────────
-    // (造 ClassName 之實體)
-    if (len === 3 && a0 === '造' && a2 === '之實體') {
-      const cls = this._lookup(env, a1);
-      if (!cls || cls._t !== 'cls') throw new Error(a1 + ' 非類也');
-      return this._mkInstance(cls);
-    }
-
-    // ── Attribute Set ────────────────────────────────────────
-    // (令 inst 之 attr 為 value)
-    if (len === 6 && a0 === '令' && a2 === '之' && a4 === '為') {
-      const inst = this.eval(a1, env);
-      const val  = this.eval(a5, env);
-      if (!inst || inst._t !== 'inst') throw new Error('非實體不可設屬性');
-      this._setAttr(inst, a3, val);
-      return val;
-    }
-
-    // ── Method Call ──────────────────────────────────────────
-    // (施 (inst 之 method) 於 args)
-    if (len === 4 && a0 === '施' && Array.isArray(a1) && a1.length === 3 && a1[1] === '之' && a2 === '於') {
-      const inst = this.eval(a1[0], env);
-      if (!inst || inst._t !== 'inst') throw new Error('非實體不可調方法');
-      const mfn  = this._getMethod(inst, a1[2]);
-      const args = Array.isArray(a3) ? a3.map(x => this.eval(x, env)) : [this.eval(a3, env)];
-      return mfn(inst, ...args);
-    }
-
-    // ── Function Call ────────────────────────────────────────
-    // (施 func 於 args)
-    if (len === 4 && a0 === '施' && a2 === '於') {
-      const fn = this.eval(a1, env);
-      if (typeof fn !== 'function') throw new Error('非函數不可施。');
-      let argsVal;
-      if (Array.isArray(a3)) argsVal = a3.map(x => this.eval(x, env));
-      else argsVal = this.eval(a3, env);
-      const arity = fn._kseArity !== undefined ? fn._kseArity : fn.length;
-      if (arity === 1) return fn(argsVal);
-      if (Array.isArray(argsVal)) return fn(...argsVal);
-      return fn(argsVal);
-    }
-
-    // ── List Element Access ──────────────────────────────────
-    // (container 之 idx 者)
-    if (len === 4 && a1 === '之' && a3 === '者') {
-      const cont = this.eval(a0, env);
-      const idx  = Math.floor(this.eval(a2, env));
-      if (!Array.isArray(cont)) throw new Error(String(a0) + ' 者非列也！');
-      if (idx < 1 || idx > cont.length) throw new Error('索驥圖外、其轍亂矣。');
-      return cont[idx - 1];
-    }
-
-    // ── Attribute / Length Access ────────────────────────────
-    // (obj 之 attr)
-    if (len === 3 && a1 === '之') {
-      const obj = this.eval(a0, env);
-      if (obj && obj._t === 'inst') return this._getAttr(obj, a2);
-      if (Array.isArray(obj)) {
-        if (a2 === '長') return obj.length;
-        const idx = typeof a2 === 'number' ? a2 : Math.floor(this.eval(a2, env));
-        if (idx < 1 || idx > obj.length) throw new Error('索驥圖外、其轍亂矣。');
-        return obj[idx - 1];
-      }
-      throw new Error('此物無屬性可取');
-    }
-
-    // ── Arithmetic ───────────────────────────────────────────
-    if (len === 4 && a0 === '加' && a2 === '以') return this.eval(a1,env) + this.eval(a3,env);
-    if (len === 4 && a0 === '減' && a2 === '以') return this.eval(a1,env) - this.eval(a3,env);
-    if (len === 4 && a0 === '乘' && a2 === '以') return this.eval(a1,env) * this.eval(a3,env);
-    if (len === 4 && a0 === '除' && a2 === '以') return this.eval(a1,env) / this.eval(a3,env);
-    if (len === 5 && a0 === '除' && a2 === '以' && a4 === '所餘')
-      return this.eval(a1,env) % this.eval(a3,env);
-    if (len === 4 && a0 === '整除' && a2 === '以')
-      return Math.trunc(this.eval(a1,env) / this.eval(a3,env));
-
-    // ── Comparison ───────────────────────────────────────────
-    if (len === 3 && a1 === '等於') return this._eq(this.eval(a0,env), this.eval(a2,env));
-    if (len === 3 && a1 === '大於') return this.eval(a0,env) > this.eval(a2,env);
-    if (len === 3 && a1 === '小於') return this.eval(a0,env) < this.eval(a2,env);
-
-    // ── Logic ────────────────────────────────────────────────
-    if (len === 3 && a1 === '且') return this.eval(a0,env) && this.eval(a2,env);
-    if (len === 3 && a1 === '或') return this.eval(a0,env) || this.eval(a2,env);
-    if (len === 2 && a0 === '非') return !this.eval(a1,env);
-
-    // ── Conditionals ─────────────────────────────────────────
-    if (len === 6 && a0 === '若' && a2 === '則' && a4 === '若非')
-      return this.eval(a1,env) ? this.eval(a3,env) : this.eval(a5,env);
-    if (len === 4 && a0 === '若' && a2 === '則')
-      return this.eval(a1,env) ? this.eval(a3,env) : false;
-
-    // ── Print ────────────────────────────────────────────────
-    if (len === 2 && a0 === '書') {
-      const v = this.eval(a1, env);
-      this._buf += this.stringify(v) + '\n';
-      return v;
-    }
-    if (len === 3 && a0 === '書' && a2 === '未善') {
-      const v = this.eval(a1, env);
-      this._buf += this.stringify(v);
-      return v;
-    }
-
-    // ── Fixed Loop ───────────────────────────────────────────
-    // (為 body n 遍)
-    if (len === 4 && a0 === '為' && a3 === '遍') {
-      const n = Math.floor(this.eval(a2, env));
-      for (let i = 0; i < n; i++) { this.eval(a1, env); this._steps++; }
-      return false;
-    }
-
-    // ── Indexed Loop ─────────────────────────────────────────
-    // (大衍 var 自 start 至 end 為 body)
-    if (len === 8 && a0 === '大衍' && a2 === '自' && a4 === '至' && a6 === '為') {
-      const s = Math.floor(this.eval(a3, env));
-      const f = Math.floor(this.eval(a5, env));
-      for (let i = s; i <= f; i++) {
-        env.b.set(a1, i);
-        this.eval(a7, env);
-        this._steps++;
-        if (this._steps > this._MAX_STEPS) throw new Error('運算逾限，或陷無窮也。');
-      }
-      return false;
-    }
-
-    // ── Lambda ───────────────────────────────────────────────
-    // (夫 (params) body)
-    if (len === 3 && a0 === '夫')
-      return this._mkFn(Array.isArray(a1) ? a1 : [], a2, env);
-
-    // ── List Creation ────────────────────────────────────────
-    // (為列以 (items))
-    if (len === 2 && a0 === '為列以') {
-      if (!Array.isArray(a1)) return [];
-      return a1.map(x => this.eval(x, env));
-    }
-
-    // ── List Append ──────────────────────────────────────────
-    // (充 list 以 value)
-    if (len === 4 && a0 === '充' && a2 === '以') {
-      const lst = this.eval(a1, env);
-      const val = this.eval(a3, env);
-      if (!Array.isArray(lst)) throw new Error(String(a1) + ' 者非列也！');
-      const nls = [...lst, val];
-      if (typeof a1 === 'string') env.b.set(a1, nls);
-      return val;
-    }
-
-    // ── Pattern Match ────────────────────────────────────────
-    // (卦 val 而 branches)
-    if (len === 4 && a0 === '卦' && a2 === '而') {
-      const val = this.eval(a1, env);
-      for (const br of a3) {
-        if (!Array.isArray(br) || br[1] !== '則') throw new Error('卦象不明，吉凶未兆。');
-        const pat = this.eval(br[0], env); // evaluate pattern
-        if (this._eq(val, pat) || val === pat) return this.eval(br[2], env);
-      }
-      return false;
-    }
-
-    // ── Sequence (catch-all) ─────────────────────────────────
-    let last = false;
-    for (const sub of e) { last = this.eval(sub, env); }
-    return last;
+    if (a0 === '夫') return (...args) => { const ne = this._mkEnv(env); (a1||[]).forEach((p,i) => ne.b.set(p, args[i])); return this.eval(a2, ne); };
+    if (a0 === '大衍') { const s=ev(a3), f=ev(a5); for(let i=s; i<=f; i++) { env.b.set(a1, i); ev(a7); } return false; }
+    if (a1 === '之') { const o = ev(a0); if (a3 === '者') return o[ev(a2)-1]; if (o?._t === 'inst') return o._attrs.get(a2); if (Array.isArray(o)) return a2 === '長' ? o.length : o[ev(a2)-1]; }
+    if (a0 === '為列以') return (a1||[]).map(x => ev(x)); if (a0 === '充') { const l=ev(a1), v=ev(a3); l.push(v); return v; }
+    let last = false; e.forEach(sub => last = this.eval(sub, env)); return last;
   }
-
-  // ── Public API ───────────────────────────────────────────────────
-  run(code) {
-    this._buf = '';
-    this._steps = 0;
-    try {
-      const toks = this.tokenize(code);
-      const ast  = this.parse(toks);
-      const env  = this._mkEnv(null);
-      env.b.set('陽', true);
-      env.b.set('陰', false);
-      for (const ex of ast) this.eval(ex, env);
-      return { output: this._buf, error: null };
-    } catch (err) {
-      return { output: this._buf, error: err.message };
-    }
-  }
+  run(code) { this._buf = ''; this._steps = 0; try { const toks = this.tokenize(code), ast = this.parse(toks), env = this._mkEnv(null); env.b.set('陽', true); env.b.set('陰', false); ast.forEach(ex => this.eval(ex, env)); return { output: this._buf, error: null }; } catch (err) { return { output: this._buf, error: err.message }; } }
 }
 
-// ═══════════════════════════════════════════════════════════════════
-//  CODEMIRROR MODE
-// ═══════════════════════════════════════════════════════════════════
-
-CodeMirror.defineMode('kanbunse', () => {
-  const KW = new Set([
-    '者','也','名','以','加','減','乘','除','所餘','整除',
-    '等於','大於','小於','且','或','非','若','則','若非',
-    '書','未善','為','遍','大衍','自','至','夫','施','於',
-    '立','承','具','能','造','之實體','之','令','充','卦','而','為列以','此',
-  ]);
-  const BOOL = new Set(['陽','陰']);
-  const CN = /^[負零〇一二三四五六七八九十百千萬億兆京垓壹貳叁參肆伍陸柒捌玖拾佰仟廿卅卌兩分厘毫絲忽微點又]+$/u;
-
-  return {
-    token(stream) {
-      if (stream.eatSpace()) return null;
-      // comment
-      if (stream.peek() === ';') { stream.skipToEnd(); return 'comment'; }
-      // string 「...」
-      if (stream.peek() === '「') {
-        stream.next();
-        while (!stream.eol() && stream.peek() !== '」') stream.next();
-        if (!stream.eol()) stream.next();
-        return 'string';
-      }
-      // parens
-      if (stream.peek() === '(' || stream.peek() === ')') { stream.next(); return 'bracket'; }
-      // word
-      let w = '';
-      while (!stream.eol() && !/[\s()「]/.test(stream.peek())) w += stream.next();
-      if (!w) { stream.next(); return null; }
-      if (BOOL.has(w)) return 'atom';
-      if (KW.has(w))   return 'keyword';
-      if (/^-?\d+(\.\d+)?$/.test(w)) return 'number';
-      if (CN.test(w))  return 'number';
-      return 'variable';
-    }
-  };
-});
-
-CodeMirror.defineMIME('text/x-kanbunse', 'kanbunse');
-
-// ═══════════════════════════════════════════════════════════════════
-//  EXAMPLES
-// ═══════════════════════════════════════════════════════════════════
-
-const EXAMPLES = {
-  '你好，世界': `\
-; 你好，世界！— KanbunSE 入門示例
-
-; 打印字串
-(書 「你好，世界！」)
-
-; 定義變數（兩種寫法等價）
-(名 二十五 以 年齡)
-(是否成年 者 (年齡 大於 十八) 也)
-
-(書 「年齡：」 未善)
-(書 年齡)
-(書 「是否成年：」 未善)
-(書 是否成年)
-
-; 基本算術
-(書 「三加四：」 未善)
-(書 (加 三 以 四))
-(書 「十除三餘：」 未善)
-(書 (除 十 以 三 所餘))
-
-; 條件
-(若 (年齡 大於 十八)
-    則 (書 「已成年」)
-    若非 (書 「未成年」))
-
-; 大衍循環（1 至 5）
-(書 「數一至五：」)
-(大衍 甲 自 一 至 五 為
-    (書 甲))
-`,
-
-  '函數與遞歸': `\
-; 階乘（迭代版）
-(名 (夫 (數)
-    (
-        (名 一 以 積)
-        (大衍 計 自 一 至 數 為
-            (積 者 (乘 積 以 計) 也))
-        積
-    )
-) 以 階乘)
-
-(書 「階乘：」)
-(大衍 甲 自 一 至 八 為
-    (
-        (書 甲 未善)
-        (書 「! = 」 未善)
-        (書 (施 階乘 於 甲))
-    ))
-
-; 斐波那契（遞歸版）
-(名 (夫 (數)
-    (若 (數 小於 二)
-        則 數
-        若非 (加 (施 fib 於 ((減 數 以 一)))
-                以 (施 fib 於 ((減 數 以 二))))))
-) 以 fib)
-
-(書 「斐波那契前十項：」)
-(大衍 甲 自 零 至 九 為
-    (
-        (書 「F」 未善)(書 甲 未善)(書 「=」 未善)
-        (書 (施 fib 於 甲))
-    ))
-`,
-
-  '列表與模式匹配': `\
-; 列表操作
-(名 (為列以 (一 二 三 四 五)) 以 數列)
-(書 「數列：」 未善)(書 數列)
-(書 「長度：」 未善)(書 (數列 之 長))
-
-(充 數列 以 六)
-(書 「添六後：」 未善)(書 數列)
-(書 「第三個：」 未善)(書 (數列 之 三 者))
-
-; 模式匹配
-(名 「乙」 以 成績)
-(卦 成績 而 (
-    (「甲」 則 (書 「優秀」))
-    (「乙」 則 (書 「良好」))
-    (「丙」 則 (書 「及格」))
-    (「丁」 則 (書 「不及格」))
-))
-
-; 重複循環
-(書 「重複三遍：」)
-(為 (書 「吾日三省吾身」) 三 遍)
-`,
-
-  '物件導向': `\
-; 定義形狀基類
-(立 形狀 具 (名稱 顏色) 能 (
-    (描述 () (
-        (書 「此乃一」 未善)
-        (書 (此 之 顏色) 未善)
-        (書 「之」 未善)
-        (書 (此 之 名稱))
-    ))
-    (面積 () (書 「面積計算需子類實現」))
-))
-
-; 矩形類，繼承形狀
-(立 矩形 承 形狀 具 (長 寬) 能 (
-    (面積 () (乘 (此 之 長) 以 (此 之 寬)))
-    (周長 () (乘 二 以 (加 (此 之 長) 以 (此 之 寬))))
-    (是否正方形 () ((此 之 長) 等於 (此 之 寬)))
-))
-
-; 創建並使用實例
-(名 (造 矩形 之實體) 以 我的矩形)
-(令 我的矩形 之 名稱 為 「矩形」)
-(令 我的矩形 之 顏色 為 「藍色」)
-(令 我的矩形 之 長 為 五)
-(令 我的矩形 之 寬 為 三)
-
-(施 (我的矩形 之 描述) 於 ())
-(書 「面積：」 未善)(書 (施 (我的矩形 之 面積) 於 ()))
-(書 「周長：」 未善)(書 (施 (我的矩形 之 周長) 於 ()))
-(書 「是否正方形：」 未善)(書 (施 (我的矩形 之 是否正方形) 於 ()))
-`,
-
-  'example.kse（完整示例）': `\
-; 定義
-(名 三點一四一五九二六五三五八九七九 以 圓周率)
-(書 圓周率)
-
-; 求和
-(名 (夫 (甲)
-    (
-        (名 零 以 乙)
-        (大衍 丙 自 一 至 甲 為
-            (乙 者 (加 乙 以 丙) 也)
-        )
-        乙
-    )
-) 以 求和)
-
-(書 (施 求和 於 百))
-
-; 階乘
-(名 (夫 (甲)
-    (
-        (名 一 以 乙)
-        (大衍 丙 自 一 至 甲 為
-            (乙 者 (乘 乙 以 丙) 也)
-        )
-        乙
-    )
-) 以 階乘)
-
-(大衍 甲 自 一 至 十 為
-    (
-        (書 甲 未善)
-        (書 「的階乘為：」 未善)
-        (書 (施 階乘 於 甲))
-    )
-)
-
-; 遞歸
-(名 (夫 (甲) (若 (甲 大於 一)
-            則 (加 甲 以 (施 加數 於 ((減 甲 以 一))))
-            若非 一
-)) 以 加數)
-
-(書 (施 加數 於 百))
-
-; 複數
-(名 (夫 (實 虛) (為列以 (實 虛))) 以 作複數)
-(名 (夫 (複數) (
-    (書 「實部為」 未善)
-    (書 (複數 之 一 者) 未善)
-    (書 「而虛部為」 未善)
-    (書 (複數 之 二 者))
-)) 以 書複數)
-(名 (夫 (複數甲 複數乙) (為列以 (
-    (加 (複數甲 之 一 者) 以 (複數乙 之 一 者))
-    (加 (複數甲 之 二 者) 以 (複數乙 之 二 者))))) 以 複相加)
-
-(名 (施 作複數 於 (一 二)) 以 甲)
-(名 (施 作複數 於 (三 四)) 以 乙)
-(結果 者 (施 複相加 於 (甲 乙)) 也)
-(施 書複數 於 結果)
-`,
-
-  'oo.kse（OOP 完整測試）': `\
-(書 「========== 物件導向程式設計測試 ==========」)
-
-(立 形狀 具 (名稱 顏色) 能 (
-    (描述 () (
-        (書 「這是一個」 未善)
-        (書 (此 之 顏色) 未善)
-        (書 「的」 未善)
-        (書 (此 之 名稱))
-    ))
-    (面積 () (書 「基礎形狀沒有面積計算」))
-))
-
-(立 矩形 承 形狀 具 (長 寬) 能 (
-    (面積 () (乘 (此 之 長) 以 (此 之 寬)))
-    (周長 () (乘 二 以 (加 (此 之 長) 以 (此 之 寬))))
-    (是否正方形 () ((此 之 長) 等於 (此 之 寬)))
-))
-
-(名 (造 矩形 之實體) 以 我的矩形)
-(令 我的矩形 之 名稱 為 「矩形」)
-(令 我的矩形 之 顏色 為 「藍色」)
-(令 我的矩形 之 長 為 五)
-(令 我的矩形 之 寬 為 三)
-
-(施 (我的矩形 之 描述) 於 ())
-(書 「面積：」 未善)
-(書 (施 (我的矩形 之 面積) 於 ()))
-(書 「周長：」 未善)
-(書 (施 (我的矩形 之 周長) 於 ()))
-(書 「是否正方形：」 未善)
-(書 (施 (我的矩形 之 是否正方形) 於 ()))
-
-(書 「--- 計算器測試 ---」)
-(立 計算器 具 (記憶體) 能 (
-    (清零 () (令 此 之 記憶體 為 零))
-    (加到 (數) (令 此 之 記憶體 為 (加 (此 之 記憶體) 以 數)))
-    (減去 (數) (令 此 之 記憶體 為 (減 (此 之 記憶體) 以 數)))
-    (顯示 () (
-        (書 「記憶體：」 未善)
-        (書 (此 之 記憶體))
-    ))
-    (計算 (運算 甲 乙) (
-        (卦 運算 而 (
-            (「加」 則 (加 甲 以 乙))
-            (「減」 則 (減 甲 以 乙))
-            (「乘」 則 (乘 甲 以 乙))
-            (「除」 則 (除 甲 以 乙))
-        ))
-    ))
-))
-
-(名 (造 計算器 之實體) 以 吾之計算器)
-(令 吾之計算器 之 記憶體 為 零)
-(施 (吾之計算器 之 顯示) 於 ())
-(施 (吾之計算器 之 加到) 於 十)
-(施 (吾之計算器 之 顯示) 於 ())
-(書 「15+25=」 未善)
-(書 (施 (吾之計算器 之 計算) 於 (「加」 十五 二十五)))
-(書 「20×3=」 未善)
-(書 (施 (吾之計算器 之 計算) 於 (「乘」 二十 三)))
-`
+const LANGS = {
+  la: { navTitle: "Editor KanbunSE Online", curre: "▶ Curre", purga: "Purga", exempla: "Exempla", syntaxis: "Syntaxis", editor: "Editor KanbunSE", exitus: "Exitus", welcome: "▷ Preme \"Curre\" vel ⌘↵ ad codicem exsequendum.", err: "Error", empty: "(Nullus codex)" },
+  en: { navTitle: "KanbunSE Online IDE", curre: "▶ Run", purga: "Clear", exempla: "Examples", syntaxis: "Syntax", editor: "KanbunSE Editor", exitus: "Output", welcome: "▷ Press \"Run\" or ⌘↵ to execute code.", err: "Error", empty: "(No code)" }
 };
-
-// ═══════════════════════════════════════════════════════════════════
-//  KEYWORD REFERENCE DATA
-// ═══════════════════════════════════════════════════════════════════
-
-const KWREF = [
-  { cat: '變數定義', items: [
-    { kw:'者…也', desc:'Classical式定義', tmpl:'(變量名 者 值 也)' },
-    { kw:'名…以', desc:'命名式定義',       tmpl:'(名 值 以 變量名)' },
-  ]},
-  { cat: '算術運算', items: [
-    { kw:'加',   desc:'加法',   tmpl:'(加 甲 以 乙)' },
-    { kw:'減',   desc:'減法',   tmpl:'(減 甲 以 乙)' },
-    { kw:'乘',   desc:'乘法',   tmpl:'(乘 甲 以 乙)' },
-    { kw:'除',   desc:'除法',   tmpl:'(除 甲 以 乙)' },
-    { kw:'所餘', desc:'取餘數', tmpl:'(除 甲 以 乙 所餘)' },
-    { kw:'整除', desc:'整除',   tmpl:'(整除 甲 以 乙)' },
-  ]},
-  { cat: '比較與邏輯', items: [
-    { kw:'等於', desc:'相等',   tmpl:'(甲 等於 乙)' },
-    { kw:'大於', desc:'大於',   tmpl:'(甲 大於 乙)' },
-    { kw:'小於', desc:'小於',   tmpl:'(甲 小於 乙)' },
-    { kw:'且',   desc:'邏輯AND',tmpl:'(甲 且 乙)' },
-    { kw:'或',   desc:'邏輯OR', tmpl:'(甲 或 乙)' },
-    { kw:'非',   desc:'邏輯NOT',tmpl:'(非 甲)' },
-  ]},
-  { cat: '控制流程', items: [
-    { kw:'若…則…若非', desc:'條件（if-else）', tmpl:'(若 條件 則 動作 若非 否則)' },
-    { kw:'若…則',      desc:'條件（if）',      tmpl:'(若 條件 則 動作)' },
-    { kw:'大衍…為',    desc:'索引循環（for）', tmpl:'(大衍 甲 自 一 至 十 為 動作)' },
-    { kw:'為…遍',      desc:'固定次數循環',    tmpl:'(為 動作 三 遍)' },
-    { kw:'卦…而',      desc:'模式匹配（match）',tmpl:'(卦 值 而 ((模式 則 動作)))' },
-  ]},
-  { cat: '函數', items: [
-    { kw:'夫',    desc:'定義函數（lambda）', tmpl:'(名 (夫 (甲 乙) 函數體) 以 名稱)' },
-    { kw:'施…於', desc:'調用函數',           tmpl:'(施 函數名 於 參數)' },
-  ]},
-  { cat: '輸出', items: [
-    { kw:'書',    desc:'打印並換行', tmpl:'(書 值)' },
-    { kw:'書…未善',desc:'打印不換行',tmpl:'(書 值 未善)' },
-  ]},
-  { cat: '列表', items: [
-    { kw:'為列以', desc:'創建列表',   tmpl:'(為列以 (一 二 三))' },
-    { kw:'充…以',  desc:'追加元素',   tmpl:'(充 列表 以 值)' },
-    { kw:'之…者',  desc:'按下標取元素（1起）',tmpl:'(列表 之 一 者)' },
-    { kw:'之長',   desc:'取列表長度', tmpl:'(列表 之 長)' },
-  ]},
-  { cat: '物件導向', items: [
-    { kw:'立…具…能', desc:'定義類',       tmpl:'(立 類名 具 (屬性) 能 ((方法名 (參) 方法體)))' },
-    { kw:'承',        desc:'繼承父類',     tmpl:'(立 子類 承 父類 具 (屬性) 能 (方法))' },
-    { kw:'造…之實體', desc:'創建實例',     tmpl:'(名 (造 類名 之實體) 以 實例名)' },
-    { kw:'令…之…為', desc:'設置屬性',     tmpl:'(令 實例 之 屬性 為 值)' },
-    { kw:'實例之屬性',desc:'讀取屬性',     tmpl:'(實例 之 屬性名)' },
-    { kw:'施…之…於', desc:'調用方法',     tmpl:'(施 (實例 之 方法) 於 參數)' },
-    { kw:'此',        desc:'方法內的self', tmpl:'(此 之 屬性名)' },
-  ]},
-  { cat: '字面量', items: [
-    { kw:'陽',    desc:'布林值 true',  tmpl:'陽' },
-    { kw:'陰',    desc:'布林值 false', tmpl:'陰' },
-    { kw:'「…」', desc:'字串字面量',   tmpl:'「你好」' },
-    { kw:'; …',   desc:'注釋',         tmpl:'; 這是注釋' },
-  ]},
-];
-
-// ═══════════════════════════════════════════════════════════════════
-//  UI SETUP
-// ═══════════════════════════════════════════════════════════════════
-
-const terp = new KanbunSEInterpreter();
-
-// ── CodeMirror ───────────────────────────────────────────────────
-const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-  mode: 'kanbunse',
-  theme: 'kanbun',
-  lineNumbers: true,
-  matchBrackets: true,
-  autoCloseBrackets: { pairs: '()', explode: '()' },
-  styleActiveLine: true,
-  indentUnit: 4,
-  tabSize: 4,
-  lineWrapping: false,
-  extraKeys: {
-    'Ctrl-Enter': runCode,
-    'Cmd-Enter':  runCode,
-  },
+let curLang = 'la'; const terp = new KanbunSEInterpreter(); const outEl = document.getElementById('output');
+function setLang(l) { curLang = l; const t = LANGS[l]; document.getElementById('nav-title').textContent = t.navTitle; document.getElementById('btn-run').textContent = t.curre; document.getElementById('btn-clear').textContent = t.purga; document.getElementById('ex-title').textContent = t.exempla; document.getElementById('ref-title').textContent = t.syntaxis; document.getElementById('editor-title').textContent = t.editor; document.getElementById('output-title').textContent = t.exitus; document.getElementById('btn-lang').textContent = l === 'la' ? 'English' : 'Latina'; if (outEl.children.length === 1) outEl.firstChild.textContent = t.welcome; }
+document.getElementById('btn-lang').onclick = () => setLang(curLang === 'la' ? 'en' : 'la');
+CodeMirror.defineMode('kanbunse', () => {
+  const KW = new Set(['者','也','名','以','加','減','乘','除','所餘','整除','等於','大於','小於','且','或','非','若','則','若非','書','未善','為','遍','大衍','自','至','夫','施','於','立','承','具','能','造','之實體','之','令','充','卦','而','為列以','此']);
+  return { token(stream) { if (stream.eatSpace()) return null; if (stream.peek() === ';') { stream.skipToEnd(); return 'comment'; } if (stream.peek() === '「') { stream.next(); while(!stream.eol() && stream.peek() !== '」') stream.next(); stream.next(); return 'string'; } if (stream.peek() === '(' || stream.peek() === ')') { stream.next(); return 'bracket'; } let w = ''; while(!stream.eol() && !/[\s()「]/.test(stream.peek())) w += stream.next(); if (KW.has(w)) return 'keyword'; if (w === '陽' || w === '陰') return 'atom'; return 'variable'; } };
 });
-
-// ── Output helpers ───────────────────────────────────────────────
-const outEl = document.getElementById('output');
-
-function appendOut(text, cls) {
-  text.split('\n').forEach(line => {
-    const span = document.createElement('span');
-    span.className = cls;
-    span.textContent = line + '\n';
-    outEl.appendChild(span);
-  });
-  outEl.scrollTop = outEl.scrollHeight;
-}
-
-function clearOutput() { outEl.innerHTML = ''; }
-
-// ── Run ──────────────────────────────────────────────────────────
-function runCode() {
-  clearOutput();
-  const code = editor.getValue();
-  if (!code.trim()) {
-    appendOut('（無代碼可執行）', 'info-line');
-    return;
-  }
-  const t0 = performance.now();
-  const res = terp.run(code);
-  const dt = (performance.now() - t0).toFixed(1);
-
-  if (res.output) appendOut(res.output, 'out-line');
-  if (res.error)  appendOut('錯誤：' + res.error, 'err-line');
-  appendOut('\n─ 耗時 ' + dt + 'ms', 'info-line');
-}
-
-document.getElementById('btn-run').addEventListener('click', runCode);
-document.getElementById('btn-clear').addEventListener('click', clearOutput);
-
-// ── Examples sidebar ─────────────────────────────────────────────
-const exList = document.getElementById('example-list');
-let activeBtn = null;
-
-Object.entries(EXAMPLES).forEach(([name, code]) => {
-  const btn = document.createElement('button');
-  btn.className = 'example-item';
-  btn.textContent = name;
-  btn.addEventListener('click', () => {
-    editor.setValue(code.trimStart());
-    editor.clearHistory();
-    if (activeBtn) activeBtn.classList.remove('active');
-    btn.classList.add('active');
-    activeBtn = btn;
-    clearOutput();
-  });
-  exList.appendChild(btn);
-});
-
-// ── Keyword Reference sidebar ────────────────────────────────────
-const refPanel = document.getElementById('ref-panel');
-KWREF.forEach(section => {
-  const sec = document.createElement('div');
-  sec.className = 'ref-section';
-  const title = document.createElement('div');
-  title.className = 'ref-section-title';
-  title.textContent = section.cat;
-  sec.appendChild(title);
-
-  section.items.forEach(item => {
-    const row = document.createElement('div');
-    row.className = 'ref-item';
-    const kw = document.createElement('span');
-    kw.className = 'ref-kw';
-    kw.textContent = item.kw;
-    kw.title = '點擊插入範本';
-    kw.addEventListener('click', () => {
-      const cm = editor;
-      const cursor = cm.getCursor();
-      cm.replaceRange(item.tmpl, cursor);
-      cm.focus();
-    });
-    const desc = document.createElement('span');
-    desc.className = 'ref-desc';
-    desc.textContent = item.desc;
-    row.appendChild(kw);
-    row.appendChild(desc);
-    sec.appendChild(row);
-  });
-  refPanel.appendChild(sec);
-});
-
-// ── Hover Tooltip ────────────────────────────────────────────────
-const tooltip = document.getElementById('kw-tooltip');
-const KWMAP = {};
-KWREF.forEach(s => s.items.forEach(it => { KWMAP[it.kw] = it; }));
-
-const ALL_KW = {};
-KWREF.forEach(sec => sec.items.forEach(it => { ALL_KW[it.kw] = it; }));
-
-// Map each bare keyword to its reference entry
-const BARE_KW = {};
-KWREF.forEach(sec => sec.items.forEach(it => {
-  it.kw.split(/[…。、（）\s]+/).filter(Boolean).forEach(k => {
-    if (!BARE_KW[k]) BARE_KW[k] = it;
-  });
-}));
-
-editor.getWrapperElement().addEventListener('mousemove', e => {
-  try {
-    const pos = editor.coordsChar({ left: e.clientX, top: e.clientY });
-    const tok = editor.getTokenAt(pos);
-    if ((tok.type === 'keyword' || tok.type === 'atom') && BARE_KW[tok.string]) {
-      const info = BARE_KW[tok.string];
-      tooltip.innerHTML = `<strong>${info.kw}</strong> — ${info.desc}<code>${info.tmpl}</code>`;
-      tooltip.style.display = 'block';
-      tooltip.style.left = (e.clientX + 14) + 'px';
-      tooltip.style.top  = (e.clientY - 8) + 'px';
-      return;
-    }
-  } catch {}
-  tooltip.style.display = 'none';
-});
-editor.getWrapperElement().addEventListener('mouseleave', () => {
-  tooltip.style.display = 'none';
-});
-
-// ── Load first example by default ───────────────────────────────
-exList.firstChild && exList.firstChild.click();
+const editor = CodeMirror.fromTextArea(document.getElementById('editor'), { mode: 'kanbunse', theme: 'kanbun', lineNumbers: true, matchBrackets: true, autoCloseBrackets: true, styleActiveLine: true, indentUnit: 4, extraKeys: { 'Cmd-Enter': runCode, 'Ctrl-Enter': runCode } });
+function runCode() { const code = editor.getValue(); if (!code.trim()) return; outEl.innerHTML = ''; const res = terp.run(code); if (res.output) { const s = document.createElement('span'); s.textContent = res.output; outEl.appendChild(s); } if (res.error) { const s = document.createElement('span'); s.className = 'err-line'; s.textContent = LANGS[curLang].err + ': ' + res.error; outEl.appendChild(s); } outEl.scrollTop = outEl.scrollHeight; }
+document.getElementById('btn-run').onclick = runCode;
+document.getElementById('btn-clear').onclick = () => { outEl.innerHTML = ''; };
+const EX = { 'Salve': '(書 「Salve Mundi!」)', 'Calculus': '(書 (加 一 以 二))', 'OOP': '(立 形狀 具 (名) 能 ((說 () (書 (此 之 名)))))\n(名 (造 形狀 之實體) 以 甲)\n(令 甲 之 名 為 「Rectangulum」)\n(施 (甲 之 說) 於 ())' };
+const exList = document.getElementById('example-list'); Object.entries(EX).forEach(([n, c]) => { const b = document.createElement('button'); b.className = 'example-item'; b.textContent = n; b.onclick = () => { editor.setValue(c); runCode(); }; exList.appendChild(b); });
+setLang('la');
 </script>
 </body>
 </html>

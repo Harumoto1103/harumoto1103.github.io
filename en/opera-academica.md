@@ -101,7 +101,7 @@ Below are the primary projects I have completed during my university courses.
 > ### Principles of Programming Languages
 >
 > **KanbunSE: An S-Expression Programming Language**
-> _KanbunSE_ (Kanbun S-Expression) is a language I created to bridge Classical Chinese literature and modern computation. It elegantly combines the syntax of Classical Chinese with an S-Expression structure.
+> _KanbunSE_ <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Online Editor &rarr;</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">VS Code Extension &rarr;</a> (Kanbun S-Expression) is a language I created to bridge Classical Chinese literature and modern computation. It elegantly combines the syntax of Classical Chinese with an S-Expression structure.
 >
 > #### Key Features:
 >

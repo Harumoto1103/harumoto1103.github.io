@@ -101,7 +101,7 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 > ### Principia Lingvarvm Programmatvrae
 >
 > **KanbunSE: Lingva Programmatvrae S-Expressionis**
-> Lingva _KanbunSE_ (Kanbun S-Expression) a me creata est vt pontem faciat inter litteras Sinicas classicas et compvtationem hodiernam. Haec lingva syntaxim lingvae Sinicae classicae cvm strvctvra S-Expressionis eleganter conivngit.
+> Lingva _KanbunSE_ <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Machina Interpretandi ▶</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Extensio VS Code &rarr;</a> (Kanbun S-Expression) a me creata est vt pontem faciat inter litteras Sinicas classicas et compvtationem hodiernam. Haec lingva syntaxim lingvae Sinicae classicae cvm strvctvra S-Expressionis eleganter conivngit.
 >
 > #### Proprietates Praecipvvae:
 >
