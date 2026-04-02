@@ -68,6 +68,25 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 
 ## Proposita Praecipvva
 
+> ### Visio Terminalis (TermVis)
+>
+> Watch video streams and monitor CV models directly over SSH — no X11, no GUI required.
+>
+> Per hoc instrvmentvm, imagines videophonicae altae fidelitatis in terminali videri possvnt. Vtitvr characteribvs `▀` ad resolvtionem dvplicandam et algorithmo **Delta-XOR** ad bandae latitvdinem servandam. Acvatio Fovrieriana in itinere efficitvr vt margines acvti appareant.
+>
+> **Munera Praecipua:**
+> - **Redditio Alta:** Color 24-bit et resolvtio dvplex per SSH.
+> - **Compressio:** Tantum differentiae inter qvadra (frames) mittvntvr.
+> - **Engine:** Cor in lingva **Rust** scriptvm ad velocitatem praestandam.
+>
+> <span class="badge">Rust</span> <span class="badge">Python</span> <span class="badge">OpenCV</span> <span class="badge">SSH</span> <span class="badge">Fourier</span>
+>
+<div style="text-align: center; margin: 1.5rem 0;">
+<div style="margin-top: 10px;">
+    <a href="https://github.com/Harumoto1103/TermVis" class="btn" style="margin-top: 5px;">Codex Fontis (GitHub) &rarr;</a>
+</div>
+</div>
+
 > ### Systema Nvbis & Repositorivm Datorvm (LHDrive)
 >
 > Systema administrationis fasciculorum et repositorium datorum pro ludo secundario meo (_Lou Hau High School_) creavi. Hoc systema per interfaciem interretialem usoribus praebet. Valde robustum est, etiamnunc in usu cottidiano a discipulis magistrisque scholae est, et in <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a> inveniri potest.
