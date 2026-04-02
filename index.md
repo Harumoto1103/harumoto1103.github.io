@@ -56,7 +56,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 - **Ingeniaria Programmaturae:** Situs interretialis ad cauponas aestimandas.
 - **Visio Computatralis:** Exemplar "TriStreamNet" ad imagines ab Intellegentia Artificiali generatas discernendas.
 - **Cryptographia:** Resolutor Playfair per Simulated Annealing et DFS.
-- **Principia Linguarum Programmaturae:** _KanbunSE_, lingua S-Expressionis verbis Sinicis classicis scripta.
+- **Principia Linguarum Programmaturae:** _KanbunSE_, lingua S-Expressionis verbis Sinicis classicis scripta. <a href="/kanbunse/" style="font-family:'Cinzel',serif;font-size:.85em;border:1px solid var(--pompeian-red);color:var(--pompeian-red);padding:.1rem .5rem;text-decoration:none;margin-left:.4rem;">Machina Interpretandi ▶</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Extensio VS Code &rarr;</a>
 - **Structurae Datorum:** Resolutor Arboris HTML in C++ Qt.
 - **Designatio Programmaturae:** Ludus Vitae (Game of Life) in CLI.
 

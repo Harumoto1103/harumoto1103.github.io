@@ -57,7 +57,7 @@ During my academic journey, I have completed numerous projects to put theory int
 - **Software Engineering:** Web application for restaurant reviews.
 - **Computer Vision:** TriStreamNet model for detecting AI-generated images.
 - **Cryptography:** Playfair Cracker via Simulated Annealing and DFS.
-- **Principles of Programming Languages:** _KanbunSE_, an S-Expression language written in Classical Chinese.
+- **Principles of Programming Languages:** _KanbunSE_, an S-Expression language written in Classical Chinese. <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Online Editor Classical Chinese.rarr;</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">VS Code Extension &rarr;</a>
 - **Data Structures:** HTML Tree Parser in C++ Qt.
 - **Software Design:** Game of Life in CLI.
 
@@ -103,7 +103,7 @@ During my academic journey, I have completed numerous projects to put theory int
         <div>
             <h3 style="margin: 0 0 0.5rem 0; color: var(--pompeian-red); font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: bold;">HARUMOTO HATENA BLOG</h3>
             <p style="margin: 0; font-size: 0.95rem; color: var(--ink); line-height: 1.6;">
-                My personal weblog, where I delve deep into my academic interests. Here, I publish detailed solutions and proofs for complex mathematical problems (such as the <i>MIT Integration Bee</i>, Feynman's integration trick, and infinite series). You can also find my competitive programming logs (<i>AtCoder</i>) and notes on reading Classical Chinese texts (<i>Kanbun Kundoku</i>).
+                My personal weblog, where I delve deep into my academic interests. Here, I publish detailed solutions and proofs for complex mathematical problems (such as the <i>MIT Integration Bee</i>, Feynman's integration trick, and infinite series). You can also find my competitive programming logs (<i>AtCoder</i>) and notes on reading Classical Chinese. <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Online Editor Classical Chinese rarr;</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">VS Code Extension &rarr;</a>texts (<i>Kanbun Kundoku</i>).
             </p>
         </div>
     </a>
