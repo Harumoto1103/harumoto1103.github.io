@@ -69,10 +69,10 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 > 3. **Flvmen Strepitvs (Noise):** Filtra SRM adhibet ad anomalias in distribvtione strepitvs extrahendas.
 >    Accvratio finalis in imaginibvs probandis 75.90% fvit.
 >
-<div style="text-align: center; margin: 1rem 0;">
-<img src="/assets/img/cv-detect.png" alt="Architectvra TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-<p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectvra TriStreamNet cvm tribvs flvminibvs et attentione CBAM.</p>
-</div>
+> <div style="text-align: center; margin: 1rem 0;">
+> <img src="/assets/img/cv-detect.png" alt="Architectvra TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectvra TriStreamNet cvm tribvs flvminibvs et attentione CBAM.</p>
+> </div>
 
 > ### Cryptographia & Secvritas Informationis
 >

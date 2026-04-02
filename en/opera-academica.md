@@ -69,10 +69,10 @@ Below are the primary projects I have completed during my university courses.
 > 3. **Noise Stream:** Applies SRM filters to extract anomalies in noise distribution.
 >    The final accuracy on the test dataset was 75.90%.
 >
-<div style="text-align: center; margin: 1rem 0;">
-<img src="/assets/img/cv-detect.png" alt="TriStreamNet Architecture" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-<p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: The TriStreamNet architecture featuring three streams and CBAM attention.</p>
-</div>
+> <div style="text-align: center; margin: 1rem 0;">
+> <img src="/assets/img/cv-detect.png" alt="TriStreamNet Architecture" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Image: The TriStreamNet architecture featuring three streams and CBAM attention.</p>
+> </div>
 
 > ### Cryptography & Information Security
 >
