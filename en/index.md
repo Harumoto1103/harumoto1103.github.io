@@ -127,7 +127,7 @@ During my academic journey, I have completed numerous projects to put theory int
 >     </div>
 > </div>
 
-> ### <img src="/assets/img/lhdrive.png" style="height: 1.2em; vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"> Cloud System & Data Repository (LHDrive)
+> ### Cloud System & Data Repository (LHDrive)
 >
 > I developed a file management system and data repository for my secondary school (_Lou Hau High School_). This system provides users with an intuitive web interface. It is highly robust, remains in daily use by students and teachers, and can be accessed at <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a>.
 >

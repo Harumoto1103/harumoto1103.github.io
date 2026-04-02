@@ -126,7 +126,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 >     </div>
 > </div>
 
-> ### <img src="/assets/img/lhdrive.png" style="height: 1.2em; vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"> Systema Nvbis & Repositorivm Datorvm (LHDrive)
+> ### Systema Nvbis & Repositorivm Datorvm (LHDrive)
 >
 > Systema administrationis fasciculorum et repositorium datorum pro ludo secundario meo (_Lou Hau High School_) creavi. Hoc systema per interfaciem interretialem usoribus praebet. Valde robustum est, etiamnunc in usu cottidiano a discipulis magistrisque scholae est, et in <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a> inveniri potest.
 >
