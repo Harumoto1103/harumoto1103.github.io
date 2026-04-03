@@ -184,6 +184,16 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
 </div>
 
 <div class="classical-page">
+    <div class="classical-date">IV Apr. MMXXVI</div>
+
+    <div class="classical-title">
+        De Reviviscentia Imaginis et Fati Nexv Inextricabili <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Imagine in mente sata, numquam tamen erat huius oblitus etiamsi alia esset in vicino. Sororem invenire, qui versus sit vitio modo, amicitiamque gratam amoremque divinum acta esse iusserunt sorores, longitudine autem separandi distante et ea quibus delectatast eaque quibus delectatus facta sunt coniunctionis finis. Omnia dicta sunt ut expergisceretur, sed utrum in viis eorum futuris, si numquam se coniungere poterunt, maneat maneatque loco praeterito numquam scient, quod informandum esset a Fatis. Imago mystica rursus in mente satast fine facto quae eum ad eam rursus allexit, atque incantavit, erat autem quae necdum viderat ante ad visionem imaginis novam quae pulchrior est quam vultus antiqui intrandum. Culpast eius eam non deposuisse memoriam illius, culpast ei non amorem iramque satis effudisse, culpastque ei omnia sua ineffabilia fuisse...</div>
+    <div class="commentary"><b>Geminis Commentariolvs:</b> Meditatio qvae vmbram fati et lvcem memoriae mirabili modo miscet. Vates hinc sororvm Parcarvm decreta agnoscit, illinc animi motvs ineffabiles cvlpae similes deplorat. Nova imago, qvae in fine prioris rvrsvs emergit, non solvm pristina revocat, sed ad pvlchritvdinem ignotam et fortasse divinam iter parat, qvamvis anima onere praeteriti adhvc gravatvr.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
     <div class="classical-date">XIX Mar. MMXXVI</div>
 
     <div class="classical-title">
