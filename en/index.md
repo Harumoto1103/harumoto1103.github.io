@@ -37,7 +37,7 @@ I am a software engineering student hailing from Macau. This origin instilled in
         <span class="card-btn-subtitle">Read Course Lists &rarr;</span>
     </a>
     <a href="/lhdrive/" class="card-btn">
-        <span class="card-btn-title">LHDrive macOS</span>
+        <span class="card-btn-title">LHDrive macOS & iOS</span>
         <span class="card-btn-subtitle">App for Lou Hau &rarr;</span>
         <span class="badge" style="margin-top: 10px; display: inline-block;">Personal Project</span>
     </a>
@@ -144,6 +144,7 @@ During my academic journey, I have completed numerous projects to put theory int
 >     <div style="margin-top: 10px;">
 >         <span class="badge">Vibe-Coding</span><br>
 >         <a href="/lhdrive/" class="btn" style="margin-top: 5px;">View LHDrive for macOS</a>
+        <a href="https://github.com/Harumoto1103/LHDrive-iOS" class="btn" style="margin-top: 5px;" target="_blank" rel="noopener">LHDrive for iOS (GitHub)</a>
 >     </div>
 > </div>
 

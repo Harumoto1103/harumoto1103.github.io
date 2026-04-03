@@ -37,7 +37,7 @@ Artis programmatvrae alvmnvs Macao orivndvs, amorem lingvarvm rervmqve gestarvm 
         <span class="card-btn-subtitle">Indices Cvrsvvm Lege &rarr;</span>
     </a>
     <a href="/lhdrive/" class="card-btn">
-        <span class="card-btn-title">LHDrive macOS</span>
+        <span class="card-btn-title">LHDrive macOS & iOS</span>
         <span class="card-btn-subtitle">App pro Lou Hau Inspice &rarr;</span>
         <span class="badge" style="margin-top: 10px; display: inline-block;">Ex Afflatv Factvm</span>
     </a>
@@ -143,6 +143,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 >     <div style="margin-top: 10px;">
 >         <span class="badge">Ex Afflatv Factvm</span><br>
 >         <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS Inspice</a>
+        <a href="https://github.com/Harumoto1103/LHDrive-iOS" class="btn" style="margin-top: 5px;" target="_blank" rel="noopener">LHDrive pro iOS (GitHub)</a>
 >     </div>
 > </div>
 
