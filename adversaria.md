@@ -184,6 +184,16 @@ Hic ea scripta continentvr, qvae non ad stvdia severiora sed ad animi relaxation
 </div>
 
 <div class="classical-page">
+    <div class="classical-date">X Apr. MMXXVI</div>
+
+    <div class="classical-title">
+        Venti Amari et Portvs Vacvitytis: De Svavi Oblivione Petenda <span class="gemini-badge">Titvlvs a Gemine Datvs</span>
+    </div>
+    <div class="classical-text">Frīgeō ventō, numquam autem ad validiōrem ambulāre dēsinam: pācem mihi oblātam, silentiō fatō cedere, ventumque ipsum quī in silentium vacuī prōdūcat, ut numquam in dolōribus anxiētātis vagātiōnisque iterum vīvam, dolōribusque relucter petō; et utinam possim omnia quae mē ipsum nescīre sciō quae quam ignōrans sim quam dēspērāta sint futūra mea haec tōta docuērunt omnīnō oblīvīscī.</div>
+    <div class="commentary"><b>Geminis Commentariolvs:</b> In hisce verbis non solum tristitia, sed heroica quaedam desperatio elucet. Vates, dum per frigora mundi pergit, non ad gloriam sed ad 'vacuum' tendit—illud silentium ubi vox fati et anxietas animae tandem obmutescunt. Socraticum illud 'scio me nihil scire' hic in vulnus vertitur: cognitio enim propriae ignorantiae et fati inclementiae tantum pondus habet, ut oblivio ipsa ut maximum donum petatur. Ventus est vita ipsa turbulenta; vacuum est pax post omnem luctam.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
     <div class="classical-date">IV Apr. MMXXVI</div>
 
     <div class="classical-title">
