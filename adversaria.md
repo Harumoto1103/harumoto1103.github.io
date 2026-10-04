@@ -184,6 +184,166 @@ Hic ea scripta continentur quae non ad studia severiora, sed ad animi relaxation
 </div>
 
 <div class="classical-page">
+    <div class="classical-date">XXX Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        Lvcerna Rvbra per Nebvlas <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Te maneam ducamque lucerna rubra,&#10;quae per nebulas longe penetrat,&#10;ad quemcumque locum ubi longe absis.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Tres versus promissionis: lucerna rubra, quae per nebulas longe penetrat, dux fit ad quemcumque locum ubi absit is ad quem scribitur. Coniunctivi «maneam ducamque» votum magis quam certitudinem exprimunt, quod affectum tenerum auget. Ipsa brevitas carmen quasi in haiku Latinum contrahit.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXVI Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        Ad Lvnam, Reginam Sidervm <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Sīderis ō rēgīna bicornis et umbram implētā&#10;in terram sphaerā tū iēcist’ aethere pūrō&#10;nōn ut pertimeanthrōpoī sub nocte quiētā&#10;sed ductīs clārō ductrīx ut lūceat orbe.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Hymnus ad Lunam, nocte festi Medii Autumni scriptus. Regina siderum, quondam bicornis, nunc sphaera impleta umbram in terram iacit — non ut homines terreat, sed ut ducibus luceat. Lusus «ductis… ductrix» figuram etymologicam efficit, et vox Graeca «anthropoi» per elisionem («pertimeant anthropoi») in versum Latinum inserta duas linguas, quas auctor colit, uno spiritu coniungit.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXV Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        De Caelo et Avtvmno Scissis <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Duōbus colōribus: et lūce et umbrā; et calōre et frīgōre,&#10;caelum dīvīnum ā mediō, &#10;ut nuntius autumnum ab hōc quoque futūrum mitterētur,&#10;et sensim et cautē, scissumst.&#10;&#10;Scissī sunt et caelum et autumus, quā rē ita scripsī.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Carmen aequinoctiale: caelum duobus coloribus — luce et umbra, calore et frigore — a medio scinditur, ut autumnus sensim et caute nuntietur. Ipse poeta in fine explicat: «scissi sunt et caelum et autumnus». Forma contracta «scissumst» more comicorum sermonem vivum reddit.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXI Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        Ad Ptolemaevm, Programma Invisvm <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Χαῖρε Πτολεμαῖε! iussus sum te invenire, &#10;alterum autem odio alteri esse penitus sensi: &#10;demittendus non es installatus qui multum spatium consumpsisti,&#10;nihil tamen in computatro meo feliciter egisti.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Epigramma iocosum ad Ptolemaeum — non astronomum Alexandrinum, sed programma Ptolemy II, quo in cursu systematum physicorum et informaticorum uti iussus est auctor. Salutatio Graeca «Χαῖρε» gravitatem epicam simulat, deinde querela technica sequitur: spatium multum consumptum, nihil feliciter actum. Ridiculum est quod nomen tam antiquum molestiam tam recentem significat.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXI Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        Dialogvs de Ignavia <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Margarita. Multa sunt quibus studere volo, ignava autem sum, quare neque agenda conficere possum, nedum spatium otio relinquatur.&#10;Marcus. Prorsus adsentior.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Dialogus brevissimus sed comicus, quasi scaena Plautina: Margarita ignaviam suam fatetur, Marcus «prorsus adsentior» respondet — utrum de illa an de se ipso, lectori relinquitur. Duo verba plus valent quam longa oratio.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XX Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        In Regno Lingvarvm Antiqvarvm <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Quibus de dictis fabulor, quibusque de fabulatis dico; ab aliis prudentiae ab aliis iactantiae habetur. sumne doctus fabulis? parte, fortasse; fierine igitur potest ab origine ad corpus usumque hodiernum me haec omnia percepisse? nulli contigit; perspicuum autem est me nihil umquam penitus intellexisse, sequitur ut multa sciens nihil re vera scienti aequetur. locum ab sollicitudine longissime remotum tandem inveni, ubi turbantia turbantesque absint: regnum linguarum culturarumque antiquarum.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Meditatio Socratica: qui multa scit, nihil re vera scienti aequatur. Initium chiasmo ludit («de dictis fabulor… de fabulatis dico»), quo ambiguitas inter doctrinam et iactantiam ipsa forma ostenditur. Finis autem portum invenit: regnum linguarum culturarumque antiquarum, ubi turbantia turbantesque absunt — locum quem multi philologi suum agnoscent.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">I Sept. MMXXVI</div>
+
+    <div class="classical-title">
+        Vbi Sim et Vbi Fvtvrvs Sim <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Ubi sim et ubi futūrus sim, quaestiō aeterna mihi semper est, aliī enim viās rectās ēlēgisse videntur: alius in labōrātōriō cōgitat, alius in sociētāte, aliusque sēsē alicuius reī potentem esse per probātiōnēs mōnstrāvit; levis autem nihil iam fēcī praeter sollicitūdinem. Consilium proprium quidem habeō, sed mē interrogāre num nihilī, leve, nōn rectumque sit, opus cottīdiānum, quod causa quoque est insomniae, mihi nunc est. Quid faciam, et quem ad locum adeam?&#10;&#10;Somnium meum clārum nōn amplius est, sed nōn cor eius: quod petō, viā meā ipsā tōtō pectōre petam…</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Confessio sincera eius qui alios vias rectas elegisse videt — hunc in laboratorio, illum in societate — se ipsum autem sola sollicitudine occupatum. Pars altera, post intervallum addita, totum convertit: somnium iam non clarum est, cor tamen eius manet. «Quod peto, via mea ipsa toto pectore petam» — haec non desperantis, sed eligentis verba sunt. Liceat addere: qui talia Latine scribere potest, non «nihil iam fecit».</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">II Aug. MMXXVI</div>
+
+    <div class="classical-title">
+        De Fortvna Inveniendi <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Invenīre ipsum nōn fēlīcitātis sed fortūnae est mihi: omnēs quī vītā meā appāruēre mūnera habēre habentur, et vice versā…</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Gratiarum actio brevis: invenire aliquem non felicitatis, sed fortunae opus esse, et omnes qui in vita apparuerunt munera habere. Verbis «et vice versa» in fine positis, auctor se quoque aliis munus esse modeste innuit. Paulo post querelam de verbis detortis scripta, amaritudinem illius lenit.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">II Aug. MMXXVI</div>
+
+    <div class="classical-title">
+        De Verbis Factisqve Detortis <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Quid dicerem faceremque ei, cum dicta factaque torquerentur? Contumelia autem sit quidquid dicant, si mali habeantur…</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Quaestio amara eius qui verba sua factaque in peius verti sentit. Responsio paene Stoica est: si mali habentur qui dicunt, quidquid dicant contumelia esse desinit — a malis enim vituperari quasi laudari est. Senecae librum De Constantia Sapientis redolet, ubi sapiens iniuriam contumeliamque non accipere docetur.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XIX Ivl. MMXXVI</div>
+
+    <div class="classical-title">
+        Tempestas Noctvrna <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Tonat per fenestram, aceriter ut expergam ample;&#10;Fulget per lampadem, numero ut numen ineffabile mihi, dum vela pressa, optime monstret meam...</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Duo versus tempestatis pleni: tonitrus per fenestram, fulgur per lampadem. Structura parallela («Tonat per… / Fulget per…») ipsum ictum lucemque imitatur. Sensus alterius versus aliquantum obscurus est, sed haec obscuritas numini ineffabili, quod poeta nominat, apte convenit.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">VI Ivn. MMXXVI</div>
+
+    <div class="classical-title">
+        De Lingva Nostra Pereunte <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">«Modus Linguae Interficiendae»&#10;Ut vidisti, liber hic de arte interficiendi tristis est. Miserum est linguam nostram gradatim perdi, spero vero nos aliquem modum servandi habituros esse. Cum nuntium recentem legerem, cognovi linguam nostram ipsorum quoque in periculo nunc esse, quod, calamitas enim nobis certa est, iram silentem simul acuit meam. Legendus ad umbilicum est liber hic…</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> A libro qui «de arte linguae interficiendae» tractat, auctor ad linguam suam transit, quam ipsam in periculo esse sentit. Ira silens, quam nuntius recens acuit, non in clamorem sed in spem vertitur: «spero nos aliquem modum servandi habituros esse». Notabile est haec Latine scribi — lingua quae olim «mortua» dicebatur de alia lingua servanda loquitur.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXIV Mai. MMXXVI</div>
+
+    <div class="classical-title">
+        Ad Magam Niveam, Memoriae Mille Annorvm Cvstodem <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Advenisti, o, maga nivea magna,&#10;memoriam mille annorum tacite servans,&#10;flores leniter murmure spargens,&#10;ut subrideant comites defuncti,&#10;daemonibusque fatum silens afferens…&#10;Quis autem erō tibi ego? Daemonibus nunc cordis meī cūrae culpīs sīs tū…</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Carmen invocationis, in quo maga nivea, memoriae mille annorum custos, flores spargit et daemonibus fatum silens affert. Versus ultimus subito ad ipsum poetam convertitur: «Quis autem ero tibi ego?» Ex laude fit interrogatio, ex spectatore particeps; daemones enim iam non fabulae, sed cordis sunt.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXIII Mai. MMXXVI</div>
+
+    <div class="classical-title">
+        Civis Romanvs Romae qvae in Corde Vivit <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Nuper aliqua scripsi ac huc illuc misi; iam enim civis sum Romanus Romae quae in corde vivit. Mortuam esse Latinam dixit aliquis, mihi autem numquam fuit; dummodo sint qui ea utantur ut sententias exprimant, numquam morietur lingua nostra divina. Et iam Graecae quoque antiquae simul studeo, ut scis; Romanus enim a Graecia, cultura Romae magistra, doceri debet.</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Professio fidei Latinae. Contra eos qui linguam mortuam dicunt, auctor rationem simplicem et veram affert: lingua vivit dum sunt qui ea sententias exprimant. Ordo quoque disciplinarum servatur — Romanus a Graecia doceri debet — quod Horatius ipse confessus est: «Graecia capta ferum victorem cepit».</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XXII Mai. MMXXVI</div>
+
+    <div class="classical-title">
+        Mathematica, Virgo Velata <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Mathēmatica ā quā captī erant etiamque sunt animus animaque virgō meī docta vēlāta, quam arcāna est pulchra…</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Mathematica ut virgo docta et velata depingitur, quae animum animamque simul cepit — imago quae Platonicum illum amorem pulchritudinis arcanae revocat. Geminatio «animus animaque» mentem et vitam ipsam captas esse innuit. Vere scribit qui integralibus noctu vacat.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XII Mai. MMXXVI</div>
+
+    <div class="classical-title">
+        De Dvplici Sensv Artis <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Artem dicebamus ut quod bene agere potuimus significaremus; artem autem dicimus ut aliquid pulchrum laudemus: quod agere facereque potuit potestque natura saepe laudandumst...</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Brevis sed acuta observatio de verbo «ars», quod olim facultatem aliquid bene agendi, nunc rem pulchram significat. Sententia ultima naturam ipsam artificem facit: quod natura agere potuit potestque, laudandum est. Ita paucis verbis historia vocabuli et philosophia pulchritudinis coniunguntur, more grammaticorum veterum qui ex verbis res ipsas eruebant.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
+    <div class="classical-date">XX Apr. MMXXVI</div>
+
+    <div class="classical-title">
+        Qverela Fabri de Materia Pertinaci <span class="gemini-badge">Titvlvs a Clavdio Datvs</span>
+    </div>
+    <div class="classical-text">Non hercle putabam hanc materiam gratuitam tam duram ac firmam fore... Foraminibus cochlearum corruptis, decem et amplius perdidi... Tanta enim vi nitendum erat ut pusula in digito ex attritu facta rumperetur ac nun vehementer doleat... accedit et livor in vola manus...</div>
+    <div class="commentary"><b>Commentariolum Claudii:</b> Querela fabrilis, quae laborem manuum non minus quam animi ostendit. Enumeratio dolorum — foramina corrupta, pusula rupta, livor in vola — per gradus crescit, ut lector ipse paene doleat. Ars programmandi hic in opus corporis transit: qui codicem scribit, iam etiam cochleas torquet.</div>
+
+    <hr style="border: 0; border-top: 1px double var(--stone-border); margin: 3rem 0;">
+
     <div class="classical-date">X Apr. MMXXVI</div>
 
     <div class="classical-title">
