@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script
       id="MathJax-script"
       async
@@ -360,9 +359,9 @@
     <footer
       class="bg-[#2b2219] text-[#d3c5b3] py-12 text-center text-sm mt-12 cinzel tracking-widest border-t-4 border-[#8b1e0b]"
     >
-      <p>&copy; 2026 WONG HOU UN. ALIQVA IVRA RESERVANTVR.</p>
+      <p>&copy; 2026 WONG HOU UN. IVRA OMNIA RESERVATA.</p>
       <p class="mt-4 text-xs opacity-60 font-sans tracking-normal">
-        Constructum cum Jekyll. In GitHub Pages hospitatur.
+        {% if page.lang == 'en' %}Built with Jekyll. Hosted on GitHub Pages.{% else %}Situs instrumento Jekyll fabricatus, apud GitHub Pages hospitatur.{% endif %}
       </p>
     </footer>
   </body>

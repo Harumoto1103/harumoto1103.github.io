@@ -6,20 +6,20 @@ title: Opera Academica
 
 # Opera Academica & Pensa
 
-Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
+Hic ea opera continentur quae in cursibus universitariis summa cura perfeci.
 
-> ### Discentia Profvnda
+> ### Doctrina Profvnda
 >
 > #### Agnitio Ciborvm & Compvtatio Caloriarvm
 >
-> **Systema ad Diaetam Inquirendam per Exemplaria Levia**
-> Opus in cvrsv "Discendi Profvndi" (Deep Learning) confectvm. Est systema integrvm ad diaetam percipiendam et consilia de valetvdine danda, qvod in machinis mobilibvs sine interrete operari potest vt intimitatem vsorvm tveatvr.
+> **Systema diaetae observandae per exemplaria levia**
+> Opus in cursu «Doctrinae Profundae» (Deep Learning) confectum: systema integrum quod victum cotidianum observat et consilia de valetudine dat, atque in machinis mobilibus sine interrete operatur, ut secreta usorum tueatur.
 >
-> **Technologiae Praecipuae:**
+> **Technologiae praecipuae:**
 >
-> - **Visio Computatralis et Validatio:** Rete neuronale YOLO cibos in imaginibus detegit et eorum magnitudinem per theorema "Shoelace" aestimat. Deinde, exemplar CLIP has detectiones confirmat (sicut ostiarius vel _Gatekeeper_) ne errores fiant.
-> - **Requisitio Datorum (Retrieval):** Algorithmi TF-IDF et Word2Vec ad thecas datorum maximas ("RecipeNLG" et "USDA Food Central") in disco locali perscrutandas adhibentur.
-> - **Ratiocinatio per LLM:** Exemplar linguae leve SmolLM2-360M (cum quantisatione 4-bit et adaptatore LoRA) adhibetur ad calorias aestimandas et consilia personalia in forma JSON danda[cite: 215, 218]. Tota memoria adhibita tantum circiter 2.75 GB est, ergo machinis mobilibus valde apta est.
+> - **Visio computatralis et validatio:** rete neurale YOLO cibos in imaginibus detegit eorumque magnitudinem formula «Shoelace» (Gaussiana) aestimat; deinde exemplar CLIP detectiones confirmat, quasi ianitor (<i>Gatekeeper</i>), ne errores fiant.
+> - **Requisitio datorum (retrieval):** algorithmis TF-IDF et Word2Vec ingentes thecae datorum («RecipeNLG» et «USDA Food Central») in disco locali perscrutantur.
+> - **Ratiocinatio per LLM:** exemplar linguae leve SmolLM2-360M (quantisatione 4 bitorum et adaptatore LoRA instructum) calorias aestimat et consilia propria forma JSON reddit. Tota memoria adhibita circiter 2.75 GB tantum est, quare machinis mobilibus aptissimum est.
 >
 > <span class="badge">Python</span> <span class="badge">YOLOv5</span> <span class="badge">CLIP</span> <span class="badge">SmolLM2</span> <span class="badge">NLP</span>
 >
@@ -27,20 +27,20 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 >   
 >   <a href="/assets/pdf/23302010090-黄浩源-个人.pdf" target="_blank" class="btn btn-red">
 >     <svg height="18" width="18" viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"></path></svg>
->     Relatio Academica De Processu Eventuum (PDF)
+>     Relatio Academica (PDF)
 >   </a>
 > </div>
 
-> ### Programmatvra Obiectis Directa (OOP)
+> ### Programmatio ad Obiecta Directa (OOP)
 >
-> **Lvdvs "MineMatching" in JavaFX**
-> Lvdvs "MineMatching" est ratiocinativvs qvidem, qvi qvasi Minecraft stilo fvtis est. Architectvra programmatis principia obiectis directa (vti svnt elvctatio et polymorphisvms) fvlcris fvndamentis demonstrat. Classis abstracta `Piece` per classes derivatas (vti svnt `Eliminator` vel `Wall`) extenditvr, vt omnia elementa in vna matrice bidimensionali (2D array) contineantvr.
+> **Ludus «MineMatching» JavaFX scriptus**
+> «MineMatching» est ludus tesserarum congruentium, ad speciem ludi <i>Minecraft</i> conformatus. Architectura programmatis principia programmationis ad obiecta directae (velut encapsulationem et polymorphismum) clare demonstrat: classis abstracta `Piece` per classes derivatas (ut `Eliminator` vel `Wall`) extenditur, ut omnia elementa in una matrice bidimensionali (2D array) tractentur.
 >
-> - **Tabvla et Elementa:** Qvinqve genera elementorvm insvnt: Ordinaria, Eliminatores, Specialia (vti gladivs adamantinvs ad colvmnas delendas), Mvri (in gradv sexto, qvi moveri non possvnt), et vacva (Nulls).
-> - **Instrvmenta et Gradvs:** Sex gradvs praesto svnt. Instrvmento "malleo" vti licet ad vnvm elementvm delendvm (qvod obtinetvr vbi qvinqve elementa simvl delentvr), et "potione restitvtionis" ad vltimam actionem revocandam.
-> - **Interficies:** Qvattvor interficies GVI (Initivm, Lvdvs, Menvs, Finis) habet, vbi vtentes mvre trahendo vel cliccando lvdvnt.
+> - **Tabula et elementa:** quinque genera elementorum insunt — ordinaria, eliminatores, specialia (velut gladius adamantinus qui columnas delet), muri (a gradu sexto, qui moveri non possunt) et loca vacua (Nulls).
+> - **Instrumenta et gradus:** sex gradus praesto sunt. Malleo singula elementa deleri possunt (qui obtinetur cum quinque elementa simul delentur), et potione restitutionis ultima actio revocatur.
+> - **Interfacies:** quattuor conspectus GUI habet (initium, ludum, menu, finem); lusores mure premendo vel trahendo ludunt.
 >
-> Potes codicem descriptionemqve (Sinice) legere:
+> Codicem et descriptionem (Sinice scriptam) infra legere potes:
 >
 > <div style="display: flex; gap: 15px; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
 >   <a href="https://github.com/Harumoto1103/MineMatching" target="_blank" class="btn">
@@ -50,38 +50,38 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 >   
 >   <a href="/assets/pdf/MineMatching 用户手册.pdf" target="_blank" class="btn btn-red">
 >     <svg height="18" width="18" viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"></path></svg>
->     Descriptio Lvdi (PDF)
+>     Enchiridion Lvdi (PDF)
 >   </a>
 > </div>
 >
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/mine-matching.png" alt="Tabvla Lvdi MineMatching" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Tabvla lvdi MineMatching cvm elementis variis et instrvmentis.</p>
+> <img src="/assets/img/mine-matching.png" alt="Tabula ludi MineMatching" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: tabula ludi MineMatching cum variis elementis et instrumentis.</p>
 > </div>
 
 > ### Visio Compvtatralis
 >
-> **TriStreamNet: Exemplar ad Imagines ab AI Generatas Discernendas**
-> Propositvm hoc classificationem binariam perficit (vervm an generatvm). Architectvra _TriStreamNet_ vtitvr tribvs flvminibvs:
+> **TriStreamNet: exemplar ad imagines ab intellegentia artificiali generatas discernendas**
+> Hoc inceptum classificationem binariam perficit (verane an generata sit imago). Architectura _TriStreamNet_ tribus fluminibus utitur:
 >
-> 1. **Flvmen Spatiale RGB:** Reti ResNet18 vtitvr ad colores et textvras percipiendas.
-> 2. **Flvmen Freqventiae:** Transformata Fovrieriana Rapida (FFT) vtitvr ad artificia periodica invenienda.
-> 3. **Flvmen Strepitvs (Noise):** Filtra SRM adhibet ad anomalias in distribvtione strepitvs extrahendas.
->    Accvratio finalis in imaginibvs probandis 75.90% fvit.
+> 1. **Flumen spatiale RGB:** rete ResNet18 colores et texturas percipit.
+> 2. **Flumen frequentiae:** transformatio Fourieriana celeris (FFT) artificia periodica detegit.
+> 3. **Flumen strepitus (noise):** filtra SRM anomalias in distributione strepitus extrahunt.
+>    Accuratio finalis in imaginibus probationis 75.90% fuit.
 >
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/cv-detect.png" alt="Architectvra TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Architectvra TriStreamNet cvm tribvs flvminibvs et attentione CBAM.</p>
+> <img src="/assets/img/cv-detect.png" alt="Architectura TriStreamNet" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: architectura TriStreamNet cum tribus fluminibus et attentione CBAM.</p>
 > </div>
 
 > ### Cryptographia & Secvritas Informationis
 >
-> **PlayfairCracker: Systema ad Cryptographiam Playfair Solvendam**
-> Hoc propositvm solvtionem cryptographiae Playfair per algorithmos varios demonstrat. In primis, algorithmvs **"Simulated Annealing"** (in lingva C) adhibetvr ad claves fortvitas explorandas et ad textvm clarvm paulatim inveniendvm. Deinde, algorithmvs provectior (in lingva **Rust**) vtitvr analysi freqventiae (bigrams & quadgrams) et inqvisitione DFS ad claves celeriter ervendas.
+> **PlayfairCracker: instrumenta varia ad notas Playfair solvendas**
+> Hoc inceptum notas arcanas Playfair variis algorithmis solvit. Primum algorithmus **<i>simulated annealing</i>** (lingua C scriptus) claves fortuitas mutando textum clarum paulatim invenit; deinde instrumentum provectius (lingua **Rust** scriptum) analysi frequentiae (bigrammatum et quadrigrammatum) et inquisitione DFS claves celeriter eruit.
 >
-> - **Simulated Annealing (C):** Vtitvr mvtationibvs clavivm et ratiocinatione probabilistica (Metropolis criterion) ad optima solvta reperienda sine in foveis localibvs manendo.
-> - **Inqvisitio DFS & Parallelismvs (Rust):** Algorithmos mltithreaded (Rayon) adhibet ad milia pensorvm simvl solvenda, vbi regulae Playfair ad spativm inqvisitionis coercendvm (pruning) valent.
-> - **Interficies Graphica (GUI):** Systema vtitvr interficie graphica ad progressvm vsvrvm et reconstrvctionem matricis Playfair in tempore reali ostendendvm.
+> - **Simulated annealing (C):** clavibus mutandis et criterio probabilistico (Metropolis) ingens spatium clavium percurrit, ne in minimis localibus haereat.
+> - **Inquisitio DFS et parallelismus (Rust):** inquisitio in profundum, quam regulae geometricae notarum Playfair acriter putant (pruning), per Rayon in omnibus nucleis CPU decies centena milia pensorum simul tractat.
+> - **Interfacies graphica (GUI):** instrumentum visibile «ex afflatu» factum (vibe-coding), quo progressus solutionis et reconstructio matricis Playfair tempore reali spectantur.
 >
 > <span class="badge">C</span> <span class="badge">Rust</span> <span class="badge">Cryptography</span> <span class="badge">Simulated Annealing</span> <span class="badge">GUI</span>
 >
@@ -93,24 +93,24 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 > </div>
 >
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/playfair-gui.png" alt="Interficies Graphica PlayfairCracker" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Interficies graphica PlayfairCracker matricem reconstrvctionis ostendens.</p>
+> <img src="/assets/img/playfair-gui.png" alt="Interfacies graphica PlayfairCracker" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: interfacies graphica PlayfairCracker matricem tempore reali reconstruens.</p>
 > </div>
 >
 
 > ### Principia Lingvarvm Programmatvrae
 >
-> **KanbunSE: Lingva Programmatvrae S-Expressionis**
-> Lingva _KanbunSE_ <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Machina Interpretandi ▶</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Extensio VS Code &rarr;</a> (Kanbun S-Expression) a me creata est vt pontem faciat inter litteras Sinicas classicas et compvtationem hodiernam. Haec lingva syntaxim lingvae Sinicae classicae cvm strvctvra S-Expressionis eleganter conivngit.
+> **KanbunSE: lingua programmandi S-expressionum**
+> Linguam _KanbunSE_ <a href="/kanbunse/" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Interpres Interretialis ▶</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Extensio VS Code &rarr;</a> (Kanbun S-Expression) condidi, ut pontem facerem inter litteras Sinicas classicas et computationem hodiernam. Haec lingua syntaxim Sinicam classicam cum structura S-expressionum eleganter coniungit.
 >
-> #### Proprietates Praecipvvae:
+> #### Proprietates Praecipvae:
 >
-> - **Systema Obiectis Directvm (OOP):** Classes absolvtas et hereditarias, polymorphisvvm, et vocabvlvm `此` (hoc) pro avtoreferentia in methodis plene svstinet.
-> - **Nvmeri et Genera Datorvm:** Nvmeros Arabicos in nvmeros Sinicos traditionales vel formales (e.g., 三百一十四點一五 pro 314.15) avtomatice convertit per integrationem cvm lingva Python. Valores booleani vt 陽 (Yang, vervm) et 陰 (Yin, falsvm) repraesentantvr.
-> - **Tractatio Errorvm:** Errores contextuales plene in lingva classica Sinica nvntiantvr. Exempli gratia, error indicis extra fines sic ostenditvr: "索驥圖外、其轍亂矣".
-> - **Architectvra Interna:** Interpretes in lingva Racket aedificatvs est. Analysim lexicalem, parsationem descensvs recvrsivi (recvrsive descent parser), et catenam ambitvs (Environment Chain) pro spatio lexicali (lexical scoping) comprehendit.
+> - **Systema ad obiecta directum (OOP):** classes abstractas et hereditarias, polymorphismum, et vocabulum `此` (hoc), quo methodi se ipsas referunt, plene sustinet.
+> - **Numeri et genera datorum:** numeros Arabicos in numeros Sinicos vulgares vel formales (e.g. 三百一十四點一五 pro 314.15) per Pythonem automatice convertit. Valores Booleani signis 陽 (Yang, verum) et 陰 (Yin, falsum) repraesentantur.
+> - **Tractatio errorum:** errores plene lingua Sinica classica nuntiantur; exempli gratia, index extra fines sic significatur: «索驥圖外、其轍亂矣» (equum extra tabulam quaerenti vestigia turbantur).
+> - **Architectura interna:** interpres lingua Racket aedificatus est; analysin lexicalem, parsorem descensus recursivi (recursive descent parser) et catenam ambituum (environment chain) ad ambitum lexicalem (lexical scoping) comprehendit.
 >
-> Potes codicem descriptionemqve (Anglice) legere:
+> Codicem et descriptionem (Anglice scriptam) infra legere potes:
 >
 > <div style="display: flex; gap: 15px; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
 >   <a href="https://github.com/Harumoto1103/KanbunSE" target="_blank" class="btn">
@@ -119,20 +119,20 @@ Hic ea opera continentvr, qvae in cvrsibvs vniversitariis svmma cvra perfeci.
 >   </a>
 >   <a href="/assets/pdf/KanbunSE Guide.pdf" target="_blank" class="btn btn-red">
 >     <svg height="18" width="18" viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"></path></svg>
->     Descriptio Lvdi (PDF)
+>     Enchiridion Lingvae (PDF)
 >   </a>
 > </div>
 > <div style="text-align: center; margin: 1rem 0;">
-> <img src="/assets/img/exec-flow.png" alt="Flvxvs Execvtionis KanbunSE" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: Strvctvra interpretis et flvxvs execvtionis lingvae KanbunSE.</p>
+> <img src="/assets/img/exec-flow.png" alt="Fluxus exsecutionis KanbunSE" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+> <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Imago: structura interpretis et fluxus exsecutionis linguae KanbunSE.</p>
 > </div>
 
 > ### Designatio Thecarvm Datorvm
 >
-> **Systema Administrationis Refectionis Cvrruvm**
-> Systema datorvm designatvm ad negotia cvrruvm reficiendorvm. Tres partes habet: Vtentes, Mechanici, et Administratores. Vtitvr transactionibvs SQL ad integritatem datorvm servandam, et machinis (triggers) ad deletionem continvatam (cascade delete).
+> **Systema ad officinas autocinetorum reficiendorum administrandas**
+> Systema datorum ad negotia autocinetorum reficiendorum designatum. Tria genera usorum habet: clientes, mechanicos, administratores. Transactionibus SQL integritas datorum servatur, et excitatoribus (triggers) deletio continuata (cascade delete) tuto efficitur.
 
 > ### Ingeniaria Programmatvrae
 >
-> **Sitvs Interretialis ad Cavponas Aestimandas**
-> Applicationem interretialem aedificavi vbi vtentes cavponas inqvirere, locare, et de eis commentarios relinqvere possvnt. Systema plene operatvr cvm designatione robvsta.
+> **Situs interretialis ad cauponas aestimandas**
+> Applicationem interretialem aedificavi, in qua usores cauponas quaerere, in tabula invenire, de iisque iudicia relinquere possunt. Systema plene operatur et firma designatione nititur.

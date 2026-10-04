@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editor KanbunSE Online — Wong Hou Un</title>
+  <title>Editor KanbunSE Interretialis — Wong Hou Un</title>
   <link rel="icon" type="image/jpeg" href="/profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
@@ -61,16 +61,16 @@
   </div>
   <div class="controls">
     <button class="btn-lang" id="btn-lang">English</button>
-    <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" target="_blank" style="margin-right: .5rem; color: var(--muted); text-decoration: underline; font-size: 0.75rem;" id="vs-link">VS Code Extension</a>
+    <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" target="_blank" style="margin-right: .5rem; color: var(--muted); text-decoration: underline; font-size: 0.75rem;" id="vs-link">Extensio VS Code</a>
     <button class="btn-clear" id="btn-clear">Purga</button>
-    <button class="btn-run" id="btn-run">▶ Curre</button>
+    <button class="btn-run" id="btn-run">▶ Exsequere</button>
   </div>
 </nav>
 <div class="ide-body">
   <aside class="sidebar-left"><div class="sidebar-title" id="ex-title">Exempla</div><div id="example-list"></div></aside>
   <main class="editor-area">
     <div class="editor-pane"><div class="pane-title"><span id="editor-title">Editor KanbunSE</span></div><textarea id="editor"></textarea></div>
-    <div class="output-pane"><div class="pane-title"><span id="output-title">Exitus</span></div><div id="output"><span class="info-line" id="welcome-msg">▷ Preme "Curre" ad codicem exsequendum.</span></div></div>
+    <div class="output-pane"><div class="pane-title"><span id="output-title">Effectus</span></div><div id="output"><span class="info-line" id="welcome-msg">▷ Preme «Exsequere» ut codicem exsequaris.</span></div></div>
   </main>
   <aside class="sidebar-right"><div class="sidebar-title" id="ref-title">Syntaxis</div><div id="ref-panel"></div></aside>
 </div>
@@ -141,11 +141,11 @@ class KanbunSEInterpreter {
 }
 
 const LANGS = {
-  la: { nav: "Editor KanbunSE", cur: "▶ Curre", clr: "Purga", ex: "Exempla", syn: "Syntaxis", ed: "Editor", out: "Exitus", welcome: "▷ Preme \"Curre\" ad codicem exsequendum.", err: "Error" },
-  en: { nav: "KanbunSE IDE", cur: "▶ Run", clr: "Clear", ex: "Examples", syn: "Syntax", ed: "Editor", out: "Output", welcome: "▷ Press \"Run\" to execute code.", err: "Error" }
+  la: { nav: "Editor KanbunSE", cur: "▶ Exsequere", clr: "Purga", ex: "Exempla", syn: "Syntaxis", ed: "Editor", out: "Effectus", welcome: "▷ Preme «Exsequere» ut codicem exsequaris.", err: "Error", vs: "Extensio VS Code" },
+  en: { nav: "KanbunSE IDE", cur: "▶ Run", clr: "Clear", ex: "Examples", syn: "Syntax", ed: "Editor", out: "Output", welcome: "▷ Press \"Run\" to execute code.", err: "Error", vs: "VS Code Extension" }
 };
 let curLang = 'la'; const terp = new KanbunSEInterpreter();
-function setLang(l) { curLang = l; const t = LANGS[l]; document.getElementById('nav-title').textContent = t.nav; document.getElementById('btn-run').textContent = t.cur; document.getElementById('btn-clear').textContent = t.clr; document.getElementById('ex-title').textContent = t.ex; document.getElementById('ref-title').textContent = t.syn; document.getElementById('editor-title').textContent = t.ed; document.getElementById('output-title').textContent = t.out; document.getElementById('btn-lang').textContent = l === 'la' ? 'English' : 'Latina'; if (document.getElementById('output').children.length === 1) document.getElementById('welcome-msg').textContent = t.welcome; }
+function setLang(l) { curLang = l; const t = LANGS[l]; document.getElementById('nav-title').textContent = t.nav; document.getElementById('btn-run').textContent = t.cur; document.getElementById('btn-clear').textContent = t.clr; document.getElementById('ex-title').textContent = t.ex; document.getElementById('ref-title').textContent = t.syn; document.getElementById('editor-title').textContent = t.ed; document.getElementById('output-title').textContent = t.out; document.getElementById('btn-lang').textContent = l === 'la' ? 'English' : 'Latina'; document.getElementById('vs-link').textContent = t.vs; if (document.getElementById('output').children.length === 1) document.getElementById('welcome-msg').textContent = t.welcome; }
 document.getElementById('btn-lang').onclick = () => setLang(curLang === 'la' ? 'en' : 'la');
 CodeMirror.defineMode('kanbunse', () => {
   const KW = new Set(['者','也','名','以','加','減','乘','除','所餘','整除','等於','大於','小於','且','或','非','若','則','若非','書','未善','為','遍','大衍','自','至','夫','施','於','立','承','具','能','造','之實體','之','令','充','卦','而','為列以','此']);

@@ -8,7 +8,7 @@ title: WONG HOU UN — Pagina Domestica
     <h1 class="cinzel" style="font-size: 3.5rem; font-weight: bold; margin-bottom: 1rem; color: #2c241b; letter-spacing: 0.05em;">WONG HOU UN</h1>
     <p style="font-size: 1.5rem; color: var(--pompeian-red); font-family: 'Cinzel', serif;">Stvdia Informaticae & Philologiae</p>
     <p style="font-size: 1.25rem; color: #4a4036; max-width: 600px; margin: 1.5rem auto;">
-        Artis programmatvrae alumnus Macao natvs, vbi antiqvae litterae cvm technologia mirifice conivngvntvr, non solvm scientiae compvtatrali sed etiam lingvisticae rationi operam do.
+        Ingeniariae programmaturae alumnus, Macai natus, ubi litterae antiquae cum artibus novis mirum in modum coniunguntur, non solum scientiae computatrali sed etiam linguisticae operam do.
     </p>
     <div style="margin-top: 2.5rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
         <a href="https://github.com/harumoto1103" class="btn">
@@ -21,73 +21,73 @@ title: WONG HOU UN — Pagina Domestica
 
 ## De Me
 
-Artis programmatvrae alvmnvs Macao orivndvs, amorem lingvarvm rervmqve gestarvm havsi, quem nvnc cvm scientia technica copvlare stvdeo. Neqve vero solvm compvtatris delector, sed mathematicas artes qvoqve ex animo colo; saepissime enim in interrete calcvelis integralibvs vaco et qvaestiones de lingvistica cvm aliis amicis tracto.
+Ingeniariae programmaturae alumnus, Macao oriundus, inde amorem linguarum rerumque gestarum hausi, quem nunc cum scientia technica coniungere studeo. Neque vero computatris solum delector, sed etiam mathematicas artes ex animo colo: saepe enim in interrete integralibus computandis vaco et de rebus linguisticis cum amicis disputo.
 
-**In rebvs technicis**, praecipve machinis discentibvs visioniqve compvtatrali atqve secvritati systematvm incvmbens, nihil ivcvndivs habeo qvam nova instrvmenta fingere atqve expolire, a retibvs nevronalibvs ad programmatvras avtomaticas.
+**In rebus technicis** praecipue doctrinae machinali, visioni computatrali securitatique systematum incumbo; nihil mihi iucundius est quam nova instrumenta fingere atque expolire, a retibus neuralibus usque ad programmata quae per se operantur.
 
-**In rebvs hymanitatis**, philologiam et grammaticam comparativam magnopere colo, eo consilio vt pontem inter has disciplinas aedificem: instrvmentis compvtatralibvs hodiernis vti ad textvs antiqvos intellegendos et ad philologiam compvtatralem promovendam.
+**In litteris humanioribus** philologiam grammaticamque comparativam magnopere colo, eo consilio ut pontem inter has disciplinas aedificem: instrumentis enim computatralibus hodiernis uti velim ad textus antiquos intellegendos et ad philologiam computatralem promovendam.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem;">
     <a href="/progressus.html" class="card-btn">
-        <span class="card-btn-title">Progressus Discendi</span>
-        <span class="card-btn-subtitle">Stvdia Cvrrentia Inspice &rarr;</span>
+        <span class="card-btn-title">Progressvs Discendi</span>
+        <span class="card-btn-subtitle">Quae nunc studeam &rarr;</span>
     </a>
     <a href="/cursus.html" class="card-btn">
-        <span class="card-btn-title">Cursus Academici</span>
-        <span class="card-btn-subtitle">Indices Cvrsvvm Lege &rarr;</span>
+        <span class="card-btn-title">Cvrsvs Academici</span>
+        <span class="card-btn-subtitle">Index cursuum confectorum &rarr;</span>
     </a>
     <a href="/lhdrive/" class="card-btn">
         <span class="card-btn-title">LHDrive macOS & iOS</span>
-        <span class="card-btn-subtitle">App pro Lou Hau Inspice &rarr;</span>
+        <span class="card-btn-subtitle">Applicatio scholae Lou Hau &rarr;</span>
         <span class="badge" style="margin-top: 10px; display: inline-block;">Ex Afflatv Factvm</span>
     </a>
     <a href="/adversaria.html" class="card-btn">
         <span class="card-btn-title">Adversaria</span>
-        <span class="card-btn-subtitle">Scripta Leviora & Adnotata &rarr;</span>
+        <span class="card-btn-subtitle">Scripta leviora et adnotationes &rarr;</span>
     </a>
 </div>
 
-## Opera Academica (Cvrsvs)
+## Opera in Cvrsibvs Confecta
 
-In schola, multa proposita confeci ad theoriam in praxim redigendam.
+In universitate multa opera confeci, quibus doctrinam ad usum transferrem.
 
-- **Programmatura Obiectis Directa:** Ludus "MineMatching" in JavaFX.
-- **Designatio Datorum Thecarum:** Systema ad currus reficiendos.
-- **Ingeniaria Programmaturae:** Situs interretialis ad cauponas aestimandas.
-- **Visio Computatralis:** Exemplar "TriStreamNet" ad imagines ab Intellegentia Artificiali generatas discernendas.
-- **Cryptographia:** Resolutor Playfair per Simulated Annealing et DFS.
-- **Principia Linguarum Programmaturae:** _KanbunSE_, lingua S-Expressionis verbis Sinicis classicis scripta. <a href="/kanbunse/" style="font-family:'Cinzel',serif;font-size:.85em;border:1px solid var(--pompeian-red);color:var(--pompeian-red);padding:.1rem .5rem;text-decoration:none;margin-left:.4rem;">Machina Interpretandi ▶</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Extensio VS Code &rarr;</a>
-- **Structurae Datorum:** Resolutor Arboris HTML in C++ Qt.
-- **Designatio Programmaturae:** Ludus Vitae (Game of Life) in CLI.
+- **Programmatio ad obiecta directa:** ludus «MineMatching» JavaFX scriptus.
+- **Designatio thecarum datorum:** systema ad officinas autocinetorum reficiendorum administrandas.
+- **Ingeniaria programmaturae:** situs interretialis ad cauponas aestimandas.
+- **Visio computatralis:** exemplar «TriStreamNet» quo imagines ab intellegentia artificiali generatae discernuntur.
+- **Cryptographia:** instrumentum ad notas arcanas Playfair solvendas (per <i>simulated annealing</i> et DFS).
+- **Principia linguarum programmandi:** _KanbunSE_, lingua S-expressionum verbis Sinicis classicis scripta. <a href="/kanbunse/" style="font-family:'Cinzel',serif;font-size:.85em;border:1px solid var(--pompeian-red);color:var(--pompeian-red);padding:.1rem .5rem;text-decoration:none;margin-left:.4rem;">Interpres Interretialis ▶</a> <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" style="font-family: 'Cinzel', serif; font-size: .85em; border: 1px solid var(--pompeian-red); color: var(--pompeian-red); padding: .1rem .5rem; text-decoration: none; margin-left: .4rem;">Extensio VS Code &rarr;</a>
+- **Structurae datorum:** analysator arboris HTML in C++ (Qt).
+- **Designatio programmaturae:** «Ludus Vitae» (Game of Life) in linea mandatorum (CLI).
 
 <div style="text-align: center; margin: 3rem 0 1rem 0;">
     <a href="/opera-academica.html" class="btn-solid-red">
-        Omnia Opera Fusius Lege
+        Omnia Opera Fvsivs Descripta
     </a>
 </div>
 
-## Proposita Praecipvva
+## Incepta Praecipva
 
 > ### Visio Terminalis (TermVis)
 >
-> Watch video streams and monitor CV models directly over SSH — no X11, no GUI required.
+> Fluxus video et exemplaria visionis computatralis per SSH directe inspice — nec X11 nec interfacie graphica opus est.
 >
-> Per hoc instrvmentvm, imagines videophonicae altae fidelitatis in terminali videri possvnt. Vtitvr characteribvs `▀` ad resolvtionem dvplicandam et algorithmo **Delta-XOR** ad bandae latitvdinem servandam. Acvatio Fovrieriana in itinere efficitvr vt margines acvti appareant.
+> Hoc instrumento imagines motae altae fidelitatis in terminali spectari possunt. Characteribus `▀` utitur, ut resolutio duplicetur, et algorithmo **Delta-XOR**, ut latitudo bandae servetur; filtro Fourieriano in ipso fluxu adhibito margines acuuntur.
 >
-> **Munera Praecipua:**
-> - **Redditio Alta:** Color 24-bit et resolvtio dvplex per SSH.
-> - **Compressio:** Tantum differentiae inter qvadra (frames) mittvntvr.
-> - **Engine:** Cor in lingva **Rust** scriptvm ad velocitatem praestandam.
+> **Munera praecipua:**
+> - **Redditio alta:** color 24 bitorum et resolutio duplex per SSH.
+> - **Compressio:** solae differentiae inter tabulas (frames) mittuntur.
+> - **Machina interna:** nucleus lingua **Rust** scriptus, ut celeritas praestetur.
 >
 > <span class="badge">Rust</span> <span class="badge">Python</span> <span class="badge">OpenCV</span> <span class="badge">SSH</span> <span class="badge">Fourier</span>
 >
 > <div style="text-align: center; margin: 1.5rem 0;">
 >     <video src="https://github.com/Harumoto1103/TermVis/raw/main/assets/remote_desktop_demo.mov" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" controls></video>
->     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Demonstratio: Desktop 1080p per SSH in terminali reddita cvm acvatione Fovrieriana.</p>
+>     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Demonstratio: area operandi (desktop) 1080p per SSH in terminali reddita, filtro Fourieriano acuta.</p>
 >     <div style="margin-top: 15px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 >         <a href="https://github.com/Harumoto1103/TermVis" target="_blank" class="btn">
 >             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
->             Codex Fontis (GitHub)
+>             Codex Fontalis (GitHub)
 >         </a>
 >         <a href="https://pypi.org/project/termvis/" target="_blank" class="btn btn-red">
 >             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 0L2.197 5.66l9.803 5.66 9.803-5.66L12 0zm0 12.56L2.197 6.9 12 12.56l9.803-5.66L12 12.56zm0 11.44l9.803-5.66V13.8L12 19.46l-9.803-5.66v4.54L12 24z"/></svg>
@@ -98,51 +98,51 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
 
 > ### <img src="/assets/img/kanbunse-logo.png" style="height: 1.2em; vertical-align: middle; margin-right: 0.4rem; border-radius: 4px;"> KanbunSE (Kanbun S-Expression)
 >
-> Lingua S-Expressionis verbis Sinicis classicis scripta ad philologiam computatralem promovendam.
+> Lingua S-expressionum verbis Sinicis classicis scripta, ad philologiam computatralem promovendam.
 >
-> _KanbunSE_ est interpretatrum et instrumentum quod sinit utentes programmata scribere utendo verbis et syntaxi Sinica antiqua (Kanbun). Propositum est pontem aedificare inter mundum technicum et litteras humaniores.
+> _KanbunSE_ est interpres atque instrumentum quo programmata verbis et syntaxi Sinica classica (Kanbun) scribi possunt. Propositum est pontem aedificare inter artes technicas et litteras humaniores.
 >
-> **Munera Praecipua:**
-> - **Interpretatrum:** Machina quae S-expressiones (Kanbun) legit et exsequitur.
-> - **Extensio VS Code:** Instrumentum ad scribendum cum auxilio syntaxis et colorum.
-> - **Philologia:** Facilior redditur analysis textuum antiquorum per instrumenta computatralia.
+> **Munera praecipua:**
+> - **Interpres:** machina quae S-expressiones Kanbun legit et exsequitur.
+> - **Extensio VS Code:** syntaxis coloribus distinguitur, quo facilius scribatur.
+> - **Philologia:** textus antiqui instrumentis computatralibus facilius examinantur.
 >
 > <span class="badge">TypeScript</span> <span class="badge">S-Expression</span> <span class="badge">Classical Chinese</span> <span class="badge">VS Code Extension</span>
 >
 > <div style="text-align: center; margin: 1.5rem 0;">
 >     <img src="/assets/img/kanbunse-vsc.png" alt="KanbunSE VS Code Syntax Highlighting" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
->     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Demonstratio syntaxis in VS Code.</p>
+>     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Syntaxis in VS Code coloribus distincta.</p>
 >     <div style="margin-top: 15px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 >         <a href="https://github.com/Harumoto1103/KanbunSE" target="_blank" class="btn">
 >             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
->             Codex Fontis (GitHub)
+>             Codex Fontalis (GitHub)
 >         </a>
 >         <a href="https://github.com/Harumoto1103/KanbunSE-VSCode" target="_blank" class="btn btn-red">
 >             Extensio VS Code &rarr;
 >         </a>
 >         <a href="/kanbunse/" class="btn">
->             Machina Interpretandi ▶
+>             Interpres Interretialis ▶
 >         </a>
 >     </div>
 > </div>
 
-> ### Systema Nvbis & Repositorivm Datorvm (LHDrive)
+> ### Conditorivm Nvbis Scholasticvm (LHDrive)
 >
-> Systema administrationis fasciculorum et repositorium datorum pro ludo secundario meo (_Lou Hau High School_) creavi. Hoc systema per interfaciem interretialem usoribus praebet. Valde robustum est, etiamnunc in usu cottidiano a discipulis magistrisque scholae est, et in <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a> inveniri potest.
+> Systema ad fasciculos administrandos et data servanda pro schola mea secundaria (_Lou Hau High School_) condidi, quod per interfaciem interretialem usoribus praebetur. Firmum est atque etiamnunc a discipulis magistrisque scholae cotidie adhibetur; adest in <a href="https://drive.louhau.edu.mo" target="_blank">drive.louhau.edu.mo</a>.
 >
-> **Munera Praecipua:**
-> - **Administratio Fasciculorum:** Integra ratio ad fasciculos in nubem imponendos (upload) et deponendos (download), cum thecis (folders) ordinandis.
-> - **Communicatio:** Facultas fasciculos cum aliis utentibus facile communicandi (file sharing).
-> - **Thecae Communes pro Administratoribus:** Spatia separata et tuta ubi administratores scholae documenta publica simul gerere et communicare possunt.
+> **Munera praecipua:**
+> - **Administratio fasciculorum:** fasciculi in nubem imponi et inde deduci possunt (upload / download), directoriis (folders) ordinatis.
+> - **Communicatio:** fasciculi cum aliis usoribus facile communicantur (file sharing).
+> - **Directoria communia:** loca separata ac tuta, ubi administratores scholae documenta publica simul curant et communicant.
 >
 > <span class="badge">PHP</span> <span class="badge">Vue.js</span> <span class="badge">cURL</span> <span class="badge">Full-Stack</span> <span class="badge">Manv Factvm</span>
 >
 > <div style="text-align: center; margin: 1.5rem 0;">
->     <img src="/assets/img/lhdrive.png" alt="Interficies Systematis Louhau Drive" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
->     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Interficies systematis Louhau Drive.</p>
+>     <img src="/assets/img/lhdrive.png" alt="Interfacies systematis LHDrive" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+>     <p style="font-size: 0.9em; color: #666; font-style: italic; margin-top: 10px">Interfacies systematis LHDrive.</p>
 >     <div style="margin-top: 10px;">
 >         <span class="badge">Ex Afflatv Factvm</span><br>
->         <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS Inspice</a>
+>         <a href="/lhdrive/" class="btn" style="margin-top: 5px;">LHDrive pro macOS</a>
         <a href="https://github.com/Harumoto1103/LHDrive-iOS" class="btn" style="margin-top: 5px;" target="_blank" rel="noopener">LHDrive pro iOS (GitHub)</a>
 >     </div>
 > </div>
@@ -160,7 +160,7 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
         <div>
             <h3 style="margin: 0 0 0.5rem 0; color: var(--pompeian-red); font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: bold;">HARVMOTO HATENA BLOG</h3>
             <p style="margin: 0; font-size: 0.95rem; color: var(--ink); line-height: 1.6;">
-                Diarium meum interretiale est, ubi studia mea academica penitus exploro. Hic solutiones subtiles et demonstrationes pro quaestionibus mathematicis multiplicibus (sicut certamina <i>MIT Integration Bee</i>, technica integrationis Feynman, et series infinitae) evulgo. Etiam acta mea de certaminibus programmaturae (<i>AtCoder</i>) et de litteris Sinicis classicis legendis (<i>Kanbun Kundoku</i>) illic inveniri possunt.
+                Diarium meum interretiale de mathematica et linguistica. Hic solutiones demonstrationesque quaestionum mathematicarum evulgo (velut certaminis <i>MIT Integration Bee</i>, artis integrandi Feynmanianae, serierum infinitarum), necnon adnotationes de linguis, de certaminibus programmandi (<i>AtCoder</i>) et de litteris Sinicis classicis legendis (<i>Kanbun Kundoku</i>).
             </p>
         </div>
     </a>
@@ -174,14 +174,14 @@ In schola, multa proposita confeci ad theoriam in praxim redigendam.
         <div>
             <h3 style="margin: 0 0 0.5rem 0; color: var(--pompeian-red); font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: bold;">THREADS (@harumoto1103)</h3>
             <p style="margin: 0; font-size: 0.95rem; color: var(--ink); line-height: 1.6;">
-                Reticulum meum sociale praecipuum. Hic integralia mathematica (e.g., per substitutionem et analysim complexam) explicare soleo et quaestiones linguae atque grammaticae cum aliis sectatoribus tracto.
+                Rete sociale quo maxime utor. Hic integralia (e.g. per substitutionem vel analysin complexam) explicare soleo et de linguis grammaticaque cum sectatoribus disputo.
             </p>
         </div>
     </a>
 
 </div>
 
-## Contactvs
+## Vbi Me Invenias
 
 - **Email:** <a href="mailto:harumoto1103@gmail.com">harumoto1103@gmail.com</a>
 - **GitHub:** <a href="https://github.com/harumoto1103">github.com/harumoto1103</a>

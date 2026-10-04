@@ -14,18 +14,18 @@ I am a lifelong learner. Beyond academic studies, I love dedicating time to expl
 >
 > - **Classical Chinese (文言文):** <span class="badge">Intermediate</span><br> I can read and write standard texts, though highly complex works like the <i>Shi Jing</i> (詩經) remain challenging.
 > - **Classical Japanese (古文):** <span class="badge">Intermediate</span><br> I can read and write <i>Kakikudashibun</i> (書き下し文) for <i>Kanbun Kundoku</i> (漢文訓読). Currently focusing on reading <i>Waka</i> (和歌) poetry and the <i>Makura no Soshi</i> (枕草子).
-> - **Latin:** <span class="badge">Intermediate</span><br> I regularly read and write texts of moderate difficulty.
-> - **Ancient Greek:** <span class="badge">Beginner</span><br> Currently learning the alphabet and basic syntax to better understand the roots of European culture.
+> - **Latin:** <span class="badge">Intermediate</span><br> I regularly read and write texts of moderate difficulty, and am taking an intermediate Latin course at university.
+> - **Ancient Greek:** <span class="badge">Beginner</span><br> Currently studying its grammar and syntax in a university course, to better understand the roots of European culture.
 
 > ### Modern Languages
 >
 > - **Chinese (中文):** <span class="badge">Native / Fluent</span><br> Cantonese (native) and Mandarin (fluent, near-native).
 > - **Japanese (日本語):** <span class="badge">JLPT N1</span><br> Capable of communicating fluently on a wide variety of topics.
-> - **English:** <span class="badge">CET-6</span><br> Comfortable communicating on general and academic topics.
+> - **English:** <span class="badge">TOEFL iBT · C1</span><br> Comfortable communicating on general and academic topics.
 > - **Vietnamese (Tiếng Việt):** <span class="badge">Post-Beginner</span><br> Leveraging my knowledge of the ancient <i>Chữ Nôm</i> script to facilitate the learning process.
 > - **Korean (한국어):** <span class="badge">Post-Beginner</span><br> Transitioning smoothly from Japanese due to grammatical similarities.
 > - **Portuguese (Português):** <span class="badge">Beginner</span><br> Learning foundational grammar, bridging over from Latin. As someone from Macau, studying this language is deeply important for understanding my heritage.
-> - **German (Deutsch):** <span class="badge">Beginner</span><br> Just starting with the basics.
+> - **German (Deutsch):** <span class="badge">Beginner</span><br> Completed a foundational university course.
 
 > ### Mathematics
 >

@@ -6,35 +6,35 @@ title: Progressus Discendi
 
 # Progressvs Discendi
 
-In stvdiis nvmqvam conqviesco; nam praeter ea qvae in scholis docentvr, libenter res novas in omni genere artivm exploro. Praecipve vero "Orbem Sinicvm" (id est cvltvram lingvasqve Asiae Orientalis) admiror.
+In studiis numquam conquiesco; nam praeter ea quae in scholis docentur, libenter res novas in omni genere artium exploro. Praecipue vero «Orbem Sinicum» (id est cultum linguasque Asiae Orientalis) admiror.
 
 > ### Lingvae Antiqvae
 >
-> Lingvae enim qvasi fenestrae svnt per qvas historiae atqve hvmanitatis lvmen havrimvs.
+> Linguae enim quasi fenestrae sunt, per quas lumen historiae atque humanitatis haurimus.
 >
-> - **Sinica Classica (文言文):** <span class="badge">Exercitatio Media</span><br> Possum legere et scribere textus mediocres, sed opera difficiliora sicut <i>Shi Jing</i> (詩經) adhuc ardua sunt.
-- **Iaponica Classica (古文):** <span class="badge">Exercitatio Media</span><br> Possum legere et scribere <i>Kakikudashibun</i> (書き下し文) pro <i>Kanbun Kundoku</i> (漢文訓読). Nunc linguam praecipue pro <i>Waka</i> (和歌) studeo et <i>Makura no Soshi</i> (枕草子) lego.
-- **Latina:** <span class="badge">Exercitatio Media</span><br> Assidue lego et scribo textus mediocris difficultatis.
-- **Graeca Antiqua:** <span class="badge">Tiro</span><br> Nunc elementa alphabeti et syntaxim construendi disco, ut radices culturae Europaeae intellegam.
+> - **Sinica classica (文言文):** <span class="badge">Gradvs Medivs</span><br> Textus mediocris difficultatis legere et scribere possum, sed opera difficiliora, velut <i>Shi Jing</i> (詩經), adhuc mihi ardua sunt.
+> - **Iaponica classica (古文):** <span class="badge">Gradvs Medivs</span><br> <i>Kakikudashibun</i> (書き下し文) ad <i>Kanbun Kundoku</i> (漢文訓読) legere et scribere possum. Nunc praecipue carminibus <i>Waka</i> (和歌) studeo et <i>Makura no Sōshi</i> (枕草子) lego.
+> - **Latina:** <span class="badge">Gradvs Medivs</span><br> Textus mediocris difficultatis assidue lego et scribo; in universitate cursum Latinum gradus intermedii frequento.
+> - **Graeca antiqua:** <span class="badge">Tiro</span><br> Elementa grammaticae et syntaxis in cursu universitario disco, ut radices cultus Europaei intellegam.
 
-> ### Lingvae Modernae
+> ### Lingvae Hodiernae
 >
-> - **Sinica (中文):** <span class="badge">Nativa / Fvsa</span><br> Cantonesa (sermo nativus) et Mandarinica (fluens, prope nativus).
-> - **Iaponica (日本語):** <span class="badge">JLPT N1</span><br> Possum communicare de rebus variis expedite.
-> - **Anglica (English):** <span class="badge">CET-6</span><br> Possum communicare de rebus generalibus.
-> - **Vietnamica (Tiếng Việt):** <span class="badge">Initia Svpergressvs</span><br> Vtor scientia mea scripturae antiquae <i>Chữ Nôm</i> ad linguam facilius discendam.
-> - **Coreana (한국어):** <span class="badge">Initia Svpergressvs</span><br> Partim a lingua Iaponica transeo ob similitudines grammaticas.
-> - **Lvsitana (Português):** <span class="badge">Tiro</span><br> Grammaticam fundamentalem disco, a Latina transiens. Ut vir ex Macau, hanc linguam studere maximi momenti est ad hereditatem meam cognoscendam.
-> - **Germanica (Deutsch):** <span class="badge">Tiro</span><br> Elementa incipio.
+> - **Sinica (中文):** <span class="badge">Lingva Materna</span><br> Cantonensis (lingua materna) et Mandarinica (fluens, paene ut materna).
+> - **Iaponica (日本語):** <span class="badge">JLPT N1</span><br> De rebus variis expedite colloqui possum.
+> - **Anglica (English):** <span class="badge">TOEFL iBT · C1</span><br> De rebus cotidianis et academicis expedite colloqui et scribere possum.
+> - **Vietnamica (Tiếng Việt):** <span class="badge">Initia Svpergressvs</span><br> Scientia scripturae antiquae <i>Chữ Nôm</i> utor, quo facilius linguam discam.
+> - **Coreana (한국어):** <span class="badge">Initia Svpergressvs</span><br> Ob similitudinem grammaticam a lingua Iaponica facile transeo.
+> - **Lusitana (Português):** <span class="badge">Tiro</span><br> Grammaticae fundamenta disco, a Latina transiens. Cum Macai natus sim, huius linguae studium ad patrimonium meum cognoscendum maximi momenti est.
+> - **Germanica (Deutsch):** <span class="badge">Tiro</span><br> Cursum fundamentalem in universitate absolvi.
 
 > ### Mathematica
 >
-> Theoriae nvmerorvm ac rationi analyticae svmma devotione stvdeo.
+> Theoriae numerorum et analysi summo studio incumbo.
 >
-> - **Calcvlvs et Integralia:** Valde delector in solvendis aequationibus et integralibus multiplicibus online. Explicare et disserere vias integrandi, mihi gaudium magnum affert. Potes me invenire in <i>Threads</i> de his rebus loquentem.
-> - **Mathematica Svperior (Propositvm "Napkin"):** Nunc studeo secundum opus clarum <a href="https://web.evanchen.cc/napkin.html" target="_blank"><i>An Infinitely Large Napkin</i></a> ab Evan Chen scriptum, ut theoriae mathematicae provectiori (sicut algebrae abstractae et topologiae) adsuescam.
+> - **Calculus et integralia:** Aequationes et integralia difficilia in interrete solvere valde me delectat; vias integrandi explicare et de iis disserere magno mihi gaudio est. In <i>Threads</i> me de his rebus disserentem invenies.
+> - **Mathematica superior (inceptum «Napkin»):** Nunc opus clarum <a href="https://web.evanchen.cc/napkin.html" target="_blank"><i>An Infinitely Large Napkin</i></a> ab Evan Chen scriptum perlego, ut theoriis mathematicis provectioribus (velut algebrae abstractae et topologiae) assuescam.
 
 > ### Scientia Compvtatralis
 >
-> - **Fvzzing et Secvritas:** Assidve programmatis operam do vt errores in codicibvs detegam.
-> - **Intelligentia Artificialis:** Vltra <i>Visio Compvtatralis</i>, nvnc magis in <i>Semantic Segmentation</i> et in exemplaria lingvarvm maiorvm (LLMs) incvmbo ad data svbtilivs intellegenda.
+> - **Fuzzing et securitas:** Programmata assidue scribo quibus errores in codice binario (per ASAN) detegantur.
+> - **Intellegentia artificialis:** Praeter visionem computatralem nunc in segmentatione semantica (<i>Semantic Segmentation</i>) et in exemplaribus linguae magnis (LLM) versor, ut data subtilius intellegantur.

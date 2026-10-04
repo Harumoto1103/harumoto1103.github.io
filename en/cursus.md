@@ -113,9 +113,18 @@ This is a catalog of the courses and disciplines I have completed throughout my 
 
 </div>
 
-## Computer Science (CS)
+## Computer Science (CS / CSEC)
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-8">
+
+    <blockquote style="margin: 0;">
+        <span class="badge">CSEC</span>
+        <h3 style="margin-top: 0;">Information Security</h3>
+        <div class="course-details">
+            <span class="course-tc">信息安全</span>
+            <span class="course-en">Information Security</span>
+        </div>
+    </blockquote>
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>

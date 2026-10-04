@@ -4,9 +4,9 @@ lang: la
 title: Cursus Peracti
 ---
 
-# DE CVRSVVS STVDIORVM CONFECTIS
+# De Cvrsibvs Confectis
 
-Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra excolvi.
+Hic ea studia continentur quae in universitate maxima cum cura excolui.
 
 ## Ars Compvtatralis (COMP)
 
@@ -14,7 +14,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Systema Administrativvm Linvx</h3>
+        <h3 style="margin-top: 0;">Systema Operativvm Linvx</h3>
         <div class="course-details">
             <span class="course-tc">LINUX作業系統</span>
             <span class="course-en">Linux Operating System</span>
@@ -32,7 +32,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Logica Compvtatralis et Dispositio Partivm</h3>
+        <h3 style="margin-top: 0;">Logica Digitalis et Designatio Partivm</h3>
         <div class="course-details">
             <span class="course-tc">數字邏輯與部件設計</span>
             <span class="course-en">Digital Logic and Component Design</span>
@@ -41,7 +41,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Strvctvra Datorvm</h3>
+        <h3 style="margin-top: 0;">Strvctvrae Datorvm</h3>
         <div class="course-details">
             <span class="course-tc">數據結構</span>
             <span class="course-en">Data Structure</span>
@@ -59,7 +59,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Theoria Coetvvm et Graphismorvm</h3>
+        <h3 style="margin-top: 0;">Theoria Copiarvm et Graphorvm</h3>
         <div class="course-details">
             <span class="course-tc">集合與圖論</span>
             <span class="course-en">Set Theory and Graph Theory</span>
@@ -86,7 +86,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Mens Artificiosa</h3>
+        <h3 style="margin-top: 0;">Intellegentia Artificialis</h3>
         <div class="course-details">
             <span class="course-tc">人工智能</span>
             <span class="course-en">Artificial Intelligence</span>
@@ -104,7 +104,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">COMP</span>
-        <h3 style="margin-top: 0;">Fvndamenta Mathematica Mentis Artificiosae</h3>
+        <h3 style="margin-top: 0;">Fvndamenta Mathematica Intellegentiae Artificialis</h3>
         <div class="course-details">
             <span class="course-tc">人工智能的數學基礎</span>
             <span class="course-en">Mathematical Foundations of Artificial Intelligence</span>
@@ -113,9 +113,18 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
 </div>
 
-## Scientia Compvtatralis (CS)
+## Scientia Compvtatralis (CS / CSEC)
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-8">
+
+    <blockquote style="margin: 0;">
+        <span class="badge">CSEC</span>
+        <h3 style="margin-top: 0;">Secvritas Informationis</h3>
+        <div class="course-details">
+            <span class="course-tc">信息安全</span>
+            <span class="course-en">Information Security</span>
+        </div>
+    </blockquote>
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
@@ -137,7 +146,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
-        <h3 style="margin-top: 0;">Systemata Discentiae Machinaris</h3>
+        <h3 style="margin-top: 0;">Systemata Doctrinae Machinalis</h3>
         <div class="course-details">
             <span class="course-tc">機器學習系統</span>
             <span class="course-en">Machine Learning Systems</span>
@@ -155,7 +164,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
-        <h3 style="margin-top: 0;">Cvratio Qvalitatis Programmatvrae</h3>
+        <h3 style="margin-top: 0;">Cvratio Qvalitatis et Probatio Programmatvrae</h3>
         <div class="course-details">
             <span class="course-tc">軟件質量保障與測試</span>
             <span class="course-en">Software Quality Assurance and Testing</span>
@@ -164,7 +173,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
-        <h3 style="margin-top: 0;">Programmatvra Systematis</h3>
+        <h3 style="margin-top: 0;">Programmatio Systematvm</h3>
         <div class="course-details">
             <span class="course-tc">系統程序設計</span>
             <span class="course-en">System Programming</span>
@@ -191,7 +200,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
-        <h3 style="margin-top: 0;">Tractatio Lingvae Natvralis</h3>
+        <h3 style="margin-top: 0;">Tractatio Lingvae Natvralis et Repraesentatio Scientiae</h3>
         <div class="course-details">
             <span class="course-tc">自然語言處理和知識表示</span>
             <span class="course-en">Natural Language Processing and Knowledge Representation</span>
@@ -200,7 +209,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
-        <h3 style="margin-top: 0;">Compvtatio Nvbilaris</h3>
+        <h3 style="margin-top: 0;">Compvtatio Nvbivm et Virtvalizatio</h3>
         <div class="course-details">
             <span class="course-tc">雲計算與虛擬化技術</span>
             <span class="course-en">Cloud Computing and Virtualization Technology</span>
@@ -209,7 +218,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">CS</span>
-        <h3 style="margin-top: 0;">Discentia Profvnda</h3>
+        <h3 style="margin-top: 0;">Doctrina Profvnda</h3>
         <div class="course-details">
             <span class="course-tc">深度學習及其應用</span>
             <span class="course-en">Deep Learning: theory and applications</span>
@@ -242,7 +251,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">SOFT</span>
-        <h3 style="margin-top: 0;">Programmatvra Obiectis Directa</h3>
+        <h3 style="margin-top: 0;">Programmatio ad Obiecta Directa</h3>
         <div class="course-details">
             <span class="course-tc">面向對象程序設計</span>
             <span class="course-en">Object-Oriented Programming</span>
@@ -293,7 +302,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">PHYS</span>
-        <h3 style="margin-top: 0;">Experimenta Physicae Fvndamentalis</h3>
+        <h3 style="margin-top: 0;">Experimenta Physica Fvndamentalia</h3>
         <div class="course-details">
             <span class="course-tc">基礎物理實驗</span>
             <span class="course-en">Fundamental Physics Experiments</span>
@@ -326,7 +335,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
 </div>
 
-## Lingvae et Hvmanitates (ENGL / HIST / FORE / ICES)
+## Lingvae et Litterae Hvmaniores (ENGL / HIST / FORE / ICES)
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-8">
 
@@ -341,7 +350,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">ENGL</span>
-        <h3 style="margin-top: 0;">Compositio Tractatvvm</h3>
+        <h3 style="margin-top: 0;">Dissertationes Anglice Scribendae</h3>
         <div class="course-details">
             <span class="course-tc">英語論說文寫作</span>
             <span class="course-en">Essay Writing</span>
@@ -395,13 +404,13 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
 </div>
 
-## Artes, Cvltvra et Edvcatio Physica (FINE / GEEC / PEDU)
+## Artes, Cvltvs et Exercitatio Corporis (FINE / GEEC / PEDU)
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-8">
 
     <blockquote style="margin: 0;">
         <span class="badge">FINE</span>
-        <h3 style="margin-top: 0;">Aesthetica Mvsicae</h3>
+        <h3 style="margin-top: 0;">Aesthetica Mvsicae Sinicae et Externae</h3>
         <div class="course-details">
             <span class="course-tc">中外音樂審美</span>
             <span class="course-en">Aesthetics of Chinese and Foreign Music</span>
@@ -410,7 +419,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">GEEC</span>
-        <h3 style="margin-top: 0;">Cibvs Medicinalis et Cvltvra</h3>
+        <h3 style="margin-top: 0;">Cibi Medicinales et Cvltvs Victvs Sinici</h3>
         <div class="course-details">
             <span class="course-tc">藥膳與中國飲食文化</span>
             <span class="course-en">Medicinal Food and Chinese Dietetic Culture</span>
@@ -419,7 +428,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">PEDU</span>
-        <h3 style="margin-top: 0;">Pvgilatvs Tai Chi XVI</h3>
+        <h3 style="margin-top: 0;">Taiji Qvan: Formae Sedecim</h3>
         <div class="course-details">
             <span class="course-tc">十六式太極拳</span>
             <span class="course-en">16-Form Shadow Boxing</span>
@@ -428,7 +437,7 @@ Hic ea stvdia continentvr, qvae in lyceo atqve in vniversitate maxima cvm cvra e
 
     <blockquote style="margin: 0;">
         <span class="badge">PEDU</span>
-        <h3 style="margin-top: 0;">Pvgilatvs Tai Chi Stili Chen</h3>
+        <h3 style="margin-top: 0;">Taiji Qvan Generis Chen</h3>
         <div class="course-details">
             <span class="course-tc">陳式太極拳</span>
             <span class="course-en">Chen-Style Shadow Boxing</span>
